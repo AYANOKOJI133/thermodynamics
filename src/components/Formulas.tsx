@@ -5,18 +5,19 @@ import { formulasData } from '@/lib/course-data';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { FlaskConical, Calculator, Thermometer, Zap, Flame, Atom, ChevronDown, ChevronUp, Waves, Sparkles, Droplets, Target } from 'lucide-react';
+import { FlaskConical, Calculator, Thermometer, Zap, Flame, Atom, ChevronDown, ChevronUp, Waves, Sparkles, Droplets, Target, Settings, RotateCcw, Cpu, Database } from 'lucide-react';
 
 const categories = [
   { id: 'general', label: 'General', icon: Calculator, color: 'from-gray-500 to-slate-500' },
   { id: 'temperature', label: 'Temperature', icon: Thermometer, color: 'from-blue-500 to-cyan-500' },
   { id: 'travail', label: 'Travail', icon: Zap, color: 'from-amber-500 to-orange-500' },
   { id: 'chaleur', label: 'Chaleur', icon: Flame, color: 'from-red-500 to-pink-500' },
-  { id: 'expressionChaleur', label: 'Expression de la Chaleur', icon: Waves, color: 'from-rose-500 to-red-500' },
-  { id: 'transfertThermique', label: 'Transfert Thermique', icon: Sparkles, color: 'from-yellow-500 to-amber-500' },
   { id: 'gazParfait', label: 'Gaz Parfait', icon: FlaskConical, color: 'from-emerald-500 to-teal-500' },
+  { id: 'premierPrincipe', label: 'Premier Principe', icon: Settings, color: 'from-purple-500 to-violet-500' },
+  { id: 'secondPrincipe', label: 'Second Principe', icon: RotateCcw, color: 'from-indigo-500 to-blue-500' },
+  { id: 'machines', label: 'Machines Dithermes', icon: Cpu, color: 'from-rose-500 to-red-500' },
   { id: 'chaleursLatentes', label: 'Chaleurs Latentes', icon: Droplets, color: 'from-sky-500 to-blue-500' },
-  { id: 'pointTriple', label: 'Point Triple', icon: Target, color: 'from-indigo-500 to-purple-500' },
+  { id: 'constantes', label: 'Constantes', icon: Database, color: 'from-amber-500 to-yellow-500' },
 ];
 
 export default function Formulas() {
@@ -44,7 +45,7 @@ export default function Formulas() {
           <FlaskConical className="h-6 w-6" />
           Formules Essentielles
         </h2>
-        <p className="text-gray-600">Toutes les formules a retenir - {totalFormulas} formules au total</p>
+        <p className="text-gray-600">Toutes les formules a retenir - {totalFormulas} formules au total (Seances 1-6)</p>
       </div>
 
       {/* Quick Reference Card */}
@@ -52,20 +53,20 @@ export default function Formulas() {
         <CardContent className="pt-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div>
-              <p className="text-3xl font-mono font-bold">PV=nRT</p>
+              <p className="text-2xl font-mono font-bold">PV=nRT</p>
               <p className="text-sm text-emerald-100 mt-1">Gaz Parfait</p>
             </div>
             <div>
-              <p className="text-3xl font-mono font-bold">dW=-PdV</p>
-              <p className="text-sm text-emerald-100 mt-1">Travail</p>
+              <p className="text-2xl font-mono font-bold">dU=W+Q</p>
+              <p className="text-sm text-emerald-100 mt-1">1er Principe</p>
             </div>
             <div>
-              <p className="text-3xl font-mono font-bold">Q=mcDT</p>
-              <p className="text-sm text-emerald-100 mt-1">Chaleur</p>
+              <p className="text-2xl font-mono font-bold">dS=dQ/T</p>
+              <p className="text-sm text-emerald-100 mt-1">Entropie</p>
             </div>
             <div>
-              <p className="text-3xl font-mono font-bold">T(K)=T(C)+273</p>
-              <p className="text-sm text-emerald-100 mt-1">Conversion</p>
+              <p className="text-2xl font-mono font-bold">eta=1-T2/T1</p>
+              <p className="text-sm text-emerald-100 mt-1">Carnot</p>
             </div>
           </div>
         </CardContent>
@@ -118,7 +119,7 @@ export default function Formulas() {
                             <p className="font-medium text-gray-800">{formula.name}</p>
                             {formula.session && (
                               <Badge variant="outline" className="text-xs">
-                                Seance {formula.session}
+                                S{formula.session}
                               </Badge>
                             )}
                           </div>
@@ -212,50 +213,44 @@ export default function Formulas() {
         </CardContent>
       </Card>
 
-      {/* Unit Conversions */}
+      {/* Summary by Session */}
       <Card>
         <CardHeader>
-          <CardTitle>Conversions d'Unites</CardTitle>
-          <CardDescription>Tables de conversion utiles</CardDescription>
+          <CardTitle>Resume par Seance</CardTitle>
+          <CardDescription>Nombre de formules par seance</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-4 py-2 text-left font-medium">Grandeur</th>
-                  <th className="px-4 py-2 text-left font-medium">Unite SI</th>
-                  <th className="px-4 py-2 text-left font-medium">Autres unites</th>
-                  <th className="px-4 py-2 text-left font-medium">Conversion</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y">
-                <tr>
-                  <td className="px-4 py-2">Energie</td>
-                  <td className="px-4 py-2 font-mono">Joule (J)</td>
-                  <td className="px-4 py-2">calorie, eV</td>
-                  <td className="px-4 py-2 font-mono">1 cal = 4.186 J</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2">Pression</td>
-                  <td className="px-4 py-2 font-mono">Pascal (Pa)</td>
-                  <td className="px-4 py-2">atm, bar</td>
-                  <td className="px-4 py-2 font-mono">1 atm = 1.013 x 10^5 Pa</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2">Temperature</td>
-                  <td className="px-4 py-2 font-mono">Kelvin (K)</td>
-                  <td className="px-4 py-2">C, F</td>
-                  <td className="px-4 py-2 font-mono">T(K) = T(C) + 273.15</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2">Volume</td>
-                  <td className="px-4 py-2 font-mono">m3</td>
-                  <td className="px-4 py-2">L, cm3</td>
-                  <td className="px-4 py-2 font-mono">1 L = 10^-3 m3</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="text-center p-4 bg-emerald-50 rounded-lg">
+              <p className="text-3xl font-bold text-emerald-700">3</p>
+              <p className="text-sm text-gray-600">Seance 1</p>
+              <p className="text-xs text-gray-500">General</p>
+            </div>
+            <div className="text-center p-4 bg-blue-50 rounded-lg">
+              <p className="text-3xl font-bold text-blue-700">4</p>
+              <p className="text-sm text-gray-600">Seance 2</p>
+              <p className="text-xs text-gray-500">Temperature</p>
+            </div>
+            <div className="text-center p-4 bg-red-50 rounded-lg">
+              <p className="text-3xl font-bold text-red-700">5</p>
+              <p className="text-sm text-gray-600">Seance 3</p>
+              <p className="text-xs text-gray-500">Chaleur</p>
+            </div>
+            <div className="text-center p-4 bg-purple-50 rounded-lg">
+              <p className="text-3xl font-bold text-purple-700">10</p>
+              <p className="text-sm text-gray-600">Seance 4</p>
+              <p className="text-xs text-gray-500">1er Principe</p>
+            </div>
+            <div className="text-center p-4 bg-indigo-50 rounded-lg">
+              <p className="text-3xl font-bold text-indigo-700">7</p>
+              <p className="text-sm text-gray-600">Seance 5</p>
+              <p className="text-xs text-gray-500">2nd Principe</p>
+            </div>
+            <div className="text-center p-4 bg-rose-50 rounded-lg">
+              <p className="text-3xl font-bold text-rose-700">8</p>
+              <p className="text-sm text-gray-600">Seance 6</p>
+              <p className="text-xs text-gray-500">Machines</p>
+            </div>
           </div>
         </CardContent>
       </Card>

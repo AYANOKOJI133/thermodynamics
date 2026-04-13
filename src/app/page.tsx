@@ -26,7 +26,7 @@ export default function Home() {
   }, [setTotalCards]);
 
   const tabs = [
-    { id: 'course' as Tab, label: 'Cours', icon: BookOpen, description: 'Contenu complet des 3 seances' },
+    { id: 'course' as Tab, label: 'Cours', icon: BookOpen, description: 'Contenu complet des 6 seances' },
     { id: 'flashcards' as Tab, label: 'Flashcards', icon: Lightbulb, description: 'Reviser les definitions cles' },
     { id: 'quiz' as Tab, label: 'Quiz', icon: GraduationCap, description: 'Testez vos connaissances' },
     { id: 'formulas' as Tab, label: 'Formules', icon: FlaskConical, description: 'Toutes les formules essentielles' },
@@ -149,7 +149,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-emerald-900 text-white py-6 mt-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-emerald-200">Cours de Thermodynamique - 3 Seances</p>
+          <p className="text-emerald-200">Cours de Thermodynamique - 6 Seances</p>
           <p className="text-sm text-emerald-300 mt-2">References: Foussard et Julien (DUNOD) | Perez (DUNOD)</p>
         </div>
       </footer>
