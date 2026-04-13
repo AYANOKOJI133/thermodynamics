@@ -326,7 +326,7 @@ export default function Summary() {
                   <td className="px-4 py-2">Entropie</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-2 font-mono">Delta S_c >= 0</td>
+                  <td className="px-4 py-2 font-mono">Delta S_c &gt;= 0</td>
                   <td className="px-4 py-2">Entropie creee positive</td>
                 </tr>
                 <tr className="bg-gray-50">
