@@ -237,25 +237,25 @@ export default function Summary() {
                   <td className="px-4 py-2">Conversion Kelvin-Celsius</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-2 font-mono">(1/2)m<v²> = (3/2)kT</td>
-                  <td className="px-4 py-2">Énergie cinétique moyenne</td>
+                  <td className="px-4 py-2 font-mono">(1/2)m&lt;v²&gt; = (3/2)kT</td>
+                  <td className="px-4 py-2">Energie cinetique moyenne</td>
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="px-4 py-2 font-medium" rowSpan={3}>Travail</td>
-                  <td className="px-4 py-2 font-mono">δW = -Pext·dV</td>
-                  <td className="px-4 py-2">Travail élémentaire</td>
+                  <td className="px-4 py-2 font-mono">dW = -Pext.dV</td>
+                  <td className="px-4 py-2">Travail elementaire</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="px-4 py-2 font-mono">W = -P(V₂-V₁)</td>
+                  <td className="px-4 py-2 font-mono">W = -P(V2-V1)</td>
                   <td className="px-4 py-2">Travail isobare</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="px-4 py-2 font-mono">W = nRT·ln(V₂/V₁)</td>
+                  <td className="px-4 py-2 font-mono">W = nRT.ln(V2/V1)</td>
                   <td className="px-4 py-2">Travail isotherme (gaz parfait)</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-2 font-medium" rowSpan={3}>Chaleur</td>
-                  <td className="px-4 py-2 font-mono">Q = mcΔT</td>
+                  <td className="px-4 py-2 font-mono">Q = mc.dT</td>
                   <td className="px-4 py-2">Chaleur sensible</td>
                 </tr>
                 <tr>

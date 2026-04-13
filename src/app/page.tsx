@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
-import { BookOpen, GraduationCap, FlaskConical, Lightbulb, FileText, Trophy, Menu, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { BookOpen, GraduationCap, FlaskConical, Lightbulb, FileText, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import CourseContent from '@/components/CourseContent';
 import Flashcards from '@/components/Flashcards';
@@ -11,23 +11,31 @@ import Quiz from '@/components/Quiz';
 import Formulas from '@/components/Formulas';
 import Summary from '@/components/Summary';
 import { useProgressStore } from '@/lib/store';
+import { flashcardsData } from '@/lib/course-data';
 
 type Tab = 'course' | 'flashcards' | 'quiz' | 'formulas' | 'summary';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>('course');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { progress, totalCards, reviewedCards } = useProgressStore();
+  const { reviewedCards, setTotalCards } = useProgressStore();
+
+  // Set total cards on mount
+  useEffect(() => {
+    setTotalCards(flashcardsData.length);
+  }, [setTotalCards]);
 
   const tabs = [
-    { id: 'course' as Tab, label: 'Cours', icon: BookOpen, description: 'Contenu complet des 3 séances' },
-    { id: 'flashcards' as Tab, label: 'Flashcards', icon: Lightbulb, description: 'Réviser les définitions clés' },
+    { id: 'course' as Tab, label: 'Cours', icon: BookOpen, description: 'Contenu complet des 3 seances' },
+    { id: 'flashcards' as Tab, label: 'Flashcards', icon: Lightbulb, description: 'Reviser les definitions cles' },
     { id: 'quiz' as Tab, label: 'Quiz', icon: GraduationCap, description: 'Testez vos connaissances' },
     { id: 'formulas' as Tab, label: 'Formules', icon: FlaskConical, description: 'Toutes les formules essentielles' },
-    { id: 'summary' as Tab, label: 'Résumé', icon: FileText, description: 'Fiche de révision finale' },
+    { id: 'summary' as Tab, label: 'Resume', icon: FileText, description: 'Fiche de revision finale' },
   ];
 
-  const progressPercentage = totalCards > 0 ? (reviewedCards / totalCards) * 100 : 0;
+  const progressPercentage = flashcardsData.length > 0 
+    ? (reviewedCards.length / flashcardsData.length) * 100 
+    : 0;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-teal-50">
@@ -41,7 +49,7 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-xl md:text-2xl font-bold">Thermodynamique</h1>
-                <p className="text-emerald-200 text-sm hidden sm:block">Plateforme d'apprentissage interactive</p>
+                <p className="text-emerald-200 text-sm hidden sm:block">Plateforme d apprentissage interactive</p>
               </div>
             </div>
             
@@ -98,7 +106,7 @@ export default function Home() {
       <div className="bg-white border-b shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex items-center justify-between mb-1">
-            <span className="text-sm font-medium text-emerald-800">Progression d'apprentissage</span>
+            <span className="text-sm font-medium text-emerald-800">Progression d apprentissage</span>
             <span className="text-sm text-emerald-600">{Math.round(progressPercentage)}%</span>
           </div>
           <Progress value={progressPercentage} className="h-2" />
@@ -141,8 +149,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-emerald-900 text-white py-6 mt-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-emerald-200">Cours de Thermodynamique - 3 Séances</p>
-          <p className="text-sm text-emerald-300 mt-2">Références: Foussard & Julien (DUNOD) | Perez (DUNOD)</p>
+          <p className="text-emerald-200">Cours de Thermodynamique - 3 Seances</p>
+          <p className="text-sm text-emerald-300 mt-2">References: Foussard et Julien (DUNOD) | Perez (DUNOD)</p>
         </div>
       </footer>
     </div>

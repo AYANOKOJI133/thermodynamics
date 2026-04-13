@@ -150,7 +150,7 @@ export default function Flashcards() {
             <CardHeader>
               <div className="flex items-center justify-between">
                 <Badge className="bg-white/20 text-white">Séance {currentCard.session}</Badge>
-                {reviewedCards.has(currentCard.id) && (
+                {reviewedCards.includes(currentCard.id) && (
                   <CheckCircle className="h-5 w-5" />
                 )}
               </div>

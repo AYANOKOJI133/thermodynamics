@@ -37,7 +37,7 @@ export default function CourseContent() {
             <CardHeader className="pb-2">
               <div className="flex items-center justify-between">
                 <Badge variant={activeSession === index ? 'default' : 'secondary'} className="bg-emerald-600">
-                  Séance {s.id}
+                  Seance {s.id}
                 </Badge>
                 <Clock className="h-4 w-4 text-gray-400" />
               </div>
@@ -62,7 +62,7 @@ export default function CourseContent() {
 
         {/* Topics List */}
         <div className="bg-emerald-50 rounded-lg p-4 mb-6">
-          <h3 className="font-semibold text-emerald-700 mb-2">Thèmes abordés :</h3>
+          <h3 className="font-semibold text-emerald-700 mb-2">Themes abordes :</h3>
           <div className="flex flex-wrap gap-2">
             {session.topics.map((topic, i) => (
               <Badge key={i} variant="outline" className="border-emerald-300 text-emerald-700">
@@ -82,7 +82,7 @@ export default function CourseContent() {
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    {reviewedCards.has(`session-${activeSession + 1}-${section.title}`) && (
+                    {reviewedCards.includes(`session-${activeSession + 1}-${section.title}`) && (
                       <CheckCircle className="h-5 w-5 text-emerald-500" />
                     )}
                     <CardTitle className="text-lg text-emerald-800">{section.title}</CardTitle>
@@ -186,7 +186,7 @@ export default function CourseContent() {
                             <div key={i} className="bg-gray-50 rounded p-2">
                               <span className="font-mono text-emerald-700">{f.formula}</span>
                               {f.description && (
-                                <span className="text-sm text-gray-500 ml-2">— {f.description}</span>
+                                <span className="text-sm text-gray-500 ml-2">- {f.description}</span>
                               )}
                             </div>
                           ))}
@@ -273,13 +273,13 @@ export default function CourseContent() {
                       {/* Warning */}
                       {subSection.warning && (
                         <div className="bg-amber-50 border-l-4 border-amber-400 p-4 mx-4">
-                          <p className="text-amber-800 font-medium">⚠️ {subSection.warning}</p>
+                          <p className="text-amber-800 font-medium">Attention: {subSection.warning}</p>
                         </div>
                       )}
 
                       {/* Note */}
                       {subSection.note && (
-                        <p className="text-sm text-gray-500 italic pl-4">💡 {subSection.note}</p>
+                        <p className="text-sm text-gray-500 italic pl-4">Note: {subSection.note}</p>
                       )}
 
                       {/* Explanation */}
