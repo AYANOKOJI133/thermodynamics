@@ -1,4 +1,5 @@
 // Complete thermodynamics course data from all 6 documents
+// COMPREHENSIVE VERSION - All information included
 
 export const courseData = {
   sessions: [
@@ -6,36 +7,36 @@ export const courseData = {
       id: 1,
       title: "Concepts Fondamentaux de la Thermodynamique",
       duration: "2 heures",
-      description: "Introduction à la thermodynamique, systèmes, variables d'état, transformations et outils mathématiques.",
+      description: "Introduction a la thermodynamique, systemes, variables d'etat, transformations et outils mathematiques.",
       topics: [
-        "Introduction à la thermodynamique",
+        "Introduction a la thermodynamique",
         "Approches macroscopique et microscopique",
-        "Notion de système thermodynamique",
-        "Types de systèmes",
+        "Notion de systeme thermodynamique",
+        "Types de systemes",
         "Convention du banquier",
-        "Variables d'état et équation d'état",
+        "Variables d'etat et equation d'etat",
         "Variables extensives et intensives",
-        "Fonctions d'état",
+        "Fonctions d'etat",
         "Transformations thermodynamiques",
-        "Outils mathématiques",
-        "Systèmes thermo-élastiques (STEP)"
+        "Outils mathematiques",
+        "Systemes thermo-elastiques (STEP)"
       ],
       content: [
         {
-          title: "Introduction à la Thermodynamique",
+          title: "Introduction a la Thermodynamique",
           sections: [
             {
-              subtitle: "Définition",
-              content: "La thermodynamique est la science qui étudie les transformations de la matière et de l'énergie. Elle est née vers 1820, au début de l'ère industrielle, de la nécessité de comprendre les relations entre les phénomènes thermiques et dynamiques dans les machines thermiques.",
+              subtitle: "Definition",
+              content: "La thermodynamique est la science qui etudie les transformations de la matiere et de l'energie. Elle est nee vers 1820, au debut de l'ere industrielle, de la necessite de comprendre les relations entre les phenomenes thermiques et dynamiques dans les machines thermiques.",
               keyPoints: [
-                "Caractère universel de la thermodynamique",
-                "Toute théorie ne vérifiant pas les principes de la thermodynamique est mise en doute",
-                "Conversion inévitable d'au moins une forme d'énergie en une autre"
+                "Caractere universel de la thermodynamique",
+                "Toute theorie ne verifiant pas les principes de la thermodynamique est mise en doute",
+                "Conversion inevitable d'au moins une forme d'energie en une autre"
               ]
             },
             {
               subtitle: "Citation d'Einstein",
-              content: "\"Une théorie est d'autant plus impressionnante que les principes sur lesquels elle repose sont simples, qu'elle relie toutes sortes de choses différentes et que son champ d'application est vaste. Par conséquent, la thermodynamique classique m'a fait une très grande impression. C'est la seule théorie physique à caractère universel dont je suis convaincu, compte tenu de l'application de ses concepts de base, qu'elle ne sera jamais contestée.\"",
+              content: "\"Une theorie est d'autant plus impressionnante que les principes sur lesquels elle repose sont simples, qu'elle relie toutes sortes de choses differentes et que son champ d'application est vaste. Par consequent, la thermodynamique classique m'a fait une tres grande impression. C'est la seule theorie physique a caractere universel dont je suis convaincu, compte tenu de l'application de ses concepts de base, qu'elle ne sera jamais contestee.\"",
               isQuote: true
             }
           ]
@@ -45,43 +46,43 @@ export const courseData = {
           sections: [
             {
               subtitle: "Approche Macroscopique",
-              content: "Basée sur des grandeurs mesurables à grande échelle (pression P, volume V, température T, quantité de matière n). Cette approche décrit le comportement d'ensemble du système.",
+              content: "Basee sur des grandeurs mesurables a grande echelle (pression P, volume V, temperature T, quantite de matiere n). Cette approche decrit le comportement d'ensemble du systeme.",
               keyPoints: [
                 "Variables macroscopiques : P, V, T, n",
-                "Description globale du système",
-                "Sans considération du comportement individuel des particules"
+                "Description globale du systeme",
+                "Sans consideration du comportement individuel des particules"
               ]
             },
             {
               subtitle: "Approche Microscopique",
-              content: "Analyse le comportement des particules élémentaires (positions et vitesses). Appelée aussi thermodynamique statistique.",
+              content: "Analyse le comportement des particules elementaires (positions et vitesses). Appelee aussi thermodynamique statistique.",
               keyPoints: [
-                "Positions des molécules",
-                "Vitesses des molécules",
-                "Compréhension à l'échelle atomique et moléculaire"
+                "Positions des molecules",
+                "Vitesses des molecules",
+                "Comprehension a l'echelle atomique et moleculaire"
               ]
             }
           ]
         },
         {
-          title: "Notion de Système Thermodynamique",
+          title: "Notion de Systeme Thermodynamique",
           sections: [
             {
-              subtitle: "Définition",
-              content: "Un système thermodynamique est une partie de l'univers à laquelle on porte de l'intérêt. Il est constitué d'un grand nombre de particules microscopiques (atomes ou molécules) délimitées par une surface fixe ou mobile, fictive ou réelle, à travers laquelle sont susceptibles de s'effectuer des échanges d'énergie et de matière avec le milieu extérieur.",
+              subtitle: "Definition",
+              content: "Un systeme thermodynamique est une partie de l'univers a laquelle on porte de l'interet. Il est constitue d'un grand nombre de particules microscopiques (atomes ou molecules) delimitees par une surface fixe ou mobile, fictive ou reelle, a travers laquelle sont susceptibles de s'effectuer des echanges d'energie et de matiere avec le milieu exterieur.",
               keyPoints: [
-                "Le reste de l'univers est appelé \"milieu extérieur\"",
-                "La frontière peut être réelle (paroi matérielle) ou fictive"
+                "Le reste de l'univers est appele \"milieu exterieur\"",
+                "La frontiere peut etre reelle (paroi materielle) ou fictive"
               ]
             },
             {
-              subtitle: "Types de Systèmes",
+              subtitle: "Types de Systemes",
               table: {
-                headers: ["Type", "Échanges", "Exemples"],
+                headers: ["Type", "Echanges", "Exemples"],
                 rows: [
-                  ["Système Ouvert", "Échange matière ET énergie", "Bois qui brûle, moteur thermique"],
-                  ["Système Fermé", "Échange d'énergie SEULEMENT", "Gaz dans un cylindre, réfrigérateur"],
-                  ["Système Isolé", "AUCUN échange", "L'Univers"]
+                  ["Systeme Ouvert", "Echange matiere ET energie", "Bois qui brule, moteur thermique"],
+                  ["Systeme Ferme", "Echange d'energie SEULEMENT", "Gaz dans un cylindre, refrigerateur"],
+                  ["Systeme Isole", "AUCUN echange", "L'Univers"]
                 ]
               }
             }
@@ -91,37 +92,37 @@ export const courseData = {
           title: "Convention du Banquier",
           sections: [
             {
-              subtitle: "Signes des Échanges",
-              content: "Les échanges d'énergie entre le système et le milieu extérieur s'effectuent par transfert de travail W ou de chaleur Q.",
+              subtitle: "Signes des Echanges",
+              content: "Les echanges d'energie entre le systeme et le milieu exterieur s'effectuent par transfert de travail W ou de chaleur Q.",
               keyPoints: [
-                "Q > 0, W > 0 : Énergie REÇUE par le système (positive)",
-                "Q < 0, W < 0 : Énergie CÉDÉE par le système (négative)",
-                "Analogie : comme un compte bancaire, dépôt = positif, retrait = négatif"
+                "Q > 0, W > 0 : Energie RECUE par le systeme (positive)",
+                "Q < 0, W < 0 : Energie CEDEE par le systeme (negative)",
+                "Analogie : comme un compte bancaire, depot = positif, retrait = negatif"
               ]
             }
           ]
         },
         {
-          title: "Variables d'État et Équation d'État",
+          title: "Variables d'Etat et Equation d'Etat",
           sections: [
             {
-              subtitle: "Variables d'État",
-              content: "Ce sont des grandeurs mesurables (P, V, T, n...) capables de décrire complètement l'état d'un système à un instant donné. Connaître l'état d'un système, c'est déterminer les valeurs de ces variables.",
+              subtitle: "Variables d'Etat",
+              content: "Ce sont des grandeurs mesurables (P, V, T, n...) capables de decrire completement l'etat d'un systeme a un instant donne. Connaitre l'etat d'un systeme, c'est determiner les valeurs de ces variables.",
               keyPoints: [
-                "Variables d'état non toutes indépendantes",
-                "Liées par une équation d'état : f(P, V, T, ...) = 0"
+                "Variables d'etat non toutes independantes",
+                "Liees par une equation d'etat : f(P, V, T, ...) = 0"
               ]
             },
             {
               subtitle: "Exemple : Gaz Parfait",
               formula: "PV = nRT",
-              formulaDescription: "Équation d'état du gaz parfait",
+              formulaDescription: "Equation d'etat du gaz parfait",
               keyPoints: [
                 "P : Pression (Pa)",
-                "V : Volume (m³)",
-                "n : Quantité de matière (mol)",
-                "R : Constante des gaz parfaits = 8.314 J·K⁻¹·mol⁻¹",
-                "T : Température absolue (K)"
+                "V : Volume (m3)",
+                "n : Quantite de matiere (mol)",
+                "R : Constante des gaz parfaits = 8.314 J.K-1.mol-1",
+                "T : Temperature absolue (K)"
               ]
             }
           ]
@@ -131,45 +132,45 @@ export const courseData = {
           sections: [
             {
               subtitle: "Variables Extensives",
-              content: "Proportionnelles à la masse du système. Elles sont ADDITIVES lors de la réunion de deux systèmes de même nature.",
-              examples: ["Masse (m)", "Volume (V)", "Nombre de particules (N)", "Énergie interne (U)"],
+              content: "Proportionnelles a la masse du systeme. Elles sont ADDITIVES lors de la reunion de deux systemes de meme nature.",
+              examples: ["Masse (m)", "Volume (V)", "Nombre de particules (N)", "Energie interne (U)"],
               note: "Si on double la masse, ces grandeurs doublent aussi"
             },
             {
               subtitle: "Variables Intensives",
-              content: "Indépendantes de la masse du système. Elles ont la même valeur en tout point d'un système homogène à l'équilibre.",
-              examples: ["Température (T)", "Pression (P)", "Masse volumique (ρ)"],
-              note: "Si on divise le système, ces grandeurs restent identiques"
+              content: "Independantes de la masse du systeme. Elles ont la meme valeur en tout point d'un systeme homogene a l'equilibre.",
+              examples: ["Temperature (T)", "Pression (P)", "Masse volumique (p)"],
+              note: "Si on divise le systeme, ces grandeurs restent identiques"
             },
             {
               subtitle: "Exemple Pratique",
-              content: "1 litre d'eau à 300K + 1 litre d'eau à 300K = 2 litres d'eau à 300K",
-              explanation: "Le volume (extensif) s'additionne : 1L + 1L = 2L. La température (intensive) reste identique : 300K"
+              content: "1 litre d'eau a 300K + 1 litre d'eau a 300K = 2 litres d'eau a 300K",
+              explanation: "Le volume (extensif) s'additionne : 1L + 1L = 2L. La temperature (intensive) reste identique : 300K"
             }
           ]
         },
         {
-          title: "Fonctions d'État",
+          title: "Fonctions d'Etat",
           sections: [
             {
-              subtitle: "Définition",
-              content: "Une grandeur dont la variation entre deux états dépend uniquement des états initial et final, et NON du chemin suivi.",
-              formula: "Δf = f₂ - f₁ = Cste quelque soit le chemin suivi",
+              subtitle: "Definition",
+              content: "Une grandeur dont la variation entre deux etats depend uniquement des etats initial et final, et NON du chemin suivi.",
+              formula: "Delta f = f2 - f1 = Cste quelque soit le chemin suivi",
               examples: [
-                "Énergie interne (U)",
+                "Energie interne (U)",
                 "Enthalpie (H)",
                 "Entropie (S)",
-                "Pression, Volume, Température"
+                "Pression, Volume, Temperature"
               ]
             },
             {
               subtitle: "Fonctions de Transfert",
-              content: "Grandeurs dépendant du chemin suivi.",
+              content: "Grandeurs dependant du chemin suivi.",
               examples: [
-                "Travail (W) - pas une fonction d'état",
-                "Chaleur (Q) - pas une fonction d'état"
+                "Travail (W) - pas une fonction d'etat",
+                "Chaleur (Q) - pas une fonction d'etat"
               ],
-              warning: "W et Q dépendent du chemin suivi entre les états initial et final"
+              warning: "W et Q dependent du chemin suivi entre les etats initial et final"
             }
           ]
         },
@@ -181,126 +182,126 @@ export const courseData = {
               transformations: [
                 {
                   name: "Quasi-statique",
-                  description: "Suite continue d'états d'équilibre interne. À tout instant, les variables du système sont définies."
+                  description: "Suite continue d'etats d'equilibre interne. A tout instant, les variables du systeme sont definies."
                 },
                 {
-                  name: "Réversible",
-                  description: "Succession d'états d'équilibre infiniment voisins. La transformation inverse passe par les mêmes états intermédiaires."
+                  name: "Reversible",
+                  description: "Succession d'etats d'equilibre infiniment voisins. La transformation inverse passe par les memes etats intermediaires."
                 },
                 {
-                  name: "Irréversible",
-                  description: "Transformation brutale ou spontanée. Les états intermédiaires ne sont pas des états d'équilibre."
+                  name: "Irreversible",
+                  description: "Transformation brutale ou spontanee. Les etats intermediaires ne sont pas des etats d'equilibre."
                 }
               ]
             },
             {
               subtitle: "Important",
-              warning: "Une transformation quasi-statique n'est pas nécessairement réversible !"
+              warning: "Une transformation quasi-statique n'est pas necessairement reversible !"
             }
           ]
         },
         {
-          title: "Transformations Particulières",
+          title: "Transformations Particulieres",
           sections: [
             {
               subtitle: "Types Principaux",
               transformations: [
                 { name: "Isochore", condition: "V = Cste", description: "Volume constant" },
                 { name: "Isobare", condition: "P = Cste", description: "Pression constante" },
-                { name: "Isotherme", condition: "T = Cste", description: "Température constante" },
-                { name: "Adiabatique", condition: "Q = 0", description: "Aucun échange de chaleur" },
-                { name: "Cyclique", condition: "État final = État initial", description: "Retour à l'état initial" }
+                { name: "Isotherme", condition: "T = Cste", description: "Temperature constante" },
+                { name: "Adiabatique", condition: "Q = 0", description: "Aucun echange de chaleur" },
+                { name: "Cyclique", condition: "Etat final = Etat initial", description: "Retour a l'etat initial" }
               ]
             }
           ]
         },
         {
-          title: "Outils Mathématiques",
+          title: "Outils Mathematiques",
           sections: [
             {
-              subtitle: "Différentielle Totale",
-              content: "Pour une fonction f(x, y) continue et dérivable :",
-              formula: "df = (∂f/∂x)dx + (∂f/∂y)dy"
+              subtitle: "Differentielle Totale",
+              content: "Pour une fonction f(x, y) continue et derivable :",
+              formula: "df = (df/dx)dx + (df/dy)dy"
             },
             {
               subtitle: "Condition de DTE",
-              content: "Pour que df soit une différentielle totale exacte :",
-              formula: "∂²f/∂x∂y = ∂²f/∂y∂x",
-              explanation: "Égalité des dérivées secondes croisées (condition de Schwartz)"
+              content: "Pour que df soit une differentielle totale exacte :",
+              formula: "d2f/dxdy = d2f/dydx",
+              explanation: "Egalite des derivees secondes croisees (condition de Schwartz)"
             },
             {
-              subtitle: "Interprétation Physique",
-              content: "Si df est une DTE, alors ∫df entre A et B ne dépend pas du chemin suivi."
+              subtitle: "Interpretation Physique",
+              content: "Si df est une DTE, alors l'integrale de df entre A et B ne depend pas du chemin suivi."
             }
           ]
         },
         {
-          title: "DTE vs Forme Différentielle",
+          title: "DTE vs Forme Differentielle",
           sections: [
             {
-              subtitle: "Différentielle Totale Exacte (df)",
+              subtitle: "Differentielle Totale Exacte (df)",
               properties: [
-                "✓ Intégration ne dépend PAS du chemin suivi",
-                "✓ f est une fonction d'état",
-                "✓ ∂²f/∂x∂y = ∂²f/∂y∂x"
+                "Integration ne depend PAS du chemin suivi",
+                "f est une fonction d'etat",
+                "d2f/dxdy = d2f/dydx"
               ],
-              examples: ["dU (énergie interne)", "dH (enthalpie)", "dS (entropie)"]
+              examples: ["dU (energie interne)", "dH (enthalpie)", "dS (entropie)"]
             },
             {
-              subtitle: "Forme Différentielle (δf)",
+              subtitle: "Forme Differentielle (df)",
               properties: [
-                "✗ Intégration DÉPEND du chemin suivi",
-                "✗ f n'est PAS une fonction d'état",
-                "✗ ∂²f/∂x∂y ≠ ∂²f/∂y∂x"
+                "Integration DEPEND du chemin suivi",
+                "f n'est PAS une fonction d'etat",
+                "d2f/dxdy different de d2f/dydx"
               ],
-              examples: ["δW (travail)", "δQ (chaleur)"],
-              note: "Notation : df pour DTE, δf pour forme différentielle"
+              examples: ["dW (travail)", "dQ (chaleur)"],
+              note: "Notation : df pour DTE, df pour forme differentielle"
             }
           ]
         },
         {
-          title: "État d'Équilibre",
+          title: "Etat d'Equilibre",
           sections: [
             {
-              subtitle: "Définition",
-              content: "Un système est en équilibre lorsque ses variables d'état ne varient pas dans le temps ET sont uniformes dans tout le système."
+              subtitle: "Definition",
+              content: "Un systeme est en equilibre lorsque ses variables d'etat ne varient pas dans le temps ET sont uniformes dans tout le systeme."
             },
             {
-              subtitle: "Types d'Équilibre",
+              subtitle: "Types d'Equilibre",
               equilibres: [
-                { name: "Équilibre Thermique", description: "Température constante et uniforme en tout point" },
-                { name: "Équilibre Mécanique", description: "Pression constante et uniforme en tout point" }
+                { name: "Equilibre Thermique", description: "Temperature constante et uniforme en tout point" },
+                { name: "Equilibre Mecanique", description: "Pression constante et uniforme en tout point" }
               ]
             }
           ]
         },
         {
-          title: "Systèmes Thermo-élastiques (STEP)",
+          title: "Systemes Thermo-elastiques (STEP)",
           sections: [
             {
-              subtitle: "Définition",
-              content: "Systèmes homogènes (gaz ou liquides) :\n• Inertes chimiquement (pas de réaction)\n• Composition constante (système fermé)\n• Travail uniquement mécanique\n• Décrits par P, V, T"
+              subtitle: "Definition",
+              content: "Systemes homogenes (gaz ou liquides) :\n- Inertes chimiquement (pas de reaction)\n- Composition constante (systeme ferme)\n- Travail uniquement mecanique\n- Decrits par P, V, T"
             },
             {
-              subtitle: "Coefficients Thermoélastiques",
+              subtitle: "Coefficients Thermoelastiques",
               coefficients: [
                 { 
-                  symbol: "α", 
+                  symbol: "alpha", 
                   name: "Coefficient de dilatation isobare", 
-                  formula: "α = (1/V)(∂V/∂T)P",
-                  description: "À pression constante"
+                  formula: "alpha = (1/V)(dV/dT)P",
+                  description: "A pression constante"
                 },
                 { 
-                  symbol: "β", 
+                  symbol: "beta", 
                   name: "Coefficient d'augmentation de pression", 
-                  formula: "β = (1/P)(∂P/∂T)V",
-                  description: "À volume constant"
+                  formula: "beta = (1/P)(dP/dT)V",
+                  description: "A volume constant"
                 },
                 { 
-                  symbol: "χT", 
-                  name: "Coefficient de compressibilité isotherme", 
-                  formula: "χT = -(1/V)(∂V/∂P)T",
-                  description: "À température constante"
+                  symbol: "chiT", 
+                  name: "Coefficient de compressibilite isotherme", 
+                  formula: "chiT = -(1/V)(dV/dP)T",
+                  description: "A temperature constante"
                 }
               ]
             }
@@ -310,96 +311,96 @@ export const courseData = {
     },
     {
       id: 2,
-      title: "Température et Dilatation Thermique",
+      title: "Temperature et Dilatation Thermique",
       duration: "2 heures",
-      description: "Définition de la température, échelles de mesure, principe zéro, modèle du gaz parfait et dilatation thermique.",
+      description: "Definition de la temperature, echelles de mesure, principe zero, modele du gaz parfait et dilatation thermique.",
       topics: [
-        "Définition de la température",
-        "Variables thermométriques",
-        "Échelle centésimale (Celsius)",
-        "Température absolue et échelle Kelvin",
+        "Definition de la temperature",
+        "Variables thermometriques",
+        "Echelle centesimale (Celsius)",
+        "Temperature absolue et echelle Kelvin",
         "Point triple de l'eau",
-        "Les échelles de température",
-        "Principe zéro de la thermodynamique",
-        "Modèle du gaz parfait",
+        "Les echelles de temperature",
+        "Principe zero de la thermodynamique",
+        "Modele du gaz parfait",
         "Constante des gaz parfaits",
-        "Lois particulières",
-        "Théorie cinétique",
+        "Lois particulieres",
+        "Theorie cinetique",
         "Dilatation thermique"
       ],
       content: [
         {
-          title: "Définition de la Température",
+          title: "Definition de la Temperature",
           sections: [
             {
-              subtitle: "Définition",
-              content: "La température est une grandeur physique mesurable indirectement. Elle est liée à l'état microscopique de la matière, c'est-à-dire à l'agitation moléculaire. Elle représente l'énergie moyenne d'une molécule.",
+              subtitle: "Definition",
+              content: "La temperature est une grandeur physique mesurable indirectement. Elle est liee a l'etat microscopique de la matiere, c'est-a-dire a l'agitation moleculaire. Elle represente l'energie moyenne d'une molecule.",
               keyPoints: [
-                "Fonction de deux variables d'état : θ = f(x, y)",
-                "Un thermomètre : système où une variable est constante, l'autre dépend de T",
-                "θ = f(x) avec y = constante"
+                "Fonction de deux variables d'etat : theta = f(x, y)",
+                "Un thermometre : systeme ou une variable est constante, l'autre depend de T",
+                "theta = f(x) avec y = constante"
               ]
             }
           ]
         },
         {
-          title: "Variables Thermométriques",
+          title: "Variables Thermometriques",
           sections: [
             {
-              subtitle: "Grandeurs pouvant servir de variable thermométrique",
+              subtitle: "Grandeurs pouvant servir de variable thermometrique",
               table: {
-                headers: ["Variable", "Type de Thermomètre", "Exemple"],
+                headers: ["Variable", "Type de Thermometre", "Exemple"],
                 rows: [
-                  ["Volume V", "Thermomètre à liquide", "Mercure, alcool"],
-                  ["Pression P", "Thermomètre à gaz", "Gaz parfait"],
-                  ["Résistance R", "Thermomètre à résistance", "Platine, thermistance"],
-                  ["Force électromotrice E", "Thermocouple", "Jonction de métaux différents"],
-                  ["Flux thermique Φ", "Mesures optiques", "Pyromètre"],
-                  ["Capacité électrique C", "Capteur capacitif", "Semiconducteur"]
+                  ["Volume V", "Thermometre a liquide", "Mercure, alcool"],
+                  ["Pression P", "Thermometre a gaz", "Gaz parfait"],
+                  ["Resistance R", "Thermometre a resistance", "Platine, thermistance"],
+                  ["Force electromotrice E", "Thermocouple", "Jonction de metaux differents"],
+                  ["Flux thermique Phi", "Mesures optiques", "Pyrometre"],
+                  ["Capacite electrique C", "Capteur capacitif", "Semiconducteur"]
                 ]
               }
             }
           ]
         },
         {
-          title: "Échelle Centésimale (Celsius)",
+          title: "Echelle Centesimale (Celsius)",
           sections: [
             {
-              subtitle: "Relation Linéaire",
-              content: "L'échelle centésimale suppose une relation linéaire entre la grandeur physique x et la température θ :",
-              formula: "θ = ax + b"
+              subtitle: "Relation Lineaire",
+              content: "L'echelle centesimale suppose une relation lineaire entre la grandeur physique x et la temperature theta :",
+              formula: "theta = ax + b"
             },
             {
               subtitle: "Points Fixes",
               table: {
-                headers: ["Point", "Température", "Description"],
+                headers: ["Point", "Temperature", "Description"],
                 rows: [
-                  ["Fusion de la glace", "θ = 0°C", "Équilibre glace-eau à pression atmosphérique"],
-                  ["Ébullition de l'eau", "θ = 100°C", "Vapeur d'eau à pression atmosphérique"]
+                  ["Fusion de la glace", "theta = 0 C", "Equilibre glace-eau a pression atmospherique"],
+                  ["Ebullition de l'eau", "theta = 100 C", "Vapeur d'eau a pression atmospherique"]
                 ]
               }
             },
             {
               subtitle: "Limitations",
-              warning: "Le coefficient de dilatation α(θ) varie avec la température. L'échelle centésimale n'est donc pas universelle. Un thermomètre ne mesure pas la température, il la repère."
+              warning: "Le coefficient de dilatation alpha(theta) varie avec la temperature. L'echelle centesimale n'est donc pas universelle. Un thermometre ne mesure pas la temperature, il la repere."
             }
           ]
         },
         {
-          title: "Température Absolue et Échelle Kelvin",
+          title: "Temperature Absolue et Echelle Kelvin",
           sections: [
             {
               subtitle: "Coefficient de Dilatation des Gaz",
-              content: "Pour les gaz à faible pression, le coefficient de dilatation est pratiquement constant :",
-              formula: "α ≈ 1/273.15 K⁻¹"
+              content: "Pour les gaz a faible pression, le coefficient de dilatation est pratiquement constant :",
+              formula: "alpha = 1/273.15 K-1"
             },
             {
-              subtitle: "Zéro Absolu",
-              content: "En extrapolant les courbes expérimentales du volume en fonction de la température jusqu'à V=0, toutes les courbes convergent vers une température correspondant à une agitation moléculaire nulle.",
+              subtitle: "Zero Absolu",
+              content: "En extrapolant les courbes experimentales du volume en fonction de la temperature jusqu'a V=0, toutes les courbes convergent vers une temperature correspondant a une agitation moleculaire nulle.",
               keyPoints: [
                 "C'est la limite absolue du froid",
-                "Un corps à cette température ne peut céder de la chaleur à aucun autre",
-                "T = 0 K correspond à θ = -273.15°C"
+                "Un corps a cette temperature ne peut ceder de la chaleur a aucun autre",
+                "T = 0 K correspond a theta = -273.15 C"
               ]
             }
           ]
@@ -408,87 +409,87 @@ export const courseData = {
           title: "Point Triple de l'Eau",
           sections: [
             {
-              subtitle: "Définition",
-              content: "Point où coexistent les trois phases de l'eau (solide, liquide, gazeuse) en équilibre.",
+              subtitle: "Definition",
+              content: "Point ou coexistent les trois phases de l'eau (solide, liquide, gazeuse) en equilibre.",
               keyPoints: [
-                "Température : Ttp = 273.16 K (soit 0.01°C)",
+                "Temperature : Ttp = 273.16 K (soit 0.01 C)",
                 "Pression : Ptp = 611 Pa"
               ]
             },
             {
-              subtitle: "Fonction Thermométrique",
-              content: "L'échelle Kelvin utilise un seul point fixe :",
-              formula: "T = (273.16 / xtp) × x",
-              explanation: "où xtp est la valeur de la variable thermométrique au point triple"
+              subtitle: "Fonction Thermometrique",
+              content: "L'echelle Kelvin utilise un seul point fixe :",
+              formula: "T = (273.16 / xtp) x X",
+              explanation: "ou xtp est la valeur de la variable thermometrique au point triple"
             }
           ]
         },
         {
-          title: "Les Échelles de Température",
+          title: "Les Echelles de Temperature",
           sections: [
             {
-              subtitle: "Comparaison des Échelles",
+              subtitle: "Comparaison des Echelles",
               table: {
-                headers: ["Échelle", "Symbole", "Zéro absolu", "Glace fondante", "Ébullition"],
+                headers: ["Echelle", "Symbole", "Zero absolu", "Glace fondante", "Ebullition"],
                 rows: [
                   ["Kelvin", "K", "0 K", "273.15 K", "373.15 K"],
-                  ["Celsius", "°C", "-273.15°C", "0°C", "100°C"],
-                  ["Fahrenheit", "°F", "-459.67°F", "32°F", "212°F"],
-                  ["Rankine", "°R", "0°R", "491.67°R", "671.67°R"]
+                  ["Celsius", "C", "-273.15 C", "0 C", "100 C"],
+                  ["Fahrenheit", "F", "-459.67 F", "32 F", "212 F"],
+                  ["Rankine", "R", "0 R", "491.67 R", "671.67 R"]
                 ]
               }
             },
             {
               subtitle: "Relations de Conversion",
               formulas: [
-                { formula: "T(K) = T(°C) + 273.15", description: "Kelvin vers Celsius" },
-                { formula: "T(°F) = 1.8 × T(°C) + 32", description: "Celsius vers Fahrenheit" },
-                { formula: "T(°R) = 1.8 × T(K)", description: "Kelvin vers Rankine" }
+                { formula: "T(K) = T(C) + 273.15", description: "Kelvin vers Celsius" },
+                { formula: "T(F) = 1.8 x T(C) + 32", description: "Celsius vers Fahrenheit" },
+                { formula: "T(R) = 1.8 x T(K)", description: "Kelvin vers Rankine" }
               ]
             }
           ]
         },
         {
-          title: "Principe Zéro de la Thermodynamique",
+          title: "Principe Zero de la Thermodynamique",
           sections: [
             {
-              subtitle: "Énoncé",
-              content: "\"Deux systèmes thermodynamiques en équilibre thermique avec un même troisième sont en équilibre thermique entre eux.\"",
+              subtitle: "Enonce",
+              content: "\"Deux systemes thermodynamiques en equilibre thermique avec un meme troisieme sont en equilibre thermique entre eux.\"",
               isQuote: true
             },
             {
               subtitle: "Types de Cloisons",
               table: {
-                headers: ["Type", "Échange", "Conséquence"],
+                headers: ["Type", "Echange", "Consequence"],
                 rows: [
-                  ["Cloison adiabatique", "Aucun échange de chaleur", "Systèmes restent dans leurs états initiaux"],
-                  ["Cloison diatherme", "Échange de chaleur possible", "Systèmes atteignent équilibre thermique commun"]
+                  ["Cloison adiabatique", "Aucun echange de chaleur", "Systemes restent dans leurs etats initiaux"],
+                  ["Cloison diatherme", "Echange de chaleur possible", "Systemes atteignent equilibre thermique commun"]
                 ]
               }
             }
           ]
         },
         {
-          title: "Modèle du Gaz Parfait",
+          title: "Modele du Gaz Parfait",
           sections: [
             {
-              subtitle: "Hypothèses",
+              subtitle: "Hypotheses",
               hypotheses: [
-                "Molécules assimilables à des points immatériels (sans volume propre)",
-                "Molécules très éloignées les unes des autres, sans force d'interaction (indépendantes)",
-                "Les forces de répulsion ne se manifestent que lors des chocs élastiques",
-                "Conservation de l'énergie cinétique totale : E₁ + E₂ = E₁' + E₂'"
+                "Molecules assimilables a des points immateriels (sans volume propre)",
+                "Molecules tres eloignees les unes des autres, sans force d'interaction (independantes)",
+                "Les forces de repulsion ne se manifestent que lors des chocs elastiques",
+                "Conservation de l'energie cinetique totale : E1 + E2 = E1' + E2'"
               ]
             },
             {
-              subtitle: "Équation d'État",
+              subtitle: "Equation d'Etat",
               formula: "PV = nRT",
               keyPoints: [
                 "P : Pression (Pa)",
-                "V : Volume (m³)",
-                "n : Quantité de matière (mol)",
-                "R = 8.314 J·K⁻¹·mol⁻¹",
-                "T : Température (K)"
+                "V : Volume (m3)",
+                "n : Quantite de matiere (mol)",
+                "R = 8.314 J.K-1.mol-1",
+                "T : Temperature (K)"
               ]
             }
           ]
@@ -499,44 +500,44 @@ export const courseData = {
             {
               subtitle: "Conditions Normales (STP)",
               keyPoints: [
-                "Température : T = 273.15 K (0°C)",
-                "Pression : P = 1.013 × 10⁵ Pa (1 atm)",
+                "Temperature : T = 273.15 K (0 C)",
+                "Pression : P = 1.013 x 10^5 Pa (1 atm)",
                 "Volume molaire : Vm = 22.414 L/mol"
               ]
             },
             {
               subtitle: "Calcul de R",
-              formula: "R = PV/nT = 8.314 J·K⁻¹·mol⁻¹"
+              formula: "R = PV/nT = 8.314 J.K-1.mol-1"
             }
           ]
         },
         {
-          title: "Lois Particulières des Gaz Parfaits",
+          title: "Lois Particulieres des Gaz Parfaits",
           sections: [
             {
               subtitle: "Lois Fondamentales",
               table: {
                 headers: ["Loi", "Condition", "Formule", "Description"],
                 rows: [
-                  ["Mariotte", "T = cste", "P₁V₁ = P₂V₂", "À T constante, PV = cste"],
-                  ["Charles", "V = cste", "P₁/T₁ = P₂/T₂", "À V constant, P/T = cste"],
-                  ["Gay-Lussac", "P = cste", "V₁/T₁ = V₂/T₂", "À P constante, V/T = cste"]
+                  ["Mariotte", "T = cste", "P1V1 = P2V2", "A T constante, PV = cste"],
+                  ["Charles", "V = cste", "P1/T1 = P2/T2", "A V constant, P/T = cste"],
+                  ["Gay-Lussac", "P = cste", "V1/T1 = V2/T2", "A P constante, V/T = cste"]
                 ]
               }
             }
           ]
         },
         {
-          title: "Théorie Cinétique des Gaz",
+          title: "Theorie Cinetique des Gaz",
           sections: [
             {
-              subtitle: "Énergie Cinétique Moyenne",
-              formula: "(1/2)m<v²> = (3/2)kT",
-              explanation: "k = 1.38×10⁻²³ J/K est la constante de Boltzmann"
+              subtitle: "Energie Cinetique Moyenne",
+              formula: "(1/2)m<v2> = (3/2)kT",
+              explanation: "k = 1.38 x 10^-23 J/K est la constante de Boltzmann"
             },
             {
-              subtitle: "Théorème d'Équipartition",
-              formula: "(1/2)kT par degré de liberté",
+              subtitle: "Theoreme d'Equipartition",
+              formula: "(1/2)kT par degre de liberte",
               keyPoints: [
                 "Gaz monoatomique (3 ddl) : Ec = (3/2)kT",
                 "Gaz diatomique (5 ddl) : Ec = (5/2)kT"
@@ -544,7 +545,7 @@ export const courseData = {
             },
             {
               subtitle: "Distribution de Maxwell-Boltzmann",
-              content: "Les molécules n'ont pas toutes la même vitesse. Quand T augmente, les énergies cinétiques sont plus élevées mais aussi plus dispersées."
+              content: "Les molecules n'ont pas toutes la meme vitesse. Quand T augmente, les energies cinetiques sont plus elevees mais aussi plus dispersees."
             }
           ]
         },
@@ -553,21 +554,21 @@ export const courseData = {
           sections: [
             {
               subtitle: "Principe",
-              content: "L'amplitude des oscillations atomiques augmente avec la température, provoquant une dilatation."
+              content: "L'amplitude des oscillations atomiques augmente avec la temperature, provoquant une dilatation."
             },
             {
-              subtitle: "Dilatation Linéaire",
-              formula: "L = L₀(1 + αl·ΔT)",
-              explanation: "αl : coefficient de dilatation linéaire (K⁻¹)"
+              subtitle: "Dilatation Lineaire",
+              formula: "L = L0(1 + alpha_l x Delta T)",
+              explanation: "alpha_l : coefficient de dilatation lineaire (K-1)"
             },
             {
               subtitle: "Dilatation Volumique",
-              formula: "V = V₀(1 + αV·ΔT)",
-              explanation: "αV : coefficient de dilatation volumique (K⁻¹)"
+              formula: "V = V0(1 + alpha_V x Delta T)",
+              explanation: "alpha_V : coefficient de dilatation volumique (K-1)"
             },
             {
               subtitle: "Relation",
-              formula: "αV = 3αl",
+              formula: "alpha_V = 3 x alpha_l",
               explanation: "Pour un corps isotrope"
             }
           ]
@@ -578,34 +579,34 @@ export const courseData = {
       id: 3,
       title: "Travail et Chaleur",
       duration: "2 heures",
-      description: "Échanges d'énergie : travail des forces de pression et chaleur, capacités thermiques, chaleur latente et calorimétrie.",
+      description: "Echanges d'energie : travail des forces de pression et chaleur, capacites thermiques, chaleur latente et calorimetrie.",
       topics: [
-        "Définition de la chaleur",
+        "Definition de la chaleur",
         "Modes de transfert thermique",
         "Expression de la chaleur",
-        "Capacités thermiques",
+        "Capacites thermiques",
         "Chaleur latente",
-        "Calorimétrie",
+        "Calorimetrie",
         "Travail des forces de pression",
         "Travail dans les transformations",
-        "Le travail n'est pas une fonction d'état"
+        "Le travail n'est pas une fonction d'etat"
       ],
       content: [
         {
-          title: "La Chaleur : Définition",
+          title: "La Chaleur : Definition",
           sections: [
             {
-              subtitle: "Définition",
-              content: "Énergie échangée entre deux corps de températures différentes mis en contact (le contact peut ne pas être matériel). Cette énergie est transférée de manière à atteindre un équilibre thermique.",
+              subtitle: "Definition",
+              content: "Energie echangee entre deux corps de temperatures differentes mis en contact (le contact peut ne pas etre materiel). Cette energie est transferee de maniere a atteindre un equilibre thermique.",
               keyPoints: [
-                "À l'échelle microscopique : énergie cinétique échangée par agitation moléculaire",
-                "Unités : Joule [J] ou calorie [cal]",
+                "A l'echelle microscopique : energie cinetique echangee par agitation moleculaire",
+                "Unites : Joule [J] ou calorie [cal]",
                 "1 calorie = 4.186 Joules"
               ]
             },
             {
               subtitle: "Distinction Importante",
-              warning: "La chaleur et la température sont deux grandeurs différentes ! Un échange de chaleur peut s'effectuer sans variation de température (changement d'état)."
+              warning: "La chaleur et la temperature sont deux grandeurs differentes ! Un echange de chaleur peut s'effectuer sans variation de temperature (changement d'etat)."
             }
           ]
         },
@@ -617,63 +618,63 @@ export const courseData = {
               table: {
                 headers: ["Mode", "Description", "Formule"],
                 rows: [
-                  ["Conduction", "Transfert par contact matériel direct", "Q = λS(TA-TB)/e"],
-                  ["Convection", "Transfert par mouvement de fluide", "Q = hS(T-Tfluide)"],
-                  ["Rayonnement", "Transfert par ondes EM (sans contact)", "Q = εσST⁴"]
+                  ["Conduction", "Transfert par contact materiel direct", "Q = lambda x S x (TA-TB)/e"],
+                  ["Convection", "Transfert par mouvement de fluide", "Q = h x S x (T-Tfluide)"],
+                  ["Rayonnement", "Transfert par ondes EM (sans contact)", "Q = epsilon x sigma x S x T^4"]
                 ]
               }
             },
             {
-              subtitle: "Paramètres",
+              subtitle: "Parametres",
               keyPoints: [
-                "λ : conductivité thermique",
+                "lambda : conductivite thermique",
                 "h : coefficient de convection",
-                "ε : émissivité thermique",
-                "σ : constante de Boltzmann"
+                "epsilon : emissivite thermique",
+                "sigma : constante de Boltzmann"
               ]
             }
           ]
         },
         {
-          title: "Expression de la Quantité de Chaleur",
+          title: "Expression de la Quantite de Chaleur",
           sections: [
             {
               subtitle: "Formes selon les Variables",
               table: {
                 headers: ["Variables", "Formule"],
                 rows: [
-                  ["(T, V)", "δQ = ldV + CVdT"],
-                  ["(T, P)", "δQ = hdP + CPdT"],
-                  ["(P, V)", "δQ = λdP + μdV"]
+                  ["(T, V)", "dQ = l x dV + CV x dT"],
+                  ["(T, P)", "dQ = h x dP + CP x dT"],
+                  ["(P, V)", "dQ = lambda x dP + mu x dV"]
                 ]
               }
             },
             {
-              subtitle: "Coefficients Calorimétriques",
-              content: "Les 6 coefficients Cp, CV, l, h, μ et λ sont appelés les coefficients calorimétriques de la substance étudiée.",
-              warning: "Ces expressions ne sont valables que pour des transformations réversibles ou quasi-statiques !"
+              subtitle: "Coefficients Calorimetriques",
+              content: "Les 6 coefficients Cp, CV, l, h, mu et lambda sont appeles les coefficients calorimetriques de la substance etudiee.",
+              warning: "Ces expressions ne sont valables que pour des transformations reversibles ou quasi-statiques !"
             }
           ]
         },
         {
-          title: "Capacités Thermiques",
+          title: "Capacites Thermiques",
           sections: [
             {
-              subtitle: "À Volume Constant (CV)",
-              formula: "δQV = CV dT",
-              subformula: "QV = m·cV·(T₂-T₁)",
+              subtitle: "A Volume Constant (CV)",
+              formula: "dQ_V = CV x dT",
+              subformula: "Q_V = m x c_V x (T2-T1)",
               keyPoints: [
-                "cV : chaleur massique à volume constant [J/kg·K]",
-                "cᵥ = CV/n : chaleur molaire [J/mol·K]"
+                "c_V : chaleur massique a volume constant [J/kg.K]",
+                "c_v = CV/n : chaleur molaire [J/mol.K]"
               ]
             },
             {
-              subtitle: "À Pression Constante (CP)",
-              formula: "δQP = CP dT",
-              subformula: "QP = m·cP·(T₂-T₁)",
+              subtitle: "A Pression Constante (CP)",
+              formula: "dQ_P = CP x dT",
+              subformula: "Q_P = m x c_P x (T2-T1)",
               keyPoints: [
-                "cP : chaleur massique à pression constante [J/kg·K]",
-                "cₚ = CP/n : chaleur molaire [J/mol·K]"
+                "c_P : chaleur massique a pression constante [J/kg.K]",
+                "c_p = CP/n : chaleur molaire [J/mol.K]"
               ]
             },
             {
@@ -684,46 +685,46 @@ export const courseData = {
           ]
         },
         {
-          title: "Chaleur Latente de Changement d'État",
+          title: "Chaleur Latente de Changement d'Etat",
           sections: [
             {
-              subtitle: "Définition",
-              content: "Quantité de chaleur nécessaire pour faire passer l'unité de masse d'un corps pur d'un état physique à un autre, à température et pression constantes."
+              subtitle: "Definition",
+              content: "Quantite de chaleur necessaire pour faire passer l'unite de masse d'un corps pur d'un etat physique a un autre, a temperature et pression constantes."
             },
             {
               subtitle: "Formule",
-              formula: "Q = m × L",
+              formula: "Q = m x L",
               explanation: "L : chaleur latente massique [J/kg]"
             },
             {
               subtitle: "Exemples",
               table: {
-                headers: ["Transition", "Chaleur Latente", "Température"],
+                headers: ["Transition", "Chaleur Latente", "Temperature"],
                 rows: [
-                  ["Fusion (glace → eau)", "334 kJ/kg", "0°C"],
-                  ["Vaporisation (eau → vapeur)", "2260 kJ/kg", "100°C"],
-                  ["Sublimation (glace → vapeur)", "2594 kJ/kg", "0°C"]
+                  ["Fusion (glace -> eau)", "334 kJ/kg", "0 C"],
+                  ["Vaporisation (eau -> vapeur)", "2260 kJ/kg", "100 C"],
+                  ["Sublimation (glace -> vapeur)", "2594 kJ/kg", "0 C"]
                 ]
               }
             }
           ]
         },
         {
-          title: "Calorimétrie",
+          title: "Calorimetrie",
           sections: [
             {
               subtitle: "Principe",
-              content: "La calorimétrie permet de mesurer les échanges de chaleur entre différents corps dans un système isolé thermiquement."
+              content: "La calorimetrie permet de mesurer les echanges de chaleur entre differents corps dans un systeme isole thermiquement."
             },
             {
-              subtitle: "Équation Calorimétrique",
-              formula: "ΣQi = Qcalorimètre + Qcorps + Qeau = 0",
-              explanation: "La somme des chaleurs échangées dans un système isolé est nulle"
+              subtitle: "Equation Calorimetrique",
+              formula: "Somme(Qi) = Q_calorimetre + Q_corps + Q_eau = 0",
+              explanation: "La somme des chaleurs echangees dans un systeme isole est nulle"
             },
             {
               subtitle: "Valeur en Eau",
-              formula: "μ = Σ(mi·ci)",
-              explanation: "Masse d'eau équivalente qui aurait la même capacité thermique que le calorimètre et ses accessoires"
+              formula: "mu = Somme(mi x ci)",
+              explanation: "Masse d'eau equivalente qui aurait la meme capacite thermique que le calorimetre et ses accessoires"
             }
           ]
         },
@@ -731,59 +732,59 @@ export const courseData = {
           title: "Travail des Forces de Pression",
           sections: [
             {
-              subtitle: "Définition",
-              content: "Énergie échangée entre le système et le milieu extérieur par l'intermédiaire des forces de pression. Le travail est reçu par le système (W > 0) si le volume diminue."
+              subtitle: "Definition",
+              content: "Energie echangee entre le systeme et le milieu exterieur par l'intermediaire des forces de pression. Le travail est recu par le systeme (W > 0) si le volume diminue."
             },
             {
-              subtitle: "Travail Élémentaire",
-              formula: "δW = -Pext · dV"
+              subtitle: "Travail Elementaire",
+              formula: "dW = -P_ext x dV"
             },
             {
               subtitle: "Travail Total",
-              formula: "W = -∫Pext dV",
-              explanation: "Intégrale le long du chemin (C)"
+              formula: "W = -Integrale(P_ext x dV)",
+              explanation: "Integrale le long du chemin (C)"
             },
             {
-              subtitle: "Interprétation Graphique",
-              content: "|W| est donné par l'aire sous la courbe P(V) dans le diagramme de Clapeyron."
+              subtitle: "Interpretation Graphique",
+              content: "|W| est donne par l'aire sous la courbe P(V) dans le diagramme de Clapeyron."
             }
           ]
         },
         {
-          title: "Travail dans les Transformations Particulières",
+          title: "Travail dans les Transformations Particulieres",
           sections: [
             {
               subtitle: "Cas Particuliers",
               table: {
                 headers: ["Transformation", "Travail", "Remarque"],
                 rows: [
-                  ["Isobare (P = cste)", "W = -P(V₂-V₁)", "Pression constante"],
+                  ["Isobare (P = cste)", "W = -P(V2-V1)", "Pression constante"],
                   ["Isochore (V = cste)", "W = 0", "Pas de travail"],
-                  ["Isotherme réversible (gaz parfait)", "W = nRT·ln(V₂/V₁)", "T constante"],
-                  ["Irréversible", "W = -Pext(V₂-V₁)", "Pext constante"]
+                  ["Isotherme reversible (gaz parfait)", "W = nRT x ln(V2/V1)", "T constante"],
+                  ["Irreversible", "W = -P_ext(V2-V1)", "P_ext constante"]
                 ]
               }
             }
           ]
         },
         {
-          title: "Le Travail n'est pas une Fonction d'État",
+          title: "Le Travail n'est pas une Fonction d'Etat",
           sections: [
             {
-              subtitle: "Démonstration",
-              content: "Considérons deux chemins différents entre A et C :"
+              subtitle: "Demonstration",
+              content: "Considerons deux chemins differents entre A et C :"
             },
             {
-              subtitle: "Chemin 1 : A → B → C",
-              content: "1. Détente isobare (A-B) : WAB = -P₁(V₂-V₁)\n2. Compression isochore (B-C) : WBC = 0\n→ W₁ = -P₁(V₂-V₁)"
+              subtitle: "Chemin 1 : A -> B -> C",
+              content: "1. Detente isobare (A-B) : W_AB = -P1(V2-V1)\n2. Compression isochore (B-C) : W_BC = 0\n=> W1 = -P1(V2-V1)"
             },
             {
-              subtitle: "Chemin 2 : A → D → C",
-              content: "1. Compression isochore (A-D) : WAD = 0\n2. Détente isobare (D-C) : WDC = -P₂(V₂-V₁)\n→ W₂ = -P₂(V₂-V₁)"
+              subtitle: "Chemin 2 : A -> D -> C",
+              content: "1. Compression isochore (A-D) : W_AD = 0\n2. Detente isobare (D-C) : W_DC = -P2(V2-V1)\n=> W2 = -P2(V2-V1)"
             },
             {
               subtitle: "Conclusion",
-              warning: "W₁ = -P₁(V₂-V₁) ≠ W₂ = -P₂(V₂-V₁)\nLe travail dépend du chemin suivi → Ce n'est PAS une fonction d'état !"
+              warning: "W1 = -P1(V2-V1) different de W2 = -P2(V2-V1)\nLe travail depend du chemin suivi -> Ce n'est PAS une fonction d'etat !"
             }
           ]
         }
@@ -792,300 +793,774 @@ export const courseData = {
   ]
 };
 
-// Flashcards data
+// COMPREHENSIVE FLASHCARDS - 100+ cards covering ALL concepts
 export const flashcardsData = [
-  // Session 1
-  { id: 'f1', session: 1, front: "Qu'est-ce que la thermodynamique?", back: "La science qui étudie les transformations de la matière et de l'énergie. Elle est née vers 1820 et possède un caractère universel." },
-  { id: 'f2', session: 1, front: "Qu'est-ce qu'un système ouvert?", back: "Un système qui peut échanger de la matière ET de l'énergie avec le milieu extérieur. Exemple: bois qui brûle, moteur thermique." },
-  { id: 'f3', session: 1, front: "Qu'est-ce qu'un système fermé?", back: "Un système qui peut échanger de l'énergie SEULEMENT avec le milieu extérieur (pas de matière). Exemple: gaz dans un cylindre, réfrigérateur." },
-  { id: 'f4', session: 1, front: "Qu'est-ce qu'un système isolé?", back: "Un système qui n'échange NI matière NI énergie avec le milieu extérieur. Exemple: l'Univers." },
-  { id: 'f5', session: 1, front: "Quelle est la convention du banquier?", back: "Q > 0, W > 0 : énergie REÇUE par le système (positive)\nQ < 0, W < 0 : énergie CÉDÉE par le système (négative)" },
-  { id: 'f6', session: 1, front: "Qu'est-ce qu'une variable extensive?", back: "Une variable proportionnelle à la masse du système. Elle est additive. Exemples: masse, volume, nombre de particules, énergie interne." },
-  { id: 'f7', session: 1, front: "Qu'est-ce qu'une variable intensive?", back: "Une variable indépendante de la masse du système. Exemples: température, pression, masse volumique." },
-  { id: 'f8', session: 1, front: "Qu'est-ce qu'une fonction d'état?", back: "Une grandeur dont la variation entre deux états dépend uniquement des états initial et final, et NON du chemin suivi. Exemples: U, H, S." },
-  { id: 'f9', session: 1, front: "Qu'est-ce qu'une transformation quasi-statique?", back: "Une transformation constituée d'une suite continue d'états d'équilibre interne. À tout instant, les variables du système sont définies." },
-  { id: 'f10', session: 1, front: "Qu'est-ce qu'une transformation réversible?", back: "Une transformation qui se fait par succession d'états d'équilibre infiniment voisins. La transformation inverse passe par les mêmes états." },
-  { id: 'f11', session: 1, front: "Qu'est-ce qu'une transformation isochore?", back: "Une transformation à volume constant (V = Cste)." },
-  { id: 'f12', session: 1, front: "Qu'est-ce qu'une transformation isobare?", back: "Une transformation à pression constante (P = Cste)." },
-  { id: 'f13', session: 1, front: "Qu'est-ce qu'une transformation isotherme?", back: "Une transformation à température constante (T = Cste)." },
-  { id: 'f14', session: 1, front: "Qu'est-ce qu'une transformation adiabatique?", back: "Une transformation sans échange de chaleur avec le milieu extérieur (Q = 0)." },
-  { id: 'f15', session: 1, front: "Qu'est-ce qu'une différentielle totale exacte (DTE)?", back: "Une forme différentielle dont l'intégration ne dépend pas du chemin suivi. Condition: ∂²f/∂x∂y = ∂²f/∂y∂x" },
-  { id: 'f16', session: 1, front: "Qu'est-ce que le coefficient α (alpha)?", back: "Coefficient de dilatation isobare: α = (1/V)(∂V/∂T)P. Il caractérise la variation de volume avec la température à pression constante." },
-  { id: 'f17', session: 1, front: "Qu'est-ce que le coefficient β (beta)?", back: "Coefficient d'augmentation de pression isochore: β = (1/P)(∂P/∂T)V. Il caractérise la variation de pression avec la température à volume constant." },
-  { id: 'f18', session: 1, front: "Qu'est-ce que le coefficient χT (chi)?", back: "Coefficient de compressibilité isotherme: χT = -(1/V)(∂V/∂P)T. Il caractérise la variation de volume avec la pression à température constante." },
+  // ==================== SESSION 1 - 40 FLASHCARDS ====================
+  // Introduction (3 cards)
+  { id: 'f1', session: 1, front: "Qu'est-ce que la thermodynamique?", back: "La science qui etudie les transformations de la matiere et de l'energie. Nee vers 1820, elle possede un caractere universel: toute theorie ne verifiant pas ses principes est mise en doute." },
+  { id: 'f2', session: 1, front: "Quelle est l'origine de la thermodynamique?", back: "Elle est nee vers 1820, au debut de l'ere industrielle, de la necessite de comprendre les relations entre phenomenes thermiques et dynamiques dans les machines thermiques." },
+  { id: 'f3', session: 1, front: "Que disait Einstein de la thermodynamique?", back: "\"C'est la seule theorie physique a caractere universel dont je suis convaincu... qu'elle ne sera jamais contestee.\" - Elle l'a profondement impressionne par sa simplicite et son universalite." },
   
-  // Session 2
-  { id: 'f19', session: 2, front: "Qu'est-ce que la température?", back: "Une grandeur physique mesurable indirectement, liée à l'agitation moléculaire. Elle représente l'énergie moyenne d'une molécule." },
-  { id: 'f20', session: 2, front: "Qu'est-ce qu'un thermomètre?", back: "Un système dans lequel une variable est maintenue constante tandis que l'autre dépend de la température." },
-  { id: 'f21', session: 2, front: "Quels sont les deux points fixes de l'échelle centésimale?", back: "Fusion de la glace: θ = 0°C\nÉbullition de l'eau: θ = 100°C" },
-  { id: 'f22', session: 2, front: "Qu'est-ce que le zéro absolu?", back: "La température correspondant à une agitation moléculaire nulle. T = 0 K = -273.15°C. Un corps à cette température ne peut céder de chaleur à aucun autre." },
-  { id: 'f23', session: 2, front: "Qu'est-ce que le point triple de l'eau?", back: "Le point où coexistent les trois phases de l'eau en équilibre. T = 273.16 K (0.01°C), P = 611 Pa." },
-  { id: 'f24', session: 2, front: "Comment convertir Celsius en Kelvin?", back: "T(K) = T(°C) + 273.15" },
-  { id: 'f25', session: 2, front: "Qu'est-ce que le principe zéro de la thermodynamique?", back: "\"Deux systèmes en équilibre thermique avec un même troisième sont en équilibre thermique entre eux.\"" },
-  { id: 'f26', session: 2, front: "Quelles sont les hypothèses du gaz parfait?", back: "1. Molécules ponctuelles (sans volume propre)\n2. Sans interaction (indépendantes)\n3. Chocs élastiques (conservation de l'énergie)" },
-  { id: 'f27', session: 2, front: "Quelle est l'équation d'état du gaz parfait?", back: "PV = nRT, où R = 8.314 J·K⁻¹·mol⁻¹" },
-  { id: 'f28', session: 2, front: "Quelle est la loi de Mariotte?", back: "À température constante: P₁V₁ = P₂V₂" },
-  { id: 'f29', session: 2, front: "Quelle est la loi de Charles?", back: "À volume constant: P₁/T₁ = P₂/T₂" },
-  { id: 'f30', session: 2, front: "Quelle est la loi de Gay-Lussac?", back: "À pression constante: V₁/T₁ = V₂/T₂" },
-  { id: 'f31', session: 2, front: "Quelle est l'énergie cinétique moyenne d'une molécule?", back: "(1/2)m<v²> = (3/2)kT, où k = 1.38×10⁻²³ J/K (constante de Boltzmann)" },
-  { id: 'f32', session: 2, front: "Qu'est-ce que le théorème d'équipartition?", back: "Chaque degré de liberté contribue (1/2)kT à l'énergie cinétique moyenne." },
-  { id: 'f33', session: 2, front: "Quelle est la relation entre αV et αl?", back: "Pour un corps isotrope: αV = 3αl" },
+  // Approches (4 cards)
+  { id: 'f4', session: 1, front: "Qu'est-ce que l'approche macroscopique?", back: "Approche basee sur des grandeurs mesurables a grande echelle (P, V, T, n). Elle decrit le comportement d'ensemble du systeme sans consideration du comportement individuel des particules." },
+  { id: 'f5', session: 1, front: "Qu'est-ce que l'approche microscopique?", back: "Analyse du comportement des particules elementaires (positions et vitesses). Appelee aussi thermodynamique statistique. Elle permet la comprehension a l'echelle atomique et moleculaire." },
+  { id: 'f6', session: 1, front: "Quelles sont les variables macroscopiques?", back: "Pression (P), Volume (V), Temperature (T), Quantite de matiere (n)." },
+  { id: 'f7', session: 1, front: "Quel autre nom donne-t-on a l'approche microscopique?", back: "Thermodynamique statistique." },
   
-  // Session 3
-  { id: 'f34', session: 3, front: "Qu'est-ce que la chaleur?", back: "Énergie échangée entre deux corps de températures différentes mis en contact. À l'échelle microscopique: énergie cinétique échangée par agitation moléculaire." },
-  { id: 'f35', session: 3, front: "Quels sont les trois modes de transfert de chaleur?", back: "1. Conduction: transfert par contact matériel\n2. Convection: transfert par mouvement de fluide\n3. Rayonnement: transfert par ondes EM" },
-  { id: 'f36', session: 3, front: "Qu'est-ce que la capacité thermique CV?", back: "Capacité thermique à volume constant. δQV = CV dT. QV = m·cV·(T₂-T₁)" },
-  { id: 'f37', session: 3, front: "Qu'est-ce que la capacité thermique CP?", back: "Capacité thermique à pression constante. δQP = CP dT. QP = m·cP·(T₂-T₁)" },
-  { id: 'f38', session: 3, front: "Quelle est la relation de Mayer?", back: "CP - CV = nR (pour les gaz parfaits)" },
-  { id: 'f39', session: 3, front: "Qu'est-ce que la chaleur latente?", back: "Quantité de chaleur nécessaire pour faire passer l'unité de masse d'un corps d'un état physique à un autre, à température constante. Q = m × L" },
-  { id: 'f40', session: 3, front: "Quelle est la chaleur latente de fusion de la glace?", back: "L = 334 kJ/kg à 0°C" },
-  { id: 'f41', session: 3, front: "Quelle est la chaleur latente de vaporisation de l'eau?", back: "L = 2260 kJ/kg à 100°C" },
-  { id: 'f42', session: 3, front: "Qu'est-ce que la calorimétrie?", back: "Mesure des échanges de chaleur entre différents corps dans un système isolé. Principe: ΣQi = 0" },
-  { id: 'f43', session: 3, front: "Quelle est l'expression du travail élémentaire?", back: "δW = -Pext · dV" },
-  { id: 'f44', session: 3, front: "Quel est le travail d'une transformation isobare?", back: "W = -P(V₂-V₁)" },
-  { id: 'f45', session: 3, front: "Quel est le travail d'une transformation isochore?", back: "W = 0 (pas de travail car le volume ne change pas)" },
-  { id: 'f46', session: 3, front: "Quel est le travail d'une transformation isotherme réversible pour un gaz parfait?", back: "W = nRT · ln(V₂/V₁)" },
-  { id: 'f47', session: 3, front: "Pourquoi le travail n'est-il pas une fonction d'état?", back: "Parce que W dépend du chemin suivi entre les états initial et final. Différents chemins donnent des valeurs de W différentes." }
+  // Systemes (7 cards)
+  { id: 'f8', session: 1, front: "Qu'est-ce qu'un systeme thermodynamique?", back: "Une partie de l'univers a laquelle on porte de l'interet. Constitue d'un grand nombre de particules microscopiques delimitees par une surface (fixe/mobile, fictive/reelle) travers laquelle s'effectuent des echanges d'energie et de matiere." },
+  { id: 'f9', session: 1, front: "Qu'est-ce que le milieu exterieur?", back: "Le reste de l'univers, tout ce qui n'appartient pas au systeme etudie." },
+  { id: 'f10', session: 1, front: "Qu'est-ce qu'un systeme ouvert?", back: "Un systeme qui peut echanger de la matiere ET de l'energie avec le milieu exterieur. Exemples: bois qui brule, moteur thermique." },
+  { id: 'f11', session: 1, front: "Qu'est-ce qu'un systeme ferme?", back: "Un systeme qui peut echanger de l'energie SEULEMENT avec le milieu exterieur (pas de matiere). Exemples: gaz dans un cylindre, refrigerateur." },
+  { id: 'f12', session: 1, front: "Qu'est-ce qu'un systeme isole?", back: "Un systeme qui n'echange NI matiere NI energie avec le milieu exterieur. Exemple: l'Univers." },
+  { id: 'f13', session: 1, front: "Donnez un exemple de systeme ouvert.", back: "Bois qui brule, moteur thermique, etre humain, turbine a vapeur." },
+  { id: 'f14', session: 1, front: "Donnez un exemple de systeme ferme.", back: "Gaz dans un cylindre avec piston, refrigerateur, bombe aerosol." },
+  
+  // Convention du banquier (3 cards)
+  { id: 'f15', session: 1, front: "Quelle est la convention du banquier pour les echanges d'energie?", back: "Q > 0, W > 0 : energie RECUE par le systeme (positive)\nQ < 0, W < 0 : energie CEDEE par le systeme (negative)\nAnalogie: compte bancaire, depot = positif, retrait = negatif" },
+  { id: 'f16', session: 1, front: "Si un systeme recoit 500 J de chaleur, que vaut Q?", back: "Q = +500 J (positif car energie recue par le systeme)." },
+  { id: 'f17', session: 1, front: "Si un systeme fournit 200 J de travail, que vaut W?", back: "W = -200 J (negatif car energie cedee par le systeme)." },
+  
+  // Variables d'etat (5 cards)
+  { id: 'f18', session: 1, front: "Qu'est-ce qu'une variable d'etat?", back: "Une grandeur mesurable (P, V, T, n...) capable de decrire completement l'etat d'un systeme a un instant donne." },
+  { id: 'f19', session: 1, front: "Qu'est-ce qu'une equation d'etat?", back: "Une relation f(P, V, T, ...) = 0 qui lie les variables d'etat entre elles. Les variables d'etat ne sont pas toutes independantes." },
+  { id: 'f20', session: 1, front: "Quelle est l'equation d'etat du gaz parfait?", back: "PV = nRT, avec R = 8.314 J.K-1.mol-1" },
+  { id: 'f21', session: 1, front: "Quelle est l'unite de la pression dans le SI?", back: "Le Pascal (Pa) = N/m2" },
+  { id: 'f22', session: 1, front: "Quelle est l'unite du volume dans le SI?", back: "Le metre cube (m3)" },
+  
+  // Variables extensives/intensives (6 cards)
+  { id: 'f23', session: 1, front: "Qu'est-ce qu'une variable extensive?", back: "Une variable proportionnelle a la masse du systeme. Elle est ADDITIVE lors de la reunion de deux systemes. Ex: masse, volume, nombre de particules, energie interne." },
+  { id: 'f24', session: 1, front: "Qu'est-ce qu'une variable intensive?", back: "Une variable independante de la masse du systeme. Elle a la meme valeur en tout point d'un systeme homogene a l'equilibre. Ex: temperature, pression, masse volumique." },
+  { id: 'f25', session: 1, front: "Citez 4 variables extensives.", back: "Masse (m), Volume (V), Nombre de particules (N), Energie interne (U)." },
+  { id: 'f26', session: 1, front: "Citez 3 variables intensives.", back: "Temperature (T), Pression (P), Masse volumique (rho)." },
+  { id: 'f27', session: 1, front: "Si on double la masse d'un systeme, que deviennent les variables extensives?", back: "Elles doublent aussi (proportionnelles a la masse)." },
+  { id: 'f28', session: 1, front: "Si on divise un systeme en deux, que deviennent les variables intensives?", back: "Elles restent identiques dans chaque partie (independantes de la masse)." },
+  
+  // Fonctions d'etat (4 cards)
+  { id: 'f29', session: 1, front: "Qu'est-ce qu'une fonction d'etat?", back: "Une grandeur dont la variation entre deux etats depend UNIQUEMENT des etats initial et final, et NON du chemin suivi. Ex: U, H, S, P, V, T." },
+  { id: 'f30', session: 1, front: "Citez 3 fonctions d'etat.", back: "Energie interne (U), Enthalpie (H), Entropie (S)." },
+  { id: 'f31', session: 1, front: "Pourquoi W et Q ne sont-ils pas des fonctions d'etat?", back: "Parce que le travail W et la chaleur Q dependent du chemin suivi entre les etats initial et final." },
+  { id: 'f32', session: 1, front: "Quelle est la formule de variation d'une fonction d'etat?", back: "Delta f = f2 - f1 = Constante quelque soit le chemin suivi." },
+  
+  // Transformations (6 cards)
+  { id: 'f33', session: 1, front: "Qu'est-ce qu'une transformation quasi-statique?", back: "Une transformation constituee d'une suite continue d'etats d'equilibre interne. A tout instant, les variables du systeme sont definies." },
+  { id: 'f34', session: 1, front: "Qu'est-ce qu'une transformation reversible?", back: "Une succession d'etats d'equilibre infiniment voisins. La transformation inverse passe par les memes etats intermediaires." },
+  { id: 'f35', session: 1, front: "Qu'est-ce qu'une transformation irreversible?", back: "Une transformation brutale ou spontanee. Les etats intermediaires ne sont pas des etats d'equilibre." },
+  { id: 'f36', session: 1, front: "Une transformation quasi-statique est-elle toujours reversible?", back: "NON ! Une transformation quasi-statique n'est pas necessairement reversible." },
+  { id: 'f37', session: 1, front: "Qu'est-ce qu'une transformation isochore?", back: "Une transformation a volume constant (V = Cste)." },
+  { id: 'f38', session: 1, front: "Qu'est-ce qu'une transformation isobare?", back: "Une transformation a pression constante (P = Cste)." },
+  
+  // Transformations particulieres (4 cards)
+  { id: 'f39', session: 1, front: "Qu'est-ce qu'une transformation isotherme?", back: "Une transformation a temperature constante (T = Cste)." },
+  { id: 'f40', session: 1, front: "Qu'est-ce qu'une transformation adiabatique?", back: "Une transformation sans echange de chaleur avec le milieu exterieur (Q = 0)." },
+  { id: 'f41', session: 1, front: "Qu'est-ce qu'une transformation cyclique?", back: "Une transformation ou l'etat final est identique a l'etat initial." },
+  { id: 'f42', session: 1, front: "Quelle est la particularite d'une transformation cyclique?", back: "L'etat final = Etat initial, donc toutes les fonctions d'etat retrouvent leur valeur initiale." },
+
+  // Outils mathematiques (5 cards)
+  { id: 'f43', session: 1, front: "Qu'est-ce qu'une differentielle totale exacte (DTE)?", back: "Une forme differentielle dont l'integrale entre A et B ne depend PAS du chemin suivi. C'est la differentielle d'une fonction d'etat." },
+  { id: 'f44', session: 1, front: "Quelle est la condition de Schwartz pour une DTE?", back: "d2f/dxdy = d2f/dydx (egalite des derivees secondes croisees)." },
+  { id: 'f45', session: 1, front: "Quelle est la formule de la differentielle totale?", back: "df = (df/dx)dx + (df/dy)dy" },
+  { id: 'f46', session: 1, front: "Quelle notation utilise-t-on pour une forme differentielle (pas DTE)?", back: "On utilise le symbole 'delta': dW pour le travail, dQ pour la chaleur." },
+  { id: 'f47', session: 1, front: "Pour une DTE, que peut-on dire de l'integrale?", back: "L'integrale de df entre A et B ne depend pas du chemin suivi." },
+  
+  // Equilibre (3 cards)
+  { id: 'f48', session: 1, front: "Qu'est-ce qu'un etat d'equilibre?", back: "Un systeme est en equilibre lorsque ses variables d'etat ne varient pas dans le temps ET sont uniformes dans tout le systeme." },
+  { id: 'f49', session: 1, front: "Qu'est-ce que l'equilibre thermique?", back: "Etat ou la temperature est constante et uniforme en tout point du systeme." },
+  { id: 'f50', session: 1, front: "Qu'est-ce que l'equilibre mecanique?", back: "Etat ou la pression est constante et uniforme en tout point du systeme." },
+  
+  // STEP (4 cards)
+  { id: 'f51', session: 1, front: "Qu'est-ce qu'un systeme thermo-elastique (STEP)?", back: "Systeme homogene (gaz ou liquide) inerte chimiquement, a composition constante (ferme), avec travail uniquement mecanique, decrit par P, V, T." },
+  { id: 'f52', session: 1, front: "Qu'est-ce que le coefficient alpha?", back: "Coefficient de dilatation isobare: alpha = (1/V)(dV/dT)P. Caracterise la variation relative de volume avec la temperature a pression constante." },
+  { id: 'f53', session: 1, front: "Qu'est-ce que le coefficient beta?", back: "Coefficient d'augmentation de pression isochore: beta = (1/P)(dP/dT)V. Caracterise la variation relative de pression avec la temperature a volume constant." },
+  { id: 'f54', session: 1, front: "Qu'est-ce que le coefficient chi_T?", back: "Coefficient de compressibilite isotherme: chi_T = -(1/V)(dV/dP)T. Caracterise la variation relative de volume avec la pression a temperature constante." },
+  
+  // ==================== SESSION 2 - 35 FLASHCARDS ====================
+  // Temperature (5 cards)
+  { id: 'f55', session: 2, front: "Qu'est-ce que la temperature?", back: "Une grandeur physique mesurable indirectement, liee a l'agitation moleculaire. Elle represente l'energie moyenne d'une molecule. Fonction de deux variables d'etat: theta = f(x, y)." },
+  { id: 'f56', session: 2, front: "Qu'est-ce qu'un thermometre?", back: "Un systeme dans lequel une variable est maintenue constante tandis que l'autre depend de la temperature: theta = f(x) avec y = constante." },
+  { id: 'f57', session: 2, front: "Qu'est-ce qu'une variable thermometrique?", back: "Une grandeur physique qui varie avec la temperature et peut etre mesuree: volume, pression, resistance, force electromotrice, etc." },
+  { id: 'f58', session: 2, front: "Citez 6 types de thermometres.", back: "1. Thermometre a liquide (mercure, alcool)\n2. Thermometre a gaz\n3. Thermometre a resistance (platine)\n4. Thermocouple\n5. Pyrometre (mesures optiques)\n6. Capteur capacitif" },
+  { id: 'f59', session: 2, front: "Quel principe utilise un thermocouple?", back: "La force electromotrice E creee a la jonction de deux metaux differents varie avec la temperature." },
+  
+  // Echelle centesimale (4 cards)
+  { id: 'f60', session: 2, front: "Qu'est-ce que l'echelle centesimale?", back: "Echelle de temperature basee sur une relation lineaire theta = ax + b entre la grandeur physique et la temperature." },
+  { id: 'f61', session: 2, front: "Quels sont les deux points fixes de l'echelle centesimale?", back: "1. Fusion de la glace: theta = 0 C (equilibre glace-eau a Patm)\n2. Ebullition de l'eau: theta = 100 C (vapeur d'eau a Patm)" },
+  { id: 'f62', session: 2, front: "Quelle est la limitation de l'echelle centesimale?", back: "Le coefficient de dilatation alpha(theta) varie avec la temperature. L'echelle n'est donc pas universelle. Un thermometre ne mesure pas la temperature, il la repere." },
+  { id: 'f63', session: 2, front: "Pourquoi l'echelle centesimale n'est-elle pas universelle?", back: "Parce que le coefficient de dilatation depend de la temperature. Deux thermometres differents peuvent donner des valeurs legerement differentes pour la meme temperature." },
+  
+  // Temperature absolue (5 cards)
+  { id: 'f64', session: 2, front: "Qu'est-ce que le zero absolu?", back: "La temperature correspondant a une agitation moleculaire nulle. T = 0 K = -273.15 C. C'est la limite absolue du froid: un corps a cette temperature ne peut ceder de chaleur a aucun autre." },
+  { id: 'f65', session: 2, front: "Quelle est la valeur du zero absolu en Kelvin?", back: "T = 0 K" },
+  { id: 'f66', session: 2, front: "Quelle est la valeur du zero absolu en Celsius?", back: "theta = -273.15 C" },
+  { id: 'f67', session: 2, front: "Quel est le coefficient de dilatation des gaz a faible pression?", back: "alpha = 1/273.15 K-1 (pratiquement constant pour tous les gaz a faible pression)." },
+  { id: 'f68', session: 2, front: "Que se passe-t-il si on extrapole V(T) jusqu'a V=0 pour un gaz?", back: "Toutes les courbes convergent vers une temperature correspondant au zero absolu (T = 0 K)." },
+  
+  // Point triple (3 cards)
+  { id: 'f69', session: 2, front: "Qu'est-ce que le point triple de l'eau?", back: "Le point ou coexistent les trois phases de l'eau (solide, liquide, gazeuse) en equilibre." },
+  { id: 'f70', session: 2, front: "Quelles sont les coordonnees du point triple de l'eau?", back: "Temperature: Ttp = 273.16 K (soit 0.01 C)\nPression: Ptp = 611 Pa" },
+  { id: 'f71', session: 2, front: "Quelle est la fonction thermometrique de l'echelle Kelvin?", back: "T = (273.16 / xtp) x X, ou xtp est la valeur de la variable thermometrique au point triple. L'echelle Kelvin utilise un seul point fixe." },
+  
+  // Echelles de temperature (5 cards)
+  { id: 'f72', session: 2, front: "Comment convertir Celsius en Kelvin?", back: "T(K) = T(C) + 273.15" },
+  { id: 'f73', session: 2, front: "Comment convertir Celsius en Fahrenheit?", back: "T(F) = 1.8 x T(C) + 32" },
+  { id: 'f74', session: 2, front: "Comment convertir Kelvin en Rankine?", back: "T(R) = 1.8 x T(K)" },
+  { id: 'f75', session: 2, front: "Quelle est la temperature de la glace fondante en Kelvin?", back: "T = 273.15 K" },
+  { id: 'f76', session: 2, front: "Quelle est la temperature d'ebullition de l'eau en Kelvin?", back: "T = 373.15 K" },
+  
+  // Principe zero (4 cards)
+  { id: 'f77', session: 2, front: "Enoncez le principe zero de la thermodynamique.", back: "\"Deux systemes thermodynamiques en equilibre thermique avec un meme troisieme sont en equilibre thermique entre eux.\"" },
+  { id: 'f78', session: 2, front: "Qu'est-ce qu'une cloison adiabatique?", back: "Une paroi qui ne permet aucun echange de chaleur. Les systemes restent dans leurs etats initiaux." },
+  { id: 'f79', session: 2, front: "Qu'est-ce qu'une cloison diatherme?", back: "Une paroi qui permet les echanges de chaleur. Les systemes atteignent un equilibre thermique commun." },
+  { id: 'f80', session: 2, front: "Quelle consequence a le principe zero?", back: "Il justifie l'utilisation de thermometres: on peut comparer les temperatures de differents systemes en les mettant en contact avec un meme thermometre." },
+  
+  // Gaz parfait (6 cards)
+  { id: 'f81', session: 2, front: "Quelles sont les hypotheses du gaz parfait?", back: "1. Molecules ponctuelles (sans volume propre)\n2. Sans interaction (independantes)\n3. Chocs elastiques (conservation de l'energie cinetique)" },
+  { id: 'f82', session: 2, front: "Pourquoi les molecules d'un gaz parfait n'interagissent-elles pas?", back: "Par hypothese, elles sont tres eloignees les unes des autres, sans force d'interaction. Les forces de repulsion ne se manifestent que lors des chocs elastiques." },
+  { id: 'f83', session: 2, front: "Quelle est l'equation d'etat du gaz parfait?", back: "PV = nRT, avec R = 8.314 J.K-1.mol-1" },
+  { id: 'f84', session: 2, front: "Quelles sont les conditions normales (STP)?", back: "Temperature: T = 273.15 K (0 C)\nPression: P = 1.013 x 10^5 Pa (1 atm)\nVolume molaire: Vm = 22.414 L/mol" },
+  { id: 'f85', session: 2, front: "Quel est le volume molaire d'un gaz parfait a STP?", back: "Vm = 22.414 L/mol" },
+  { id: 'f86', session: 2, front: "Quelle est la valeur de la constante des gaz parfaits R?", back: "R = 8.314 J.K-1.mol-1" },
+  
+  // Lois des gaz (4 cards)
+  { id: 'f87', session: 2, front: "Quelle est la loi de Mariotte?", back: "A temperature constante: P1V1 = P2V2 (PV = constante)" },
+  { id: 'f88', session: 2, front: "Quelle est la loi de Charles?", back: "A volume constant: P1/T1 = P2/T2 (P/T = constante)" },
+  { id: 'f89', session: 2, front: "Quelle est la loi de Gay-Lussac?", back: "A pression constante: V1/T1 = V2/T2 (V/T = constante)" },
+  { id: 'f90', session: 2, front: "Quelle condition est necessaire pour appliquer la loi de Mariotte?", back: "Temperature constante (isotherme)." },
+  
+  // Theorie cinetique (4 cards)
+  { id: 'f91', session: 2, front: "Quelle est l'energie cinetique moyenne d'une molecule?", back: "(1/2)m<v2> = (3/2)kT, ou k = 1.38 x 10^-23 J/K est la constante de Boltzmann." },
+  { id: 'f92', session: 2, front: "Qu'est-ce que le theoreme d'equipartition?", back: "Chaque degre de liberte contribue (1/2)kT a l'energie cinetique moyenne." },
+  { id: 'f93', session: 2, front: "Quelle est l'energie cinetique d'un gaz monoatomique?", back: "Ec = (3/2)kT (3 degres de liberte)" },
+  { id: 'f94', session: 2, front: "Quelle est l'energie cinetique d'un gaz diatomique?", back: "Ec = (5/2)kT (5 degres de liberte)" },
+  
+  // Dilatation (3 cards)
+  { id: 'f95', session: 2, front: "Quelle est la formule de dilatation lineaire?", back: "L = L0(1 + alpha_l x Delta T), ou alpha_l est le coefficient de dilatation lineaire (K-1)." },
+  { id: 'f96', session: 2, front: "Quelle est la formule de dilatation volumique?", back: "V = V0(1 + alpha_V x Delta T), ou alpha_V est le coefficient de dilatation volumique (K-1)." },
+  { id: 'f97', session: 2, front: "Quelle est la relation entre alpha_V et alpha_l pour un corps isotrope?", back: "alpha_V = 3 x alpha_l" },
+  
+  // ==================== SESSION 3 - 40 FLASHCARDS ====================
+  // Chaleur definition (5 cards)
+  { id: 'f98', session: 3, front: "Qu'est-ce que la chaleur?", back: "Energie echangee entre deux corps de temperatures differentes mis en contact. A l'echelle microscopique: energie cinetique echangee par agitation moleculaire." },
+  { id: 'f99', session: 3, front: "Quelles sont les unites de chaleur?", back: "Joule [J] ou calorie [cal]. 1 calorie = 4.186 Joules." },
+  { id: 'f100', session: 3, front: "Quelle est la difference entre chaleur et temperature?", back: "La chaleur est une energie echangee (J), la temperature est une grandeur d'etat (K). Un echange de chaleur peut s'effectuer sans variation de temperature (changement d'etat)." },
+  { id: 'f101', session: 3, front: "Un echange de chaleur s'accompagne-t-il toujours d'un changement de temperature?", back: "NON ! Pendant un changement d'etat, il y a echange de chaleur sans changement de temperature (chaleur latente)." },
+  { id: 'f102', session: 3, front: "Quelle est l'equivalence entre calorie et Joule?", back: "1 calorie = 4.186 Joules" },
+  
+  // Modes de transfert (6 cards)
+  { id: 'f103', session: 3, front: "Quels sont les trois modes de transfert de chaleur?", back: "1. Conduction: transfert par contact materiel\n2. Convection: transfert par mouvement de fluide\n3. Rayonnement: transfert par ondes electromagnetiques" },
+  { id: 'f104', session: 3, front: "Qu'est-ce que la conduction thermique?", back: "Transfert de chaleur par contact materiel direct. Formule: Q = lambda x S x (TA-TB)/e" },
+  { id: 'f105', session: 3, front: "Qu'est-ce que la convection thermique?", back: "Transfert de chaleur par mouvement de fluide. Formule: Q = h x S x (T - Tfluide)" },
+  { id: 'f106', session: 3, front: "Qu'est-ce que le rayonnement thermique?", back: "Transfert de chaleur par ondes electromagnetiques (sans contact materiel). Formule: Q = epsilon x sigma x S x T^4" },
+  { id: 'f107', session: 3, front: "Qu'est-ce que la conductivite thermique?", back: "Coefficient lambda qui caracterise la capacite d'un materiau a conduire la chaleur. Unite: W/(m.K)" },
+  { id: 'f108', session: 3, front: "Qu'est-ce que le coefficient de convection?", back: "Coefficient h qui caracterise les echanges thermiques par convection. Unite: W/(m2.K)" },
+  
+  // Expression de la chaleur (4 cards)
+  { id: 'f109', session: 3, front: "Quelle est l'expression de la chaleur en variables (T, V)?", back: "dQ = l x dV + CV x dT" },
+  { id: 'f110', session: 3, front: "Quelle est l'expression de la chaleur en variables (T, P)?", back: "dQ = h x dP + CP x dT" },
+  { id: 'f111', session: 3, front: "Quelle est l'expression de la chaleur en variables (P, V)?", back: "dQ = lambda x dP + mu x dV" },
+  { id: 'f112', session: 3, front: "Quels sont les 6 coefficients calorimetriques?", back: "CP, CV, l, h, mu, lambda. Ces expressions ne sont valables que pour des transformations reversibles ou quasi-statiques." },
+  
+  // Capacites thermiques (6 cards)
+  { id: 'f113', session: 3, front: "Qu'est-ce que la capacite thermique CV?", back: "Capacite thermique a volume constant. dQ_V = CV x dT. Q_V = m x c_V x (T2-T1)." },
+  { id: 'f114', session: 3, front: "Qu'est-ce que la capacite thermique CP?", back: "Capacite thermique a pression constante. dQ_P = CP x dT. Q_P = m x c_P x (T2-T1)." },
+  { id: 'f115', session: 3, front: "Qu'est-ce que la chaleur massique?", back: "Capacite thermique massique: quantite de chaleur necessaire pour elever 1 kg de substance de 1 K. Unite: J/(kg.K)" },
+  { id: 'f116', session: 3, front: "Qu'est-ce que la chaleur molaire?", back: "Capacite thermique molaire: quantite de chaleur necessaire pour elever 1 mole de substance de 1 K. Unite: J/(mol.K). c_v = CV/n, c_p = CP/n." },
+  { id: 'f117', session: 3, front: "Quelle est la relation de Mayer?", back: "CP - CV = nR (pour les gaz parfaits)" },
+  { id: 'f118', session: 3, front: "Comment calcule-t-on la chaleur echangee a pression constante?", back: "Q_P = m x c_P x (T2 - T1) = n x c_p x (T2 - T1)" },
+  
+  // Chaleur latente (5 cards)
+  { id: 'f119', session: 3, front: "Qu'est-ce que la chaleur latente?", back: "Quantite de chaleur necessaire pour faire passer l'unite de masse d'un corps pur d'un etat physique a un autre, a temperature et pression constantes. Formule: Q = m x L." },
+  { id: 'f120', session: 3, front: "Quelle est la chaleur latente de fusion de la glace?", back: "L = 334 kJ/kg a 0 C" },
+  { id: 'f121', session: 3, front: "Quelle est la chaleur latente de vaporisation de l'eau?", back: "L = 2260 kJ/kg a 100 C" },
+  { id: 'f122', session: 3, front: "Quelle est la chaleur latente de sublimation de la glace?", back: "L = 2594 kJ/kg a 0 C" },
+  { id: 'f123', session: 3, front: "Pourquoi la chaleur latente est-elle necessaire lors d'un changement d'etat?", back: "Pour modifier les liaisons entre molecules sans changer la temperature. L'energie est utilisee pour reorganiser la structure moleculaire." },
+  
+  // Calorimetrie (4 cards)
+  { id: 'f124', session: 3, front: "Qu'est-ce que la calorimetrie?", back: "Mesure des echanges de chaleur entre differents corps dans un systeme isole thermiquement." },
+  { id: 'f125', session: 3, front: "Quel est le principe de la calorimetrie?", back: "Dans un systeme isole, la somme des chaleurs echangees est nulle: Somme(Qi) = 0" },
+  { id: 'f126', session: 3, front: "Qu'est-ce que la valeur en eau d'un calorimetre?", back: "Masse d'eau equivalente mu = Somme(mi x ci) qui aurait la meme capacite thermique que le calorimetre et ses accessoires." },
+  { id: 'f127', session: 3, front: "Comment s'ecrit l'equation calorimetrique?", back: "Somme(Qi) = Q_calorimetre + Q_corps + Q_eau = 0" },
+  
+  // Travail (7 cards)
+  { id: 'f128', session: 3, front: "Qu'est-ce que le travail des forces de pression?", back: "Energie echangee entre le systeme et le milieu exterieur par l'intermediaire des forces de pression." },
+  { id: 'f129', session: 3, front: "Quelle est l'expression du travail elementaire?", back: "dW = -P_ext x dV" },
+  { id: 'f130', session: 3, front: "Quelle est l'expression du travail total?", back: "W = -Integrale(P_ext x dV) le long du chemin (C)" },
+  { id: 'f131', session: 3, front: "Comment interprete-t-on graphiquement le travail?", back: "|W| est donne par l'aire sous la courbe P(V) dans le diagramme de Clapeyron." },
+  { id: 'f132', session: 3, front: "Quand le travail est-il positif?", back: "W > 0 quand le systeme recoit du travail, c'est-a-dire quand le volume diminue (compression)." },
+  { id: 'f133', session: 3, front: "Quand le travail est-il negatif?", back: "W < 0 quand le systeme fournit du travail, c'est-a-dire quand le volume augmente (detente)." },
+  { id: 'f134', session: 3, front: "Qu'est-ce que le diagramme de Clapeyron?", back: "Graphique representant la pression P en fonction du volume V. L'aire sous la courbe represente le travail." },
+  
+  // Travail dans les transformations (5 cards)
+  { id: 'f135', session: 3, front: "Quel est le travail d'une transformation isobare?", back: "W = -P(V2 - V1) (pression constante)" },
+  { id: 'f136', session: 3, front: "Quel est le travail d'une transformation isochore?", back: "W = 0 (pas de travail car dV = 0)" },
+  { id: 'f137', session: 3, front: "Quel est le travail d'une transformation isotherme reversible pour un gaz parfait?", back: "W = nRT x ln(V2/V1)" },
+  { id: 'f138', session: 3, front: "Quel est le travail d'une transformation irreversible?", back: "W = -P_ext(V2 - V1) (pression exterieure constante)" },
+  { id: 'f139', session: 3, front: "Pour une detente isotherme (V2 > V1), que vaut W?", back: "W < 0 (le systeme fournit du travail). W = nRT x ln(V2/V1) < 0 car ln(V2/V1) > 0 et il y a un signe negatif." },
+  
+  // Travail pas fonction d'etat (3 cards)
+  { id: 'f140', session: 3, front: "Pourquoi le travail n'est-il pas une fonction d'etat?", back: "Parce que W depend du chemin suivi entre les etats initial et final. Deux chemins differents donnent des valeurs de W differentes." },
+  { id: 'f141', session: 3, front: "Comment demontrer que W n'est pas une fonction d'etat?", back: "Considerer deux chemins differents entre A et C (ex: A-B-C et A-D-C). Si W1 different de W2, alors W depend du chemin." },
+  { id: 'f142', session: 3, front: "Quelle est la difference entre fonction d'etat et fonction de transfert?", back: "Fonction d'etat: variation independante du chemin (U, H, S)\nFonction de transfert: depend du chemin (W, Q)" }
 ];
 
-// Quiz data
+// COMPREHENSIVE QUIZ - 60+ questions covering ALL concepts
 export const quizData = [
-  // Session 1 Questions
+  // ==================== SESSION 1 - 20 QUESTIONS ====================
   {
     id: 'q1',
     session: 1,
-    question: "Un système qui échange uniquement de l'énergie avec l'extérieur est appelé:",
-    options: ["Système ouvert", "Système fermé", "Système isolé", "Système adiabatique"],
+    question: "Un systeme qui echange uniquement de l'energie avec l'exterieur est appele:",
+    options: ["Systeme ouvert", "Systeme ferme", "Systeme isole", "Systeme adiabatique"],
     correctAnswer: 1,
-    explanation: "Un système fermé échange de l'énergie (chaleur/travail) mais pas de matière avec l'extérieur."
+    explanation: "Un systeme ferme echange de l'energie (chaleur/travail) mais pas de matiere avec l'exterieur."
   },
   {
     id: 'q2',
     session: 1,
     question: "Laquelle de ces variables est une variable intensive?",
-    options: ["Volume", "Masse", "Température", "Nombre de particules"],
+    options: ["Volume", "Masse", "Temperature", "Nombre de particules"],
     correctAnswer: 2,
-    explanation: "La température est intensive (indépendante de la masse), tandis que volume, masse et nombre de particules sont extensifs."
+    explanation: "La temperature est intensive (independante de la masse), tandis que volume, masse et nombre de particules sont extensifs."
   },
   {
     id: 'q3',
     session: 1,
-    question: "Une transformation isotherme s'effectue à:",
-    options: ["Pression constante", "Volume constant", "Température constante", "Sans échange de chaleur"],
+    question: "Une transformation isotherme s'effectue a:",
+    options: ["Pression constante", "Volume constant", "Temperature constante", "Sans echange de chaleur"],
     correctAnswer: 2,
-    explanation: "Isotherme signifie température constante (T = Cste)."
+    explanation: "Isotherme signifie temperature constante (T = Cste)."
   },
   {
     id: 'q4',
     session: 1,
-    question: "Lequel de ces éléments est une fonction d'état?",
-    options: ["Travail W", "Chaleur Q", "Énergie interne U", "Aucun des trois"],
+    question: "Lequel de ces elements est une fonction d'etat?",
+    options: ["Travail W", "Chaleur Q", "Energie interne U", "Aucun des trois"],
     correctAnswer: 2,
-    explanation: "L'énergie interne U est une fonction d'état. W et Q sont des fonctions de transfert qui dépendent du chemin."
+    explanation: "L'energie interne U est une fonction d'etat. W et Q sont des fonctions de transfert qui dependent du chemin."
   },
   {
     id: 'q5',
     session: 1,
-    question: "La condition pour qu'une différentielle soit totale exacte est:",
-    options: ["∂²f/∂x² = ∂²f/∂y²", "∂²f/∂x∂y = ∂²f/∂y∂x", "∂f/∂x = ∂f/∂y", "df = 0"],
+    question: "La condition pour qu'une differentielle soit totale exacte est:",
+    options: ["d2f/dx2 = d2f/dy2", "d2f/dxdy = d2f/dydx", "df/dx = df/dy", "df = 0"],
     correctAnswer: 1,
-    explanation: "La condition de Schwartz: égalité des dérivées secondes croisées."
+    explanation: "La condition de Schwartz: egalite des derivees secondes croisees."
   },
   {
     id: 'q6',
     session: 1,
     question: "Une transformation adiabatique s'effectue:",
-    options: ["À température constante", "À pression constante", "Sans échange de chaleur", "Sans échange de travail"],
+    options: ["A temperature constante", "A pression constante", "Sans echange de chaleur", "Sans echange de travail"],
     correctAnswer: 2,
-    explanation: "Adiabatique signifie Q = 0 (aucun échange de chaleur avec l'extérieur)."
+    explanation: "Adiabatique signifie Q = 0 (aucun echange de chaleur avec l'exterieur)."
   },
   {
     id: 'q7',
     session: 1,
     question: "Selon la convention du banquier, si Q > 0:",
-    options: ["Le système cède de la chaleur", "Le système reçoit de la chaleur", "Il n'y a pas d'échange", "La température diminue"],
+    options: ["Le systeme cede de la chaleur", "Le systeme recoit de la chaleur", "Il n'y a pas d'echange", "La temperature diminue"],
     correctAnswer: 1,
-    explanation: "Q > 0 signifie que le système reçoit de la chaleur (énergie positive = reçue)."
+    explanation: "Q > 0 signifie que le systeme recoit de la chaleur (energie positive = recue)."
   },
   {
     id: 'q8',
     session: 1,
-    question: "Le coefficient α (dilatation isobare) est défini par:",
-    options: ["(1/V)(∂V/∂T)P", "(1/P)(∂P/∂T)V", "-(1/V)(∂V/∂P)T", "(∂V/∂T)P"],
+    question: "Le coefficient alpha (dilatation isobare) est defini par:",
+    options: ["(1/V)(dV/dT)P", "(1/P)(dP/dT)V", "-(1/V)(dV/dP)T", "(dV/dT)P"],
     correctAnswer: 0,
-    explanation: "α = (1/V)(∂V/∂T)P représente la variation relative de volume avec la température à pression constante."
+    explanation: "alpha = (1/V)(dV/dT)P represente la variation relative de volume avec la temperature a pression constante."
   },
-  
-  // Session 2 Questions
   {
     id: 'q9',
-    session: 2,
-    question: "Le zéro absolu correspond à:",
-    options: ["0°C", "273.15 K", "0 K", "-100°C"],
-    correctAnswer: 2,
-    explanation: "Le zéro absolu est T = 0 K, correspondant à -273.15°C, soit une agitation moléculaire nulle."
+    session: 1,
+    question: "Un systeme isole peut echanger:",
+    options: ["De la matiere uniquement", "De l'energie uniquement", "Matiere et energie", "Rien du tout"],
+    correctAnswer: 3,
+    explanation: "Un systeme isole n'echange NI matiere NI energie avec l'exterieur."
   },
   {
     id: 'q10',
-    session: 2,
-    question: "Le point triple de l'eau correspond à la température:",
-    options: ["273.15 K", "273.16 K", "0 K", "373.15 K"],
+    session: 1,
+    question: "Une transformation quasi-statique:",
+    options: ["Est toujours reversible", "Est une suite continue d'etats d'equilibre", "Est forcement irreversible", "Se fait a vitesse elevee"],
     correctAnswer: 1,
-    explanation: "Le point triple de l'eau est à T = 273.16 K (soit 0.01°C), où coexistent les trois phases."
+    explanation: "Une transformation quasi-statique est une suite continue d'etats d'equilibre, mais n'est pas necessairement reversible."
   },
   {
     id: 'q11',
-    session: 2,
-    question: "Selon le principe zéro, si A et B sont en équilibre avec C:",
-    options: ["A et B ont la même pression", "A et B sont en équilibre entre eux", "C est à température nulle", "A, B et C sont isolés"],
-    correctAnswer: 1,
-    explanation: "Le principe zéro établit que deux systèmes en équilibre avec un même troisième sont en équilibre entre eux."
+    session: 1,
+    question: "L'equation d'etat du gaz parfait est:",
+    options: ["PV = nRT", "P/V = nRT", "PT = nRV", "P + V = nRT"],
+    correctAnswer: 0,
+    explanation: "PV = nRT est l'equation d'etat du gaz parfait avec R = 8.314 J.K-1.mol-1."
   },
   {
     id: 'q12',
-    session: 2,
-    question: "La constante des gaz parfaits R vaut:",
-    options: ["1.38×10⁻²³ J/K", "8.314 J·K⁻¹·mol⁻¹", "273.15 J/K", "22.414 L/mol"],
-    correctAnswer: 1,
-    explanation: "R = 8.314 J·K⁻¹·mol⁻¹. 1.38×10⁻²³ est la constante de Boltzmann k."
+    session: 1,
+    question: "Dans l'approche macroscopique, on utilise:",
+    options: ["Les positions des molecules", "Les vitesses des molecules", "Les grandeurs P, V, T, n", "L'energie des particules"],
+    correctAnswer: 2,
+    explanation: "L'approche macroscopique utilise les grandeurs mesurables a grande echelle: P, V, T, n."
   },
   {
     id: 'q13',
-    session: 2,
-    question: "La loi de Mariotte s'applique à:",
-    options: ["Température constante", "Volume constant", "Pression constante", "Transformation adiabatique"],
-    correctAnswer: 0,
-    explanation: "La loi de Mariotte (P₁V₁ = P₂V₂) s'applique à température constante."
+    session: 1,
+    question: "Si on double la masse d'un systeme, les variables intensives:",
+    options: ["Doublent", "Sont divisees par 2", "Restent identiques", "Deviennent nulles"],
+    correctAnswer: 2,
+    explanation: "Les variables intensives sont independantes de la masse du systeme."
   },
   {
     id: 'q14',
-    session: 2,
-    question: "Pour un gaz parfait monoatomique, l'énergie cinétique moyenne est:",
-    options: ["(1/2)kT", "kT", "(3/2)kT", "(5/2)kT"],
-    correctAnswer: 2,
-    explanation: "Un gaz monoatomique a 3 degrés de liberté, donc Ec = 3 × (1/2)kT = (3/2)kT."
+    session: 1,
+    question: "Une transformation cyclique se termine par:",
+    options: ["Un etat different de l'initial", "L'etat initial", "Un volume nul", "Une pression nulle"],
+    correctAnswer: 1,
+    explanation: "Dans une transformation cyclique, l'etat final est identique a l'etat initial."
   },
   {
     id: 'q15',
+    session: 1,
+    question: "La constante des gaz parfaits R vaut:",
+    options: ["1.38 x 10^-23 J/K", "8.314 J.K-1.mol-1", "273.15 J/K", "22.414 L/mol"],
+    correctAnswer: 1,
+    explanation: "R = 8.314 J.K-1.mol-1. 1.38 x 10^-23 J/K est la constante de Boltzmann k."
+  },
+  {
+    id: 'q16',
+    session: 1,
+    question: "Le coefficient de compressibilite isotherme chi_T est:",
+    options: ["Toujours positif", "Toujours negatif", "Parfois positif, parfois negatif", "Nul"],
+    correctAnswer: 0,
+    explanation: "chi_T = -(1/V)(dV/dP)T est toujours positif car (dV/dP)T < 0 (le volume diminue quand la pression augmente)."
+  },
+  {
+    id: 'q17',
+    session: 1,
+    question: "Quelle notation utilise-t-on pour la differentielle du travail?",
+    options: ["dW", "dW", "Delta W", "DW"],
+    correctAnswer: 1,
+    explanation: "On utilise dW (delta W) car le travail n'est pas une fonction d'etat."
+  },
+  {
+    id: 'q18',
+    session: 1,
+    question: "Un systeme est en equilibre thermique quand:",
+    options: ["P est uniforme", "T est uniforme et constante", "V est constant", "Il n'y a pas de travail"],
+    correctAnswer: 1,
+    explanation: "L'equilibre thermique signifie temperature constante et uniforme en tout point."
+  },
+  {
+    id: 'q19',
+    session: 1,
+    question: "L'approche microscopique est aussi appelee:",
+    options: ["Thermodynamique classique", "Thermodynamique statistique", "Thermodynamique quantique", "Thermodynamique appliquee"],
+    correctAnswer: 1,
+    explanation: "L'approche microscopique analyse le comportement des particules et est appelee thermodynamique statistique."
+  },
+  {
+    id: 'q20',
+    session: 1,
+    question: "Un systeme STEP (thermo-elastique) est:",
+    options: ["Ouvert", "Ferme et sans reaction chimique", "Isole", "En reaction chimique"],
+    correctAnswer: 1,
+    explanation: "Un systeme STEP est ferme, inerte chimiquement, a composition constante, avec travail uniquement mecanique."
+  },
+  
+  // ==================== SESSION 2 - 20 QUESTIONS ====================
+  {
+    id: 'q21',
+    session: 2,
+    question: "Le zero absolu correspond a:",
+    options: ["0 C", "273.15 K", "0 K", "-100 C"],
+    correctAnswer: 2,
+    explanation: "Le zero absolu est T = 0 K, correspondant a -273.15 C, soit une agitation moleculaire nulle."
+  },
+  {
+    id: 'q22',
+    session: 2,
+    question: "Le point triple de l'eau correspond a la temperature:",
+    options: ["273.15 K", "273.16 K", "0 K", "373.15 K"],
+    correctAnswer: 1,
+    explanation: "Le point triple de l'eau est a T = 273.16 K (soit 0.01 C), ou coexistent les trois phases."
+  },
+  {
+    id: 'q23',
+    session: 2,
+    question: "Selon le principe zero, si A et B sont en equilibre avec C:",
+    options: ["A et B ont la meme pression", "A et B sont en equilibre entre eux", "C est a temperature nulle", "A, B et C sont isoles"],
+    correctAnswer: 1,
+    explanation: "Le principe zero etablit que deux systemes en equilibre avec un meme troisieme sont en equilibre entre eux."
+  },
+  {
+    id: 'q24',
+    session: 2,
+    question: "La loi de Mariotte s'applique a:",
+    options: ["Temperature constante", "Volume constant", "Pression constante", "Transformation adiabatique"],
+    correctAnswer: 0,
+    explanation: "La loi de Mariotte (P1V1 = P2V2) s'applique a temperature constante."
+  },
+  {
+    id: 'q25',
+    session: 2,
+    question: "Pour un gaz parfait monoatomique, l'energie cinetique moyenne est:",
+    options: ["(1/2)kT", "kT", "(3/2)kT", "(5/2)kT"],
+    correctAnswer: 2,
+    explanation: "Un gaz monoatomique a 3 degres de liberte, donc Ec = 3 x (1/2)kT = (3/2)kT."
+  },
+  {
+    id: 'q26',
     session: 2,
     question: "Le volume molaire d'un gaz parfait dans les conditions STP est:",
     options: ["22.414 L/mol", "8.314 L/mol", "273.15 L/mol", "1 L/mol"],
     correctAnswer: 0,
-    explanation: "À 0°C et 1 atm, le volume molaire d'un gaz parfait est Vm = 22.414 L/mol."
+    explanation: "A 0 C et 1 atm, le volume molaire d'un gaz parfait est Vm = 22.414 L/mol."
   },
   {
-    id: 'q16',
+    id: 'q27',
     session: 2,
-    question: "Pour un corps isotrope, αV = ?",
-    options: ["αl", "2αl", "3αl", "αl/3"],
+    question: "Pour un corps isotrope, alpha_V = ?",
+    options: ["alpha_l", "2 x alpha_l", "3 x alpha_l", "alpha_l / 3"],
     correctAnswer: 2,
-    explanation: "Pour un corps isotrope, le coefficient de dilatation volumique vaut 3 fois le coefficient linéaire: αV = 3αl."
+    explanation: "Pour un corps isotrope, le coefficient de dilatation volumique vaut 3 fois le coefficient lineaire: alpha_V = 3 x alpha_l."
+  },
+  {
+    id: 'q28',
+    session: 2,
+    question: "Une cloison adiabatique:",
+    options: ["Permet les echanges de chaleur", "Empesche les echanges de chaleur", "Permet les echanges de matiere", "Est toujours mobile"],
+    correctAnswer: 1,
+    explanation: "Une cloison adiabatique ne permet aucun echange de chaleur entre les systemes."
+  },
+  {
+    id: 'q29',
+    session: 2,
+    question: "La loi de Charles s'applique a:",
+    options: ["Temperature constante", "Volume constant", "Pression constante", "Transformation isochore"],
+    correctAnswer: 1,
+    explanation: "La loi de Charles (P1/T1 = P2/T2) s'applique a volume constant."
+  },
+  {
+    id: 'q30',
+    session: 2,
+    question: "La loi de Gay-Lussac s'applique a:",
+    options: ["Temperature constante", "Volume constant", "Pression constante", "Transformation isobare"],
+    correctAnswer: 2,
+    explanation: "La loi de Gay-Lussac (V1/T1 = V2/T2) s'applique a pression constante."
+  },
+  {
+    id: 'q31',
+    session: 2,
+    question: "La constante de Boltzmann k vaut:",
+    options: ["8.314 J.K-1.mol-1", "1.38 x 10^-23 J/K", "273.15 J/K", "22.414 L/mol"],
+    correctAnswer: 1,
+    explanation: "k = 1.38 x 10^-23 J/K. Attention a ne pas confondre avec R = 8.314 J.K-1.mol-1."
+  },
+  {
+    id: 'q32',
+    session: 2,
+    question: "Pour un gaz diatomique, l'energie cinetique moyenne est:",
+    options: ["(1/2)kT", "kT", "(3/2)kT", "(5/2)kT"],
+    correctAnswer: 3,
+    explanation: "Un gaz diatomique a 5 degres de liberte, donc Ec = 5 x (1/2)kT = (5/2)kT."
+  },
+  {
+    id: 'q33',
+    session: 2,
+    question: "Combien de points fixes utilise l'echelle Kelvin?",
+    options: ["0", "1", "2", "3"],
+    correctAnswer: 1,
+    explanation: "L'echelle Kelvin utilise un seul point fixe: le point triple de l'eau (273.16 K)."
+  },
+  {
+    id: 'q34',
+    session: 2,
+    question: "La temperature 100 C correspond en Kelvin a:",
+    options: ["100 K", "273.15 K", "373.15 K", "473.15 K"],
+    correctAnswer: 2,
+    explanation: "T(K) = T(C) + 273.15, donc 100 C = 373.15 K."
+  },
+  {
+    id: 'q35',
+    session: 2,
+    question: "La pression au point triple de l'eau est:",
+    options: ["101325 Pa", "611 Pa", "0 Pa", "273.16 Pa"],
+    correctAnswer: 1,
+    explanation: "Au point triple de l'eau, la pression est Ptp = 611 Pa."
+  },
+  {
+    id: 'q36',
+    session: 2,
+    question: "Un thermocouple utilise comme variable thermometrique:",
+    options: ["Le volume", "La resistance", "La force electromotrice", "La pression"],
+    correctAnswer: 2,
+    explanation: "Un thermocouple utilise la force electromotrice E creee a la jonction de deux metaux differents."
+  },
+  {
+    id: 'q37',
+    session: 2,
+    question: "Pourquoi l'echelle centesimale n'est-elle pas universelle?",
+    options: ["Elle utilise trop de points fixes", "Le coefficient de dilatation varie avec T", "Elle n'est pas lineaire", "Elle est trop ancienne"],
+    correctAnswer: 1,
+    explanation: "Le coefficient de dilatation alpha(theta) varie avec la temperature, donc differentes substances donnent des echelles legerement differentes."
+  },
+  {
+    id: 'q38',
+    session: 2,
+    question: "Dans les hypotheses du gaz parfait, les molecules sont considerees comme:",
+    options: ["De grandes spheres", "Des points immateriels", "Des ellipsoides", "Des cylindres"],
+    correctAnswer: 1,
+    explanation: "Dans le modele du gaz parfait, les molecules sont assimilables a des points immateriels (sans volume propre)."
+  },
+  {
+    id: 'q39',
+    session: 2,
+    question: "Le theoreme d'equipartition dit que chaque degre de liberte contribue:",
+    options: ["kT", "(1/2)kT", "(3/2)kT", "2kT"],
+    correctAnswer: 1,
+    explanation: "Le theoreme d'equipartition: chaque degre de liberte contribue (1/2)kT a l'energie cinetique moyenne."
+  },
+  {
+    id: 'q40',
+    session: 2,
+    question: "La distribution de Maxwell-Boltzmann decrit:",
+    options: ["La pression des gaz", "La distribution des vitesses moleculaires", "La temperature", "Le volume molaire"],
+    correctAnswer: 1,
+    explanation: "La distribution de Maxwell-Boltzmann decrit comment les vitesses (energies cinetiques) des molecules sont distribuees dans un gaz."
   },
   
-  // Session 3 Questions
+  // ==================== SESSION 3 - 20 QUESTIONS ====================
   {
-    id: 'q17',
+    id: 'q41',
     session: 3,
     question: "La chaleur est:",
-    options: ["Une fonction d'état", "Une énergie échangée par différence de température", "Toujours positive", "Identique à la température"],
+    options: ["Une fonction d'etat", "Une energie echangee par difference de temperature", "Toujours positive", "Identique a la temperature"],
     correctAnswer: 1,
-    explanation: "La chaleur est une énergie échangée entre corps de températures différentes. Ce n'est pas une fonction d'état."
+    explanation: "La chaleur est une energie echangee entre corps de temperatures differentes. Ce n'est pas une fonction d'etat."
   },
   {
-    id: 'q18',
+    id: 'q42',
     session: 3,
     question: "Le transfert de chaleur par convection s'effectue:",
-    options: ["Par contact matériel", "Par mouvement de fluide", "Par ondes électromagnétiques", "Sans milieu matériel"],
+    options: ["Par contact materiel", "Par mouvement de fluide", "Par ondes electromagnetiques", "Sans milieu materiel"],
     correctAnswer: 1,
     explanation: "La convection est le transport de chaleur par un fluide en mouvement."
   },
   {
-    id: 'q19',
+    id: 'q43',
     session: 3,
     question: "La relation de Mayer pour les gaz parfaits est:",
-    options: ["CP + CV = nR", "CP - CV = nR", "CP/CV = γ", "CP × CV = nR"],
+    options: ["CP + CV = nR", "CP - CV = nR", "CP/CV = gamma", "CP x CV = nR"],
     correctAnswer: 1,
     explanation: "La relation de Mayer: CP - CV = nR pour les gaz parfaits."
   },
   {
-    id: 'q20',
+    id: 'q44',
     session: 3,
     question: "La chaleur latente de fusion de la glace est:",
     options: ["2260 kJ/kg", "334 kJ/kg", "4.186 kJ/kg", "273 kJ/kg"],
     correctAnswer: 1,
-    explanation: "La chaleur latente de fusion de la glace à 0°C est L = 334 kJ/kg."
+    explanation: "La chaleur latente de fusion de la glace a 0 C est L = 334 kJ/kg."
   },
   {
-    id: 'q21',
+    id: 'q45',
     session: 3,
-    question: "Le travail élémentaire des forces de pression est:",
-    options: ["δW = P dV", "δW = -Pext dV", "δW = V dP", "δW = nRT dV"],
+    question: "Le travail elementaire des forces de pression est:",
+    options: ["dW = P dV", "dW = -P_ext dV", "dW = V dP", "dW = nRT dV"],
     correctAnswer: 1,
-    explanation: "δW = -Pext · dV (travail élémentaire, négatif car le système fournit du travail quand le volume augmente)."
+    explanation: "dW = -P_ext x dV (negatif car le systeme fournit du travail quand le volume augmente)."
   },
   {
-    id: 'q22',
+    id: 'q46',
     session: 3,
     question: "Dans une transformation isochore, le travail est:",
-    options: ["W = -P(V₂-V₁)", "W = nRT·ln(V₂/V₁)", "W = 0", "W = PΔV"],
+    options: ["W = -P(V2-V1)", "W = nRT x ln(V2/V1)", "W = 0", "W = P x Delta V"],
     correctAnswer: 2,
-    explanation: "À volume constant (isochore), dV = 0, donc W = 0."
+    explanation: "A volume constant (isochore), dV = 0, donc W = 0."
   },
   {
-    id: 'q23',
+    id: 'q47',
     session: 3,
-    question: "Le travail est une fonction d'état:",
-    options: ["Vrai", "Faux", "Seulement pour les gaz parfaits", "Seulement à température constante"],
+    question: "Le travail est une fonction d'etat:",
+    options: ["Vrai", "Faux", "Seulement pour les gaz parfaits", "Seulement a temperature constante"],
     correctAnswer: 1,
-    explanation: "Faux. Le travail dépend du chemin suivi et n'est pas une fonction d'état."
+    explanation: "Faux. Le travail depend du chemin suivi et n'est pas une fonction d'etat."
   },
   {
-    id: 'q24',
+    id: 'q48',
     session: 3,
-    question: "Le principe de la calorimétrie est:",
-    options: ["ΣQi > 0", "ΣQi = 0", "ΣQi < 0", "Qi = constante"],
+    question: "Le principe de la calorimetrie est:",
+    options: ["Somme(Qi) > 0", "Somme(Qi) = 0", "Somme(Qi) < 0", "Qi = constante"],
     correctAnswer: 1,
-    explanation: "Dans un système isolé, la somme des chaleurs échangées est nulle: ΣQi = 0."
+    explanation: "Dans un systeme isole, la somme des chaleurs echangees est nulle: Somme(Qi) = 0."
+  },
+  {
+    id: 'q49',
+    session: 3,
+    question: "1 calorie equivaut a:",
+    options: ["1 Joule", "4.186 Joules", "1000 Joules", "0.239 Joules"],
+    correctAnswer: 1,
+    explanation: "1 calorie = 4.186 Joules."
+  },
+  {
+    id: 'q50',
+    session: 3,
+    question: "Le rayonnement thermique s'effectue par:",
+    options: ["Contact materiel", "Mouvement de fluide", "Ondes electromagnetiques", "Conducteurs solides"],
+    correctAnswer: 2,
+    explanation: "Le rayonnement est un transfert de chaleur par ondes electromagnetiques, sans contact materiel necessaire."
+  },
+  {
+    id: 'q51',
+    session: 3,
+    question: "La chaleur latente de vaporisation de l'eau est:",
+    options: ["334 kJ/kg", "2260 kJ/kg", "2594 kJ/kg", "4186 kJ/kg"],
+    correctAnswer: 1,
+    explanation: "La chaleur latente de vaporisation de l'eau a 100 C est L = 2260 kJ/kg."
+  },
+  {
+    id: 'q52',
+    session: 3,
+    question: "Dans une transformation isobare, le travail est:",
+    options: ["W = 0", "W = -P(V2-V1)", "W = nRT x ln(V2/V1)", "W = P x dT"],
+    correctAnswer: 1,
+    explanation: "A pression constante (isobare), W = -P(V2-V1)."
+  },
+  {
+    id: 'q53',
+    session: 3,
+    question: "Combien y a-t-il de coefficients calorimetriques?",
+    options: ["3", "4", "5", "6"],
+    correctAnswer: 3,
+    explanation: "Il y a 6 coefficients calorimetriques: CP, CV, l, h, mu, lambda."
+  },
+  {
+    id: 'q54',
+    session: 3,
+    question: "L'expression de la chaleur en variables (T, V) est:",
+    options: ["dQ = l dV + CV dT", "dQ = h dP + CP dT", "dQ = lambda dP + mu dV", "dQ = CV dP + l dV"],
+    correctAnswer: 0,
+    explanation: "En variables (T, V): dQ = l x dV + CV x dT."
+  },
+  {
+    id: 'q55',
+    session: 3,
+    question: "La capacite thermique a pression constante est notee:",
+    options: ["CV", "CP", "Q", "W"],
+    correctAnswer: 1,
+    explanation: "CP est la capacite thermique a pression constante, CV a volume constant."
+  },
+  {
+    id: 'q56',
+    session: 3,
+    question: "Pour un gaz parfait isotherme reversible, le travail est:",
+    options: ["W = -P(V2-V1)", "W = 0", "W = nRT x ln(V2/V1)", "W = -nRT x ln(V2/V1)"],
+    correctAnswer: 2,
+    explanation: "Pour un gaz parfait en transformation isotherme reversible: W = nRT x ln(V2/V1)."
+  },
+  {
+    id: 'q57',
+    session: 3,
+    question: "La valeur en eau d'un calorimetre represente:",
+    options: ["La masse d'eau qu'il contient", "La masse d'eau equivalente en capacite thermique", "Le volume du calorimetre", "La temperature de l'eau"],
+    correctAnswer: 1,
+    explanation: "La valeur en eau mu est la masse d'eau equivalente qui aurait la meme capacite thermique que le calorimetre."
+  },
+  {
+    id: 'q58',
+    session: 3,
+    question: "Dans le diagramme de Clapeyron, le travail est represente par:",
+    options: ["La pente de la courbe", "L'aire sous la courbe P(V)", "L'ordonnee a l'origine", "Le point d'intersection"],
+    correctAnswer: 1,
+    explanation: "|W| est donne par l'aire sous la courbe P(V) dans le diagramme de Clapeyron."
+  },
+  {
+    id: 'q59',
+    session: 3,
+    question: "Quand le volume augmente lors d'une detente:",
+    options: ["W > 0", "W < 0", "W = 0", "W = infini"],
+    correctAnswer: 1,
+    explanation: "Lors d'une detente (V2 > V1), le systeme fournit du travail, donc W < 0."
+  },
+  {
+    id: 'q60',
+    session: 3,
+    question: "La formule Q = m x L s'applique:",
+    options: ["A un chauffage sans changement d'etat", "A un changement d'etat", "A un travail mecanique", "A une transformation isotherme"],
+    correctAnswer: 1,
+    explanation: "Q = m x L s'applique aux changements d'etat, ou L est la chaleur latente massique."
   }
 ];
 
-// Formulas data
+// COMPLETE FORMULAS DATA - All formulas from all documents
 export const formulasData = {
   general: [
-    { name: "Équation d'état du gaz parfait", formula: "PV = nRT", variables: "P: Pression (Pa), V: Volume (m³), n: moles, R = 8.314 J·K⁻¹·mol⁻¹, T: Température (K)" },
-    { name: "Équation d'état générale", formula: "f(P, V, T) = 0", variables: "Relation entre variables d'état" }
+    { name: "Equation d'etat du gaz parfait", formula: "PV = nRT", variables: "P: Pression (Pa), V: Volume (m3), n: moles, R = 8.314 J.K-1.mol-1, T: Temperature (K)", session: 1 },
+    { name: "Equation d'etat generale", formula: "f(P, V, T) = 0", variables: "Relation entre variables d'etat", session: 1 },
+    { name: "Differentielle totale", formula: "df = (df/dx)dx + (df/dy)dy", variables: "Pour une fonction f(x, y) continue et derivable", session: 1 },
+    { name: "Condition de Schwartz (DTE)", formula: "d2f/dxdy = d2f/dydx", variables: "Egalite des derivees secondes croisees", session: 1 },
+    { name: "Variation d'une fonction d'etat", formula: "Delta f = f2 - f1", variables: "Independante du chemin suivi", session: 1 }
   ],
   temperature: [
-    { name: "Conversion Kelvin-Celsius", formula: "T(K) = T(°C) + 273.15", variables: "" },
-    { name: "Fonction thermométrique", formula: "T = (273.16/xtp) × x", variables: "xtp: valeur au point triple" },
-    { name: "Coefficient de dilatation isobare", formula: "α = (1/V)(∂V/∂T)P", variables: "" },
-    { name: "Dilatation linéaire", formula: "L = L₀(1 + αl·ΔT)", variables: "αl: coefficient linéaire" },
-    { name: "Dilatation volumique", formula: "V = V₀(1 + αV·ΔT)", variables: "αV = 3αl pour corps isotrope" }
+    { name: "Conversion Kelvin-Celsius", formula: "T(K) = T(C) + 273.15", variables: "", session: 2 },
+    { name: "Conversion Celsius-Fahrenheit", formula: "T(F) = 1.8 x T(C) + 32", variables: "", session: 2 },
+    { name: "Conversion Kelvin-Rankine", formula: "T(R) = 1.8 x T(K)", variables: "", session: 2 },
+    { name: "Fonction thermometrique (Kelvin)", formula: "T = (273.16 / xtp) x X", variables: "xtp: valeur de la variable au point triple", session: 2 },
+    { name: "Coefficient de dilatation isobare", formula: "alpha = (1/V)(dV/dT)P", variables: "Variation relative de volume a P constante", session: 1 },
+    { name: "Coefficient d'augmentation de pression", formula: "beta = (1/P)(dP/dT)V", variables: "Variation relative de pression a V constant", session: 1 },
+    { name: "Coefficient de compressibilite isotherme", formula: "chi_T = -(1/V)(dV/dP)T", variables: "Variation relative de volume a T constante", session: 1 },
+    { name: "Dilatation lineaire", formula: "L = L0(1 + alpha_l x Delta T)", variables: "alpha_l: coefficient de dilatation lineaire (K-1)", session: 2 },
+    { name: "Dilatation volumique", formula: "V = V0(1 + alpha_V x Delta T)", variables: "alpha_V: coefficient de dilatation volumique (K-1)", session: 2 },
+    { name: "Relation dilatation volumique-lineaire", formula: "alpha_V = 3 x alpha_l", variables: "Pour un corps isotrope", session: 2 }
   ],
   travail: [
-    { name: "Travail élémentaire", formula: "δW = -Pext · dV", variables: "" },
-    { name: "Travail total", formula: "W = -∫Pext dV", variables: "Intégrale le long du chemin" },
-    { name: "Travail isobare", formula: "W = -P(V₂-V₁)", variables: "P = constante" },
-    { name: "Travail isochore", formula: "W = 0", variables: "V = constante" },
-    { name: "Travail isotherme réversible", formula: "W = nRT·ln(V₂/V₁)", variables: "Gaz parfait, T = constante" }
+    { name: "Travail elementaire", formula: "dW = -P_ext x dV", variables: "Travail des forces de pression", session: 3 },
+    { name: "Travail total", formula: "W = -Integrale(P_ext x dV)", variables: "Integrale le long du chemin (C)", session: 3 },
+    { name: "Travail isobare", formula: "W = -P(V2 - V1)", variables: "P = constante", session: 3 },
+    { name: "Travail isochore", formula: "W = 0", variables: "V = constante", session: 3 },
+    { name: "Travail isotherme reversible (gaz parfait)", formula: "W = nRT x ln(V2/V1)", variables: "T = constante", session: 3 },
+    { name: "Travail irreversible", formula: "W = -P_ext(V2 - V1)", variables: "P_ext constante", session: 3 }
   ],
   chaleur: [
-    { name: "Chaleur à volume constant", formula: "QV = m·cV·(T₂-T₁)", variables: "cV: chaleur massique à V constant" },
-    { name: "Chaleur à pression constante", formula: "QP = m·cP·(T₂-T₁)", variables: "cP: chaleur massique à P constant" },
-    { name: "Chaleur latente", formula: "Q = m × L", variables: "L: chaleur latente massique (J/kg)" },
-    { name: "Relation de Mayer", formula: "CP - CV = nR", variables: "Gaz parfaits" },
-    { name: "Équation calorimétrique", formula: "ΣQi = 0", variables: "Système isolé" }
+    { name: "Chaleur a volume constant", formula: "dQ_V = CV x dT", variables: "CV: capacite thermique a V constant", session: 3 },
+    { name: "Chaleur a pression constante", formula: "dQ_P = CP x dT", variables: "CP: capacite thermique a P constant", session: 3 },
+    { name: "Chaleur massique a V constant", formula: "Q_V = m x c_V x (T2 - T1)", variables: "c_V: chaleur massique a V constant [J/kg.K]", session: 3 },
+    { name: "Chaleur massique a P constant", formula: "Q_P = m x c_P x (T2 - T1)", variables: "c_P: chaleur massique a P constant [J/kg.K]", session: 3 },
+    { name: "Chaleur molaire", formula: "c_mol = C/n", variables: "C: capacite thermique, n: nombre de moles", session: 3 },
+    { name: "Relation de Mayer", formula: "CP - CV = nR", variables: "Gaz parfaits", session: 3 },
+    { name: "Chaleur latente", formula: "Q = m x L", variables: "L: chaleur latente massique [J/kg]", session: 3 },
+    { name: "Equation calorimetrique", formula: "Somme(Qi) = 0", variables: "Systeme isole", session: 3 },
+    { name: "Valeur en eau", formula: "mu = Somme(mi x ci)", variables: "Masse d'eau equivalente", session: 3 }
   ],
-  step: [
-    { name: "Coefficient de dilatation isobare", formula: "α = (1/V)(∂V/∂T)P", variables: "" },
-    { name: "Coefficient d'augmentation de pression", formula: "β = (1/P)(∂P/∂T)V", variables: "" },
-    { name: "Coefficient de compressibilité isotherme", formula: "χT = -(1/V)(∂V/∂P)T", variables: "" }
+  expressionChaleur: [
+    { name: "Expression en variables (T, V)", formula: "dQ = l x dV + CV x dT", variables: "l: coefficient calorimetrique", session: 3 },
+    { name: "Expression en variables (T, P)", formula: "dQ = h x dP + CP x dT", variables: "h: coefficient calorimetrique", session: 3 },
+    { name: "Expression en variables (P, V)", formula: "dQ = lambda x dP + mu x dV", variables: "lambda, mu: coefficients calorimetriques", session: 3 }
+  ],
+  transfertThermique: [
+    { name: "Conduction", formula: "Q = lambda x S x (TA - TB) / e", variables: "lambda: conductivite thermique, S: surface, e: epaisseur", session: 3 },
+    { name: "Convection", formula: "Q = h x S x (T - T_fluide)", variables: "h: coefficient de convection, S: surface", session: 3 },
+    { name: "Rayonnement", formula: "Q = epsilon x sigma x S x T^4", variables: "epsilon: emissivite, sigma: constante de Boltzmann", session: 3 }
   ],
   gazParfait: [
-    { name: "Loi de Mariotte", formula: "P₁V₁ = P₂V₂", variables: "T = constante" },
-    { name: "Loi de Charles", formula: "P₁/T₁ = P₂/T₂", variables: "V = constante" },
-    { name: "Loi de Gay-Lussac", formula: "V₁/T₁ = V₂/T₂", variables: "P = constante" },
-    { name: "Énergie cinétique moyenne", formula: "(1/2)m<v²> = (3/2)kT", variables: "k = 1.38×10⁻²³ J/K" },
-    { name: "Énergie par degré de liberté", formula: "(1/2)kT", variables: "Théorème d'équipartition" }
+    { name: "Equation d'etat", formula: "PV = nRT", variables: "P (Pa), V (m3), n (mol), R = 8.314 J.K-1.mol-1, T (K)", session: 2 },
+    { name: "Loi de Mariotte (isotherme)", formula: "P1 x V1 = P2 x V2", variables: "T = constante", session: 2 },
+    { name: "Loi de Charles (isochore)", formula: "P1/T1 = P2/T2", variables: "V = constante", session: 2 },
+    { name: "Loi de Gay-Lussac (isobare)", formula: "V1/T1 = V2/T2", variables: "P = constante", session: 2 },
+    { name: "Energie cinetique moyenne", formula: "(1/2)m<v2> = (3/2)kT", variables: "k = 1.38 x 10^-23 J/K (constante de Boltzmann)", session: 2 },
+    { name: "Theoreme d'equipartition", formula: "E par ddl = (1/2)kT", variables: "Energie par degre de liberte", session: 2 },
+    { name: "Energie cinetique gaz monoatomique", formula: "Ec = (3/2)kT", variables: "3 degres de liberte", session: 2 },
+    { name: "Energie cinetique gaz diatomique", formula: "Ec = (5/2)kT", variables: "5 degres de liberte", session: 2 },
+    { name: "Volume molaire a STP", formula: "Vm = 22.414 L/mol", variables: "Conditions: T = 273.15 K, P = 1 atm", session: 2 },
+    { name: "Constante des gaz parfaits", formula: "R = PV/nT = 8.314 J.K-1.mol-1", variables: "", session: 2 }
+  ],
+  chaleursLatentes: [
+    { name: "Fusion de la glace", formula: "L_fusion = 334 kJ/kg", variables: "A 0 C", session: 3 },
+    { name: "Vaporisation de l'eau", formula: "L_vap = 2260 kJ/kg", variables: "A 100 C", session: 3 },
+    { name: "Sublimation de la glace", formula: "L_sub = 2594 kJ/kg", variables: "A 0 C", session: 3 }
+  ],
+  pointTriple: [
+    { name: "Temperature du point triple de l'eau", formula: "T_tp = 273.16 K", variables: "Soit 0.01 C", session: 2 },
+    { name: "Pression du point triple de l'eau", formula: "P_tp = 611 Pa", variables: "", session: 2 }
   ]
 };

@@ -5,15 +5,18 @@ import { formulasData } from '@/lib/course-data';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { FlaskConical, Calculator, Thermometer, Zap, Flame, Atom, ChevronDown, ChevronUp } from 'lucide-react';
+import { FlaskConical, Calculator, Thermometer, Zap, Flame, Atom, ChevronDown, ChevronUp, Waves, Sparkles, Droplets, Target } from 'lucide-react';
 
 const categories = [
-  { id: 'general', label: 'Général', icon: Calculator, color: 'from-gray-500 to-slate-500' },
-  { id: 'temperature', label: 'Température', icon: Thermometer, color: 'from-blue-500 to-cyan-500' },
+  { id: 'general', label: 'General', icon: Calculator, color: 'from-gray-500 to-slate-500' },
+  { id: 'temperature', label: 'Temperature', icon: Thermometer, color: 'from-blue-500 to-cyan-500' },
   { id: 'travail', label: 'Travail', icon: Zap, color: 'from-amber-500 to-orange-500' },
   { id: 'chaleur', label: 'Chaleur', icon: Flame, color: 'from-red-500 to-pink-500' },
-  { id: 'step', label: 'STEP', icon: Atom, color: 'from-purple-500 to-violet-500' },
+  { id: 'expressionChaleur', label: 'Expression de la Chaleur', icon: Waves, color: 'from-rose-500 to-red-500' },
+  { id: 'transfertThermique', label: 'Transfert Thermique', icon: Sparkles, color: 'from-yellow-500 to-amber-500' },
   { id: 'gazParfait', label: 'Gaz Parfait', icon: FlaskConical, color: 'from-emerald-500 to-teal-500' },
+  { id: 'chaleursLatentes', label: 'Chaleurs Latentes', icon: Droplets, color: 'from-sky-500 to-blue-500' },
+  { id: 'pointTriple', label: 'Point Triple', icon: Target, color: 'from-indigo-500 to-purple-500' },
 ];
 
 export default function Formulas() {
@@ -30,6 +33,9 @@ export default function Formulas() {
     setExpandedCategory(expandedCategory === id ? null : id);
   };
 
+  // Count total formulas
+  const totalFormulas = Object.values(formulasData).reduce((acc, arr) => acc + arr.length, 0);
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -38,7 +44,7 @@ export default function Formulas() {
           <FlaskConical className="h-6 w-6" />
           Formules Essentielles
         </h2>
-        <p className="text-gray-600">Toutes les formules à retenir pour votre cours de thermodynamique</p>
+        <p className="text-gray-600">Toutes les formules a retenir - {totalFormulas} formules au total</p>
       </div>
 
       {/* Quick Reference Card */}
@@ -50,15 +56,15 @@ export default function Formulas() {
               <p className="text-sm text-emerald-100 mt-1">Gaz Parfait</p>
             </div>
             <div>
-              <p className="text-3xl font-mono font-bold">δW=-PdV</p>
+              <p className="text-3xl font-mono font-bold">dW=-PdV</p>
               <p className="text-sm text-emerald-100 mt-1">Travail</p>
             </div>
             <div>
-              <p className="text-3xl font-mono font-bold">Q=mcΔT</p>
+              <p className="text-3xl font-mono font-bold">Q=mcDT</p>
               <p className="text-sm text-emerald-100 mt-1">Chaleur</p>
             </div>
             <div>
-              <p className="text-3xl font-mono font-bold">T(K)=T(°C)+273.15</p>
+              <p className="text-3xl font-mono font-bold">T(K)=T(C)+273</p>
               <p className="text-sm text-emerald-100 mt-1">Conversion</p>
             </div>
           </div>
@@ -70,6 +76,9 @@ export default function Formulas() {
         {categories.map((category) => {
           const Icon = category.icon;
           const formulas = formulasData[category.id as keyof typeof formulasData];
+          
+          if (!formulas || formulas.length === 0) return null;
+          
           const isExpanded = expandedCategory === category.id;
 
           return (
@@ -105,7 +114,14 @@ export default function Formulas() {
                     >
                       <div className="flex items-start justify-between gap-4">
                         <div className="flex-1">
-                          <p className="font-medium text-gray-800 mb-2">{formula.name}</p>
+                          <div className="flex items-center gap-2 mb-2">
+                            <p className="font-medium text-gray-800">{formula.name}</p>
+                            {formula.session && (
+                              <Badge variant="outline" className="text-xs">
+                                Seance {formula.session}
+                              </Badge>
+                            )}
+                          </div>
                           <div className="bg-white rounded-lg p-3 border border-gray-100">
                             <p className="text-xl md:text-2xl font-mono text-emerald-700 text-center">
                               {formula.formula}
@@ -123,7 +139,7 @@ export default function Formulas() {
                           onClick={() => handleCopy(formula.formula, formula.name)}
                           className="text-emerald-600"
                         >
-                          {copiedFormula === formula.name ? '✓' : 'Copier'}
+                          {copiedFormula === formula.name ? 'Copie !' : 'Copier'}
                         </Button>
                       </div>
                     </div>
@@ -141,14 +157,14 @@ export default function Formulas() {
           <CardTitle className="text-amber-800">Constantes Fondamentales</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-white rounded-lg p-4 border border-amber-100">
               <p className="font-medium text-amber-800">Constante des gaz parfaits</p>
-              <p className="text-2xl font-mono text-amber-600 mt-1">R = 8.314 J·K⁻¹·mol⁻¹</p>
+              <p className="text-2xl font-mono text-amber-600 mt-1">R = 8.314 J.K-1.mol-1</p>
             </div>
             <div className="bg-white rounded-lg p-4 border border-amber-100">
               <p className="font-medium text-amber-800">Constante de Boltzmann</p>
-              <p className="text-2xl font-mono text-amber-600 mt-1">k = 1.38×10⁻²³ J/K</p>
+              <p className="text-2xl font-mono text-amber-600 mt-1">k = 1.38 x 10^-23 J/K</p>
             </div>
             <div className="bg-white rounded-lg p-4 border border-amber-100">
               <p className="font-medium text-amber-800">Point triple de l'eau</p>
@@ -158,6 +174,40 @@ export default function Formulas() {
               <p className="font-medium text-amber-800">Volume molaire (STP)</p>
               <p className="text-2xl font-mono text-amber-600 mt-1">Vm = 22.414 L/mol</p>
             </div>
+            <div className="bg-white rounded-lg p-4 border border-amber-100">
+              <p className="font-medium text-amber-800">Pression atmospherique</p>
+              <p className="text-2xl font-mono text-amber-600 mt-1">Patm = 1.013 x 10^5 Pa</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 border border-amber-100">
+              <p className="font-medium text-amber-800">Zero absolu</p>
+              <p className="text-2xl font-mono text-amber-600 mt-1">T = 0 K = -273.15 C</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Chaleurs Latentes */}
+      <Card className="bg-gradient-to-br from-sky-50 to-blue-50 border-sky-200">
+        <CardHeader>
+          <CardTitle className="text-sky-800">Chaleurs Latentes de l'Eau</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-white rounded-lg p-4 border border-sky-100 text-center">
+              <p className="font-medium text-sky-800">Fusion (glace vers eau)</p>
+              <p className="text-2xl font-mono text-sky-600 mt-1">L = 334 kJ/kg</p>
+              <p className="text-sm text-gray-500">a 0 C</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 border border-sky-100 text-center">
+              <p className="font-medium text-sky-800">Vaporisation (eau vers vapeur)</p>
+              <p className="text-2xl font-mono text-sky-600 mt-1">L = 2260 kJ/kg</p>
+              <p className="text-sm text-gray-500">a 100 C</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 border border-sky-100 text-center">
+              <p className="font-medium text-sky-800">Sublimation (glace vers vapeur)</p>
+              <p className="text-2xl font-mono text-sky-600 mt-1">L = 2594 kJ/kg</p>
+              <p className="text-sm text-gray-500">a 0 C</p>
+            </div>
           </div>
         </CardContent>
       </Card>
@@ -165,7 +215,7 @@ export default function Formulas() {
       {/* Unit Conversions */}
       <Card>
         <CardHeader>
-          <CardTitle>Conversions d'Unités</CardTitle>
+          <CardTitle>Conversions d'Unites</CardTitle>
           <CardDescription>Tables de conversion utiles</CardDescription>
         </CardHeader>
         <CardContent>
@@ -174,14 +224,14 @@ export default function Formulas() {
               <thead className="bg-gray-50">
                 <tr>
                   <th className="px-4 py-2 text-left font-medium">Grandeur</th>
-                  <th className="px-4 py-2 text-left font-medium">Unité SI</th>
-                  <th className="px-4 py-2 text-left font-medium">Autres unités</th>
+                  <th className="px-4 py-2 text-left font-medium">Unite SI</th>
+                  <th className="px-4 py-2 text-left font-medium">Autres unites</th>
                   <th className="px-4 py-2 text-left font-medium">Conversion</th>
                 </tr>
               </thead>
               <tbody className="divide-y">
                 <tr>
-                  <td className="px-4 py-2">Énergie</td>
+                  <td className="px-4 py-2">Energie</td>
                   <td className="px-4 py-2 font-mono">Joule (J)</td>
                   <td className="px-4 py-2">calorie, eV</td>
                   <td className="px-4 py-2 font-mono">1 cal = 4.186 J</td>
@@ -190,19 +240,19 @@ export default function Formulas() {
                   <td className="px-4 py-2">Pression</td>
                   <td className="px-4 py-2 font-mono">Pascal (Pa)</td>
                   <td className="px-4 py-2">atm, bar</td>
-                  <td className="px-4 py-2 font-mono">1 atm = 1.013×10⁵ Pa</td>
+                  <td className="px-4 py-2 font-mono">1 atm = 1.013 x 10^5 Pa</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-2">Température</td>
+                  <td className="px-4 py-2">Temperature</td>
                   <td className="px-4 py-2 font-mono">Kelvin (K)</td>
-                  <td className="px-4 py-2">°C, °F</td>
-                  <td className="px-4 py-2 font-mono">T(K) = T(°C) + 273.15</td>
+                  <td className="px-4 py-2">C, F</td>
+                  <td className="px-4 py-2 font-mono">T(K) = T(C) + 273.15</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-2">Volume</td>
-                  <td className="px-4 py-2 font-mono">m³</td>
-                  <td className="px-4 py-2">L, cm³</td>
-                  <td className="px-4 py-2 font-mono">1 L = 10⁻³ m³</td>
+                  <td className="px-4 py-2 font-mono">m3</td>
+                  <td className="px-4 py-2">L, cm3</td>
+                  <td className="px-4 py-2 font-mono">1 L = 10^-3 m3</td>
                 </tr>
               </tbody>
             </table>
