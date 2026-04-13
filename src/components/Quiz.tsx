@@ -119,7 +119,7 @@ export default function Quiz() {
             </CardHeader>
           </Card>
 
-          {[1, 2, 3].map(session => {
+          {[1, 2, 3, 4, 5, 6].map(session => {
             const count = quizData.filter(q => q.session === session).length;
             return (
               <Card

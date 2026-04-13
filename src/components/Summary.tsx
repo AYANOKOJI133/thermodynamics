@@ -163,19 +163,19 @@ export default function Summary() {
         </Card>
         <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
           <CardContent className="pt-4 text-center">
-            <p className="text-3xl font-bold text-blue-600">160</p>
+            <p className="text-3xl font-bold text-blue-600">188</p>
             <p className="text-sm text-gray-600">Flashcards</p>
           </CardContent>
         </Card>
         <Card className="bg-gradient-to-br from-purple-50 to-violet-50 border-purple-200">
           <CardContent className="pt-4 text-center">
-            <p className="text-3xl font-bold text-purple-600">60</p>
+            <p className="text-3xl font-bold text-purple-600">83</p>
             <p className="text-sm text-gray-600">Questions Quiz</p>
           </CardContent>
         </Card>
         <Card className="bg-gradient-to-br from-amber-50 to-yellow-50 border-amber-200">
           <CardContent className="pt-4 text-center">
-            <p className="text-3xl font-bold text-amber-600">45+</p>
+            <p className="text-3xl font-bold text-amber-600">50+</p>
             <p className="text-sm text-gray-600">Formules</p>
           </CardContent>
         </Card>

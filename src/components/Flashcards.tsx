@@ -84,7 +84,10 @@ export default function Flashcards() {
   const sessionColors: Record<number, string> = {
     1: 'from-emerald-500 to-teal-500',
     2: 'from-blue-500 to-cyan-500',
-    3: 'from-purple-500 to-pink-500'
+    3: 'from-purple-500 to-pink-500',
+    4: 'from-indigo-500 to-violet-500',
+    5: 'from-rose-500 to-red-500',
+    6: 'from-amber-500 to-orange-500'
   };
 
   return (
@@ -114,7 +117,7 @@ export default function Flashcards() {
         >
           Toutes
         </Button>
-        {[1, 2, 3].map(s => (
+        {[1, 2, 3, 4, 5, 6].map(s => (
           <Button
             key={s}
             variant={filterSession === s ? 'default' : 'outline'}
