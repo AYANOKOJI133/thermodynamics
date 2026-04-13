@@ -1230,6 +1230,37 @@ export const flashcardsData = [
   { id: 'f158', session: 6, front: "Dans un moteur, d'ou vient Q1?", back: "De la combustion (essence, diesel, charbon) ou d'une reaction nucleaire." },
   { id: 'f159', session: 6, front: "Dans un moteur, ou va Q2?", back: "Perdue dans les gaz d'echappement et le circuit de refroidissement." },
   { id: 'f160', session: 6, front: "Qu'est-ce qu'un cycle monotherme?", back: "Cycle avec une seule source de chaleur. Impossible de produire du travail (eta = 0)." },
+  // Additional flashcards from Séance 4 documents
+  { id: 'f161', session: 4, front: "Quelle est la relation TV^(gamma-1) = Cste?", back: "Une des equations de l'adiabatique reversible reliant temperature et volume." },
+  { id: 'f162', session: 4, front: "Quelle est la relation T^gamma x P^(1-gamma) = Cste?", back: "Une des equations de l'adiabatique reversible reliant temperature et pression." },
+  { id: 'f163', session: 4, front: "Combien de degres de liberte a un gaz monoatomique?", back: "3 degres de liberte (translations uniquement, pas de rotation)." },
+  { id: 'f164', session: 4, front: "Combien de degres de liberte a un gaz diatomique?", back: "5 degres de liberte (3 translations + 2 rotations)." },
+  { id: 'f165', session: 4, front: "Pourquoi un gaz diatomique a 5 degres de liberte?", back: "3 translations + 2 rotations (la rotation autour de l'axe inter-nucleaire n'a pas d'effet)." },
+  { id: 'f166', session: 4, front: "Que vaut l'energie cinetique moyenne par degre de liberte?", back: "(1/2)kT ou k = 1.38 x 10^-23 J/K (constante de Boltzmann)." },
+  { id: 'f167', session: 4, front: "Dans une transformation isochore, que devient dQ?", back: "dQ s'identifie a dQ (DTE). La chaleur devient une fonction d'etat." },
+  { id: 'f168', session: 4, front: "Dans une transformation adiabatique reversible, que devient W?", back: "W devient une fonction d'etat (DTE). Il ne depend que des etats initial et final." },
+  { id: 'f169', session: 4, front: "Qu'est-ce qu'une transformation isoenergetique?", back: "Transformation ou Delta U = 0. Exemple: detente de Joule, transformation isotherme d'un gaz parfait." },
+  { id: 'f170', session: 4, front: "Comment calcule-t-on le travail d'une adiabatique avec P et V?", back: "W = (P2V2 - P1V1)/(gamma - 1)" },
+  // Additional flashcards from Séance 5 documents
+  { id: 'f171', session: 5, front: "Donnez un exemple de transformation irreversible.", back: "La detente de Joule, le transfert thermique spontane, le freinage d'une bicyclette." },
+  { id: 'f172', session: 5, front: "Pourquoi le freinage d'une bicyclette est-il irreversible?", back: "L'energie cinetique se transforme en chaleur. Impossible de voir la bicyclette se remettre en mouvement en refroidissant les freins." },
+  { id: 'f173', session: 5, front: "Que signifie l'inegalite de Carnot-Clausius?", back: "Integrale(dQ_rev/T) >= Integrale(dQ_irrev/T_source). Le signe = est pour reversible, < pour irreversible." },
+  { id: 'f174', session: 5, front: "Comment calculer l'entropie creee dans un exemple pratique?", back: "Delta S_c = Delta S - Delta S_e = Delta S - Q/T_source" },
+  { id: 'f175', session: 5, front: "Quelle est la cause de creation d'entropie dans l'exemple du fer chaud dans le lac?", back: "La mise en contact de deux corps a temperatures differentes (880 K et 278 K)." },
+  { id: 'f176', session: 5, front: "L'entropie est-elle additive?", back: "OUI, c'est une grandeur extensive. S_totale = S1 + S2 + ..." },
+  { id: 'f177', session: 5, front: "Quelle est la relation entre entropie et reversibilite?", back: "Transformation reversible: Delta S_c = 0. Transformation irreversible: Delta S_c > 0." },
+  // Additional flashcards from Séance 6 documents
+  { id: 'f178', session: 6, front: "Quelles sont les 4 transformations du cycle de Carnot?", back: "1. Detente isotherme (T1)\n2. Detente adiabatique\n3. Compression isotherme (T2)\n4. Compression adiabatique" },
+  { id: 'f179', session: 6, front: "Dans un cycle moteur, que vaut Q1 et Q2?", back: "Q1 > 0 (recoit chaleur de source chaude), Q2 < 0 (rejette chaleur a source froide)." },
+  { id: 'f180', session: 6, front: "Dans un cycle recepteur, que vaut W?", back: "W > 0 (le systeme recoit du travail de l'exterieur)." },
+  { id: 'f181', session: 6, front: "Pourquoi eta = 1 est impossible?", back: "Il faudrait Q2 = 0, donc supprimer la source froide. C'est impossible selon le 2eme principe." },
+  { id: 'f182', session: 6, front: "Qu'est-ce que le theoreme de Carnot?", back: "Tous les cycles reversibles entre T1 et T2 ont le meme rendement = 1 - T2/T1, superieur aux cycles irreversibles." },
+  { id: 'f183', session: 6, front: "Comment fonctionne une pompe a chaleur?", back: "Elle preleve de la chaleur d'une source froide et la transfere a une source chaude en consommant du travail." },
+  { id: 'f184', session: 6, front: "Pourquoi la performance d'une PAC > 1?", back: "Parce que la chaleur Q1 fournie est superieure au travail W consomme. Q1 = W + |Q2| > W." },
+  { id: 'f185', session: 6, front: "Qu'est-ce que le diagramme de Raveau?", back: "Graphique montrant les zones de fonctionnement des machines thermiques selon les signes de Q1, Q2 et W." },
+  { id: 'f186', session: 6, front: "Dans un moteur a explosion, ou a lieu l'explosion?", back: "En fin de compression, au point B du cycle." },
+  { id: 'f187', session: 6, front: "Comment calculer le travail dans un cycle moteur?", back: "W = -Somme(Q) car Delta U = 0 pour un cycle." },
+  { id: 'f188', session: 6, front: "Quelle est l'application du 2eme principe aux machines?", back: "Somme(Q_i/T_i) <= 0, donc Q1/T1 + Q2/T2 <= 0." },
 ];
 
 // COMPREHENSIVE QUIZ - 90+ questions covering ALL concepts from Sessions 1-6
@@ -1724,6 +1755,196 @@ export const quizData = [
     options: ["2 isothermes et 2 isochores", "2 isothermes et 2 adiabatiques", "2 isobares et 2 adiabatiques", "4 isothermes"],
     correctAnswer: 1,
     explanation: "Carnot: 2 isothermes + 2 adiabatiques."
+  },
+  
+  // ==================== SESSION 4 - ADDITIONAL QUESTIONS ====================
+  {
+    id: 'q61',
+    session: 4,
+    question: "La relation de Mayer s'ecrit:",
+    options: ["C_P + C_V = R", "C_P - C_V = R", "C_P x C_V = R", "C_P/C_V = R"],
+    correctAnswer: 1,
+    explanation: "La relation de Mayer: C_P - C_V = R (pour une mole)."
+  },
+  {
+    id: 'q62',
+    session: 4,
+    question: "Pour une transformation polytropique, que vaut k pour une isotherme?",
+    options: ["k = 0", "k = 1", "k = gamma", "k = infini"],
+    correctAnswer: 1,
+    explanation: "Pour une isotherme: k = 1."
+  },
+  {
+    id: 'q63',
+    session: 4,
+    question: "La detente de Joule est:",
+    options: ["Une transformation reversible", "Une transformation irreversible spontanee", "Une transformation isobare", "Une transformation isochore"],
+    correctAnswer: 1,
+    explanation: "La detente de Joule est une transformation irreversible spontanee (gaz se detend dans le vide)."
+  },
+  {
+    id: 'q64',
+    session: 4,
+    question: "Lors de la detente de Joule, que vaut Delta U?",
+    options: ["Delta U > 0", "Delta U < 0", "Delta U = 0", "Depend du gaz"],
+    correctAnswer: 2,
+    explanation: "Detente de Joule: W = 0 (P_ext = 0) et Q = 0 (adiabatique), donc Delta U = 0."
+  },
+  {
+    id: 'q65',
+    session: 4,
+    question: "Un gaz monoatomique a combien de degres de liberte?",
+    options: ["3", "5", "6", "2"],
+    correctAnswer: 0,
+    explanation: "Un gaz monoatomique a 3 degres de liberte (translations uniquement)."
+  },
+  {
+    id: 'q66',
+    session: 4,
+    question: "Un gaz diatomique a combien de degres de liberte?",
+    options: ["3", "5", "6", "7"],
+    correctAnswer: 1,
+    explanation: "Un gaz diatomique a 5 degres de liberte (3 translations + 2 rotations)."
+  },
+  {
+    id: 'q67',
+    session: 4,
+    question: "L'energie cinetique moyenne par degre de liberte vaut:",
+    options: ["kT", "(1/2)kT", "(3/2)kT", "2kT"],
+    correctAnswer: 1,
+    explanation: "Theoreme d'equipartition: (1/2)kT par degre de liberte."
+  },
+  {
+    id: 'q68',
+    session: 4,
+    question: "Pour une transformation adiabatique reversible, que vaut Q?",
+    options: ["Q > 0", "Q < 0", "Q = 0", "Q = W"],
+    correctAnswer: 2,
+    explanation: "Adiabatique: pas d'echange de chaleur, donc Q = 0."
+  },
+  {
+    id: 'q69',
+    session: 4,
+    question: "Le travail d'une adiabatique reversible peut s'ecrire:",
+    options: ["W = nR(T2-T1)", "W = nC_V(T2-T1)", "W = nC_P(T2-T1)", "W = 0"],
+    correctAnswer: 1,
+    explanation: "Pour une adiabatique: W = Delta U = nC_V(T2-T1)."
+  },
+  
+  // ==================== SESSION 5 - ADDITIONAL QUESTIONS ====================
+  {
+    id: 'q70',
+    session: 5,
+    question: "Le premier principe ne peut pas expliquer:",
+    options: ["La conservation de l'energie", "Le sens des transformations naturelles", "La relation entre W et Q", "L'energie interne"],
+    correctAnswer: 1,
+    explanation: "Le 1er principe traduit la conservation mais n'explique pas le sens d'evolution."
+  },
+  {
+    id: 'q71',
+    session: 5,
+    question: "Un exemple de transformation irreversible est:",
+    options: ["Une detente isotherme reversible", "Le freinage d'une bicyclette", "Une compression adiabatique reversible", "Un cycle de Carnot"],
+    correctAnswer: 1,
+    explanation: "Le freinage d'une bicyclette transforme l'energie cinetique en chaleur (irreversible)."
+  },
+  {
+    id: 'q72',
+    session: 5,
+    question: "L'entropie echangee est definie par:",
+    options: ["Delta S_e = Q/T_systeme", "Delta S_e = Q/T_source", "Delta S_e = W/T", "Delta S_e = Delta S - Q"],
+    correctAnswer: 1,
+    explanation: "L'entropie echangee = Q/T_source."
+  },
+  {
+    id: 'q73',
+    session: 5,
+    question: "Le bilan entropique s'ecrit:",
+    options: ["Delta S = Delta S_e - Delta S_c", "Delta S = Delta S_e + Delta S_c", "Delta S = Delta S_e x Delta S_c", "Delta S = Delta S_c"],
+    correctAnswer: 1,
+    explanation: "Bilan entropique: Delta S = Delta S_e + Delta S_c."
+  },
+  {
+    id: 'q74',
+    session: 5,
+    question: "L'inegalite de Carnot-Clausius pour une irreversible s'ecrit:",
+    options: ["Integrale(dQ/T) > 0", "Integrale(dQ/T) = 0", "Integrale(dQ/T) < 0", "Integrale(dQ/T) >= 0"],
+    correctAnswer: 2,
+    explanation: "Pour un cycle irreversible: Somme(Q/T) < 0."
+  },
+  {
+    id: 'q75',
+    session: 5,
+    question: "La creation d'entropie est due a:",
+    options: ["La reversibilite", "L'irreversibilite", "L'isolation", "La conservation d'energie"],
+    correctAnswer: 1,
+    explanation: "L'entropie creee > 0 caracterise l'irreversibilite."
+  },
+  
+  // ==================== SESSION 6 - ADDITIONAL QUESTIONS ====================
+  {
+    id: 'q76',
+    session: 6,
+    question: "Une source de chaleur est caracterisee par:",
+    options: ["Une faible capacite calorifique", "Une tres forte capacite calorifique", "Une temperature variable", "Un volume nul"],
+    correctAnswer: 1,
+    explanation: "Une source de chaleur a une tres forte capacite calorifique (temperature constante)."
+  },
+  {
+    id: 'q77',
+    session: 6,
+    question: "Dans un cycle recepteur (machine frigo), les signes sont:",
+    options: ["W > 0, Q1 < 0, Q2 > 0", "W < 0, Q1 > 0, Q2 < 0", "W > 0, Q1 > 0, Q2 < 0", "W < 0, Q1 < 0, Q2 > 0"],
+    correctAnswer: 0,
+    explanation: "Cycle recepteur: W > 0 (recoit travail), Q1 < 0 (rejette chaleur), Q2 > 0 (preleve chaleur)."
+  },
+  {
+    id: 'q78',
+    session: 6,
+    question: "L'efficacite d'une machine frigorifique de Carnot est:",
+    options: ["e = T1/(T1-T2)", "e = T2/(T1-T2)", "e = 1 - T2/T1", "e = (T1-T2)/T1"],
+    correctAnswer: 1,
+    explanation: "Efficacite Carnot frigo: e = T2/(T1-T2)."
+  },
+  {
+    id: 'q79',
+    session: 6,
+    question: "La performance d'une pompe a chaleur de Carnot est:",
+    options: ["p = T1/(T1-T2)", "p = T2/(T1-T2)", "p = 1 - T2/T1", "p = (T1-T2)/T2"],
+    correctAnswer: 0,
+    explanation: "Performance Carnot PAC: p = T1/(T1-T2)."
+  },
+  {
+    id: 'q80',
+    session: 6,
+    question: "Un cycle monotherme:",
+    options: ["Peut produire du travail", "Ne peut pas produire du travail", "A un rendement de 100%", "Necessite deux sources"],
+    correctAnswer: 1,
+    explanation: "Un cycle monotherme ne peut pas produire de travail (interdit par Kelvin)."
+  },
+  {
+    id: 'q81',
+    session: 6,
+    question: "Dans un moteur a explosion, l'explosion a lieu:",
+    options: ["Au debut de la detente", "En fin de compression", "Pendant la detente", "Au debut de la compression"],
+    correctAnswer: 1,
+    explanation: "L'explosion a lieu en fin de compression (point B du cycle)."
+  },
+  {
+    id: 'q82',
+    session: 6,
+    question: "Pour un cycle reversible, la relation entre Q et T est:",
+    options: ["Q1/T1 + Q2/T2 > 0", "Q1/T1 + Q2/T2 = 0", "Q1/T1 + Q2/T2 < 0", "Q1/T1 = Q2/T2"],
+    correctAnswer: 1,
+    explanation: "Pour un cycle reversible: Q1/T1 + Q2/T2 = 0."
+  },
+  {
+    id: 'q83',
+    session: 6,
+    question: "Le rendement d'un cycle irreversible est:",
+    options: ["Superieur a Carnot", "Egal a Carnot", "Inferieur a Carnot", "Independant de Carnot"],
+    correctAnswer: 2,
+    explanation: "Theoreme de Carnot: eta_irreversible < eta_Carnot."
   }
 ];
 
@@ -1769,8 +1990,17 @@ export const formulasData = {
     { name: "Enthalpie", formula: "H = U + PV", variables: "Fonction d'etat", session: 4 },
     { name: "Variation d'enthalpie (GP)", formula: "dH = nC_PdT", variables: "Pour un gaz parfait", session: 4 },
     { name: "Adiabatique reversible", formula: "PV^gamma = Cste", variables: "gamma = C_P/C_V", session: 4 },
+    { name: "Adiabatique (T-V)", formula: "TV^(gamma-1) = Cste", variables: "Relation temperature-volume", session: 4 },
+    { name: "Adiabatique (T-P)", formula: "T^gamma x P^(1-gamma) = Cste", variables: "Relation temperature-pression", session: 4 },
     { name: "Travail adiabatique", formula: "W = nC_V(T2 - T1)", variables: "Q = 0", session: 4 },
+    { name: "Travail adiabatique (P,V)", formula: "W = (P2V2 - P1V1)/(gamma - 1)", variables: "Forme avec pression et volume", session: 4 },
     { name: "Polytropique", formula: "PV^k = Cste", variables: "k: indice polytropique", session: 4 },
+    { name: "Polytropique - k isotherme", formula: "k = 1, C_k = infini", variables: "Transformation isotherme", session: 4 },
+    { name: "Polytropique - k isobare", formula: "k = 0, C_k = C_P", variables: "Transformation isobare", session: 4 },
+    { name: "Polytropique - k isochore", formula: "k = infini, C_k = C_V", variables: "Transformation isochore", session: 4 },
+    { name: "Polytropique - k adiabatique", formula: "k = gamma, C_k = 0", variables: "Transformation adiabatique", session: 4 },
+    { name: "Coeff gamma monoatomique", formula: "gamma = 5/3 = 1.67", variables: "Gaz monoatomique (Ar, Ne)", session: 4 },
+    { name: "Coeff gamma diatomique", formula: "gamma = 7/5 = 1.4", variables: "Gaz diatomique (N2, O2, H2)", session: 4 },
   ],
   secondPrincipe: [
     { name: "Relation de Clausius (rev)", formula: "Somme(Q_i/T_i) = 0", variables: "Cycle reversible", session: 5 },
