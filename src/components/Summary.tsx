@@ -148,9 +148,9 @@ export default function Summary() {
       <div>
         <h2 className="text-2xl font-bold text-emerald-800 flex items-center gap-2">
           <FileText className="h-6 w-6" />
-          Fiche de Revision Finale
+          Ma Fiche de Revision
         </h2>
-        <p className="text-gray-600">Synthese complete des 6 seances</p>
+        <p className="text-gray-600">Tout ce qu&apos;il faut retenir pour l&apos;exam</p>
       </div>
 
       {/* Quick Stats */}
@@ -232,7 +232,7 @@ export default function Summary() {
         <CardHeader>
           <CardTitle className="text-blue-800 flex items-center gap-2">
             <Lightbulb className="h-5 w-5" />
-            Conseils pour Reussir
+            Mes Conseils
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -351,9 +351,9 @@ export default function Summary() {
       {/* Final Message */}
       <Card className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white">
         <CardContent className="pt-6 text-center">
-          <p className="text-xl font-bold mb-2">Bonne revision !</p>
+          <p className="text-xl font-bold mb-2">Bonne chance pour l&apos;exam Adil_Err ! 🎯</p>
           <p className="text-emerald-100">
-            Utilisez les flashcards pour memoriser les definitions et les quiz pour tester vos connaissances.
+            Tu vas assurer, continue comme ca ! 💪
           </p>
         </CardContent>
       </Card>

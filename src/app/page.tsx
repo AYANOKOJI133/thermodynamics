@@ -48,8 +48,8 @@ export default function Home() {
                 <FlaskConical className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl md:text-2xl font-bold">Thermodynamique</h1>
-                <p className="text-emerald-200 text-sm hidden sm:block">Plateforme d apprentissage interactive</p>
+                <h1 className="text-xl md:text-2xl font-bold">Thermodynamique - Adil_Err</h1>
+                <p className="text-emerald-200 text-sm hidden sm:block">Mon outil de revision</p>
               </div>
             </div>
             
@@ -106,7 +106,7 @@ export default function Home() {
       <div className="bg-white border-b shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex items-center justify-between mb-1">
-            <span className="text-sm font-medium text-emerald-800">Progression d apprentissage</span>
+            <span className="text-sm font-medium text-emerald-800">Ma progression</span>
             <span className="text-sm text-emerald-600">{Math.round(progressPercentage)}%</span>
           </div>
           <Progress value={progressPercentage} className="h-2" />
@@ -149,8 +149,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-emerald-900 text-white py-6 mt-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-emerald-200">Cours de Thermodynamique - 6 Seances</p>
-          <p className="text-sm text-emerald-300 mt-2">References: Foussard et Julien (DUNOD) | Perez (DUNOD)</p>
+          <p className="text-lg font-medium">Made by Adil_Err &amp; 7bibna l&apos;AI 🤖</p>
+          <p className="text-sm text-emerald-300 mt-2">Thermodynamique - 6 Seances</p>
         </div>
       </footer>
     </div>

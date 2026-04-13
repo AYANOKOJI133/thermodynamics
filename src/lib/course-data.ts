@@ -1,5 +1,5 @@
-// Complete thermodynamics course data from all 9 documents (Sessions 1-6)
-// COMPREHENSIVE VERSION - All information included
+// Donnees du cours de Thermodynamique - Adil_Err
+// Seances 1-6 : Tout le cours en un seul endroit
 
 export const courseData = {
   sessions: [
