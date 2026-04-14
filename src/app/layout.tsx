@@ -15,22 +15,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Thermodynamique - Adil_Err",
-  description:
-    "Mon outil de revision pour le cours de Thermodynamique. Flashcards, Quiz, Formules et Resume des 6 seances.",
-  keywords: [
-    "Thermodynamique",
-    "Physique",
-    "Revision",
-    "Cours",
-    "Flashcards",
-    "Quiz",
-    "Adil_Err",
-  ],
+  description: "Mon outil de revision pour le cours de Thermodynamique. Flashcards, Quiz, Formules et Resume des 6 seances.",
+  keywords: ["Thermodynamique", "Physique", "Revision", "Cours", "Flashcards", "Quiz", "Adil_Err"],
   authors: [{ name: "Adil_Err" }],
   openGraph: {
     title: "Thermodynamique - Adil_Err",
-    description:
-      "Mon outil de revision pour le cours de Thermodynamique",
+    description: "Mon outil de revision pour le cours de Thermodynamique",
     url: "https://thermodynamique.revision",
     siteName: "Thermodynamique Revision",
     type: "website",
@@ -38,8 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Thermodynamique - Adil_Err",
-    description:
-      "Mon outil de revision pour le cours de Thermodynamique",
+    description: "Mon outil de revision pour le cours de Thermodynamique",
   },
 };
 
@@ -50,16 +39,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      
-      {/* 👇 هادي غير زيادة، ما مسحنا حتى حاجة */}
-      <head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6511189103000261"
-          crossOrigin="anonymous"
-        ></script>
-      </head>
-
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
