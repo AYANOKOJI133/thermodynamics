@@ -5,7 +5,8 @@ import { formulasData } from '@/lib/course-data';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { FlaskConical, Calculator, Thermometer, Zap, Flame, Atom, ChevronDown, ChevronUp, Waves, Sparkles, Droplets, Target, Settings, RotateCcw, Cpu, Database } from 'lucide-react';
+import { FlaskConical, Calculator, Thermometer, Zap, Flame, Atom, ChevronDown, ChevronUp, Waves, Sparkles, Droplets, Target, Settings, RotateCcw, Cpu, Database, Copy, Check } from 'lucide-react';
+import Math from './Math';
 
 const categories = [
   { id: 'general', label: 'General', icon: Calculator, color: 'from-gray-500 to-slate-500' },
@@ -52,20 +53,28 @@ export default function Formulas() {
       <Card className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white">
         <CardContent className="pt-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div>
-              <p className="text-2xl font-mono font-bold">PV=nRT</p>
+            <div className="bg-white/10 rounded-lg p-3">
+              <div className="text-2xl">
+                <Math>{'PV = nRT'}</Math>
+              </div>
               <p className="text-sm text-emerald-100 mt-1">Gaz Parfait</p>
             </div>
-            <div>
-              <p className="text-2xl font-mono font-bold">dU=W+Q</p>
+            <div className="bg-white/10 rounded-lg p-3">
+              <div className="text-2xl">
+                <Math>{'\\Delta U = W + Q'}</Math>
+              </div>
               <p className="text-sm text-emerald-100 mt-1">1er Principe</p>
             </div>
-            <div>
-              <p className="text-2xl font-mono font-bold">dS=dQ/T</p>
+            <div className="bg-white/10 rounded-lg p-3">
+              <div className="text-2xl">
+                <Math>{'dS = \\frac{\\delta Q}{T}'}</Math>
+              </div>
               <p className="text-sm text-emerald-100 mt-1">Entropie</p>
             </div>
-            <div>
-              <p className="text-2xl font-mono font-bold">eta=1-T2/T1</p>
+            <div className="bg-white/10 rounded-lg p-3">
+              <div className="text-2xl">
+                <Math>{'\\eta = 1 - \\frac{T_2}{T_1}'}</Math>
+              </div>
               <p className="text-sm text-emerald-100 mt-1">Carnot</p>
             </div>
           </div>
@@ -123,10 +132,10 @@ export default function Formulas() {
                               </Badge>
                             )}
                           </div>
-                          <div className="bg-white rounded-lg p-3 border border-gray-100">
-                            <p className="text-xl md:text-2xl font-mono text-emerald-700 text-center">
-                              {formula.formula}
-                            </p>
+                          <div className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm">
+                            <div className="text-xl md:text-2xl text-center text-emerald-700">
+                              <Math display>{formula.formula}</Math>
+                            </div>
                           </div>
                           {formula.variables && (
                             <p className="text-sm text-gray-500 mt-2 italic">
@@ -138,9 +147,13 @@ export default function Formulas() {
                           variant="ghost"
                           size="sm"
                           onClick={() => handleCopy(formula.formula, formula.name)}
-                          className="text-emerald-600"
+                          className="text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50"
                         >
-                          {copiedFormula === formula.name ? 'Copie !' : 'Copier'}
+                          {copiedFormula === formula.name ? (
+                            <Check className="h-4 w-4" />
+                          ) : (
+                            <Copy className="h-4 w-4" />
+                          )}
                         </Button>
                       </div>
                     </div>
@@ -161,27 +174,39 @@ export default function Formulas() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-white rounded-lg p-4 border border-amber-100">
               <p className="font-medium text-amber-800">Constante des gaz parfaits</p>
-              <p className="text-2xl font-mono text-amber-600 mt-1">R = 8.314 J.K-1.mol-1</p>
+              <div className="text-xl mt-1 text-amber-600">
+                <Math>{'R = 8.314 \\, \\text{J.K}^{-1}\\text{.mol}^{-1}'}</Math>
+              </div>
             </div>
             <div className="bg-white rounded-lg p-4 border border-amber-100">
               <p className="font-medium text-amber-800">Constante de Boltzmann</p>
-              <p className="text-2xl font-mono text-amber-600 mt-1">k = 1.38 x 10^-23 J/K</p>
+              <div className="text-xl mt-1 text-amber-600">
+                <Math>{'k = 1.38 \\times 10^{-23} \\, \\text{J/K}'}</Math>
+              </div>
             </div>
             <div className="bg-white rounded-lg p-4 border border-amber-100">
-              <p className="font-medium text-amber-800">Point triple de l'eau</p>
-              <p className="text-2xl font-mono text-amber-600 mt-1">T = 273.16 K</p>
+              <p className="font-medium text-amber-800">Point triple de l&apos;eau</p>
+              <div className="text-xl mt-1 text-amber-600">
+                <Math>{'T = 273.16 \\, \\text{K}'}</Math>
+              </div>
             </div>
             <div className="bg-white rounded-lg p-4 border border-amber-100">
               <p className="font-medium text-amber-800">Volume molaire (STP)</p>
-              <p className="text-2xl font-mono text-amber-600 mt-1">Vm = 22.414 L/mol</p>
+              <div className="text-xl mt-1 text-amber-600">
+                <Math>{'V_m = 22.414 \\, \\text{L/mol}'}</Math>
+              </div>
             </div>
             <div className="bg-white rounded-lg p-4 border border-amber-100">
               <p className="font-medium text-amber-800">Pression atmospherique</p>
-              <p className="text-2xl font-mono text-amber-600 mt-1">Patm = 1.013 x 10^5 Pa</p>
+              <div className="text-xl mt-1 text-amber-600">
+                <Math>{'P_{atm} = 1.013 \\times 10^5 \\, \\text{Pa}'}</Math>
+              </div>
             </div>
             <div className="bg-white rounded-lg p-4 border border-amber-100">
               <p className="font-medium text-amber-800">Zero absolu</p>
-              <p className="text-2xl font-mono text-amber-600 mt-1">T = 0 K = -273.15 C</p>
+              <div className="text-xl mt-1 text-amber-600">
+                <Math>{'T = 0 \\, \\text{K} = -273.15 \\, ^\\circ\\text{C}'}</Math>
+              </div>
             </div>
           </div>
         </CardContent>
@@ -190,24 +215,30 @@ export default function Formulas() {
       {/* Chaleurs Latentes */}
       <Card className="bg-gradient-to-br from-sky-50 to-blue-50 border-sky-200">
         <CardHeader>
-          <CardTitle className="text-sky-800">Chaleurs Latentes de l'Eau</CardTitle>
+          <CardTitle className="text-sky-800">Chaleurs Latentes de l&apos;Eau</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-white rounded-lg p-4 border border-sky-100 text-center">
               <p className="font-medium text-sky-800">Fusion (glace vers eau)</p>
-              <p className="text-2xl font-mono text-sky-600 mt-1">L = 334 kJ/kg</p>
-              <p className="text-sm text-gray-500">a 0 C</p>
+              <div className="text-xl mt-1 text-sky-600">
+                <Math>{'L = 334 \\, \\text{kJ/kg}'}</Math>
+              </div>
+              <p className="text-sm text-gray-500 mt-1">a 0°C</p>
             </div>
             <div className="bg-white rounded-lg p-4 border border-sky-100 text-center">
               <p className="font-medium text-sky-800">Vaporisation (eau vers vapeur)</p>
-              <p className="text-2xl font-mono text-sky-600 mt-1">L = 2260 kJ/kg</p>
-              <p className="text-sm text-gray-500">a 100 C</p>
+              <div className="text-xl mt-1 text-sky-600">
+                <Math>{'L = 2260 \\, \\text{kJ/kg}'}</Math>
+              </div>
+              <p className="text-sm text-gray-500 mt-1">a 100°C</p>
             </div>
             <div className="bg-white rounded-lg p-4 border border-sky-100 text-center">
               <p className="font-medium text-sky-800">Sublimation (glace vers vapeur)</p>
-              <p className="text-2xl font-mono text-sky-600 mt-1">L = 2594 kJ/kg</p>
-              <p className="text-sm text-gray-500">a 0 C</p>
+              <div className="text-xl mt-1 text-sky-600">
+                <Math>{'L = 2594 \\, \\text{kJ/kg}'}</Math>
+              </div>
+              <p className="text-sm text-gray-500 mt-1">a 0°C</p>
             </div>
           </div>
         </CardContent>

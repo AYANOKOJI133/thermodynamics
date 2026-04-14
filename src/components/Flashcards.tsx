@@ -16,6 +16,7 @@ import {
   Lightbulb
 } from 'lucide-react';
 import { useProgressStore } from '@/lib/store';
+import RenderContent from './RenderContent';
 
 export default function Flashcards() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -160,7 +161,7 @@ export default function Flashcards() {
             </CardHeader>
             <CardContent className="flex items-center justify-center h-48">
               <CardTitle className="text-xl md:text-2xl text-center leading-relaxed">
-                {currentCard.front}
+                <RenderContent text={currentCard.front} />
               </CardTitle>
             </CardContent>
             <div className="absolute bottom-4 left-0 right-0 text-center">
@@ -177,8 +178,8 @@ export default function Flashcards() {
               <Badge className="bg-emerald-100 text-emerald-800 w-fit">Réponse</Badge>
             </CardHeader>
             <CardContent className="flex items-center justify-center h-48">
-              <p className="text-lg md:text-xl text-gray-800 text-center leading-relaxed whitespace-pre-line">
-                {currentCard.back}
+              <p className="text-lg md:text-xl text-gray-800 text-center leading-relaxed">
+                <RenderContent text={currentCard.back} />
               </p>
             </CardContent>
             <div className="absolute bottom-4 left-0 right-0 text-center">
