@@ -18,9 +18,6 @@ export const metadata: Metadata = {
   description: "Mon outil de revision pour le cours de Thermodynamique. Flashcards, Quiz, Formules et Resume des 6 seances.",
   keywords: ["Thermodynamique", "Physique", "Revision", "Cours", "Flashcards", "Quiz", "Adil_Err"],
   authors: [{ name: "Adil_Err" }],
-  icons: {
-    icon: "/logo.svg",
-  },
   openGraph: {
     title: "Thermodynamique - Adil_Err",
     description: "Mon outil de revision pour le cours de Thermodynamique",
