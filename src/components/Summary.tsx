@@ -169,7 +169,7 @@ export default function Summary() {
         </Card>
         <Card className="bg-gradient-to-br from-purple-50 to-violet-50 border-purple-200">
           <CardContent className="pt-4 text-center">
-            <p className="text-3xl font-bold text-purple-600">83</p>
+            <p className="text-3xl font-bold text-purple-600">203</p>
             <p className="text-sm text-gray-600">Questions Quiz</p>
           </CardContent>
         </Card>

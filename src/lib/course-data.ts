@@ -1945,6 +1945,978 @@ export const quizData = [
     options: ["Superieur a Carnot", "Egal a Carnot", "Inferieur a Carnot", "Independant de Carnot"],
     correctAnswer: 2,
     explanation: "Theoreme de Carnot: eta_irreversible < eta_Carnot."
+  },
+
+  // ==================== SESSION 1 - ADDITIONAL 20 QUESTIONS ====================
+  {
+    id: 'q84',
+    session: 1,
+    question: "La thermodynamique est nee vers:",
+    options: ["1700", "1820", "1900", "1950"],
+    correctAnswer: 1,
+    explanation: "La thermodynamique est nee vers 1820, au debut de l'ere industrielle."
+  },
+  {
+    id: 'q85',
+    session: 1,
+    question: "L'approche macroscopique utilise les variables:",
+    options: ["Positions des molecules", "P, V, T, n", "Vitesses des particules", "Energie cinetique individuelle"],
+    correctAnswer: 1,
+    explanation: "L'approche macroscopique utilise les variables mesurables a grande echelle: P, V, T, n."
+  },
+  {
+    id: 'q86',
+    session: 1,
+    question: "L'approche microscopique est aussi appelee:",
+    options: ["Thermodynamique classique", "Thermodynamique statistique", "Thermodynamique quantique", "Thermodynamique appliquee"],
+    correctAnswer: 1,
+    explanation: "L'approche microscopique analyse le comportement des particules: thermodynamique statistique."
+  },
+  {
+    id: 'q87',
+    session: 1,
+    question: "Un exemple de systeme ouvert est:",
+    options: ["Gaz dans un cylindre ferme", "L'Univers", "Un moteur thermique", "Un refrigerateur"],
+    correctAnswer: 2,
+    explanation: "Un moteur thermique echange matiere (carburant, gaz) et energie avec l'exterieur."
+  },
+  {
+    id: 'q88',
+    session: 1,
+    question: "Si W = -500 J, cela signifie que:",
+    options: ["Le systeme recoit 500 J de travail", "Le systeme fournit 500 J de travail", "Le systeme recoit 500 J de chaleur", "Aucun echange"],
+    correctAnswer: 1,
+    explanation: "W < 0 signifie que le systeme fournit (cede) du travail a l'exterieur."
+  },
+  {
+    id: 'q89',
+    session: 1,
+    question: "La constante des gaz parfaits R vaut:",
+    options: ["1.38 x 10^-23 J/K", "8.314 J.K-1.mol-1", "273.15 J/K", "22.414 L/mol"],
+    correctAnswer: 1,
+    explanation: "R = 8.314 J.K-1.mol-1."
+  },
+  {
+    id: 'q90',
+    session: 1,
+    question: "Si on double la masse d'un systeme, le volume:",
+    options: ["Reste identique", "Double", "Divise par 2", "Triple"],
+    correctAnswer: 1,
+    explanation: "Le volume est une variable extensive, proportionnelle a la masse."
+  },
+  {
+    id: 'q91',
+    session: 1,
+    question: "La masse volumique est une variable:",
+    options: ["Extensive", "Intensive", "Ni l'un ni l'autre", "Les deux"],
+    correctAnswer: 1,
+    explanation: "La masse volumique (rho = m/V) est intensive, independante de la masse."
+  },
+  {
+    id: 'q92',
+    session: 1,
+    question: "Une transformation reversible passe par:",
+    options: ["Des etats d'equilibre instables", "Des etats d'equilibre infiniment voisins", "Des etats non definis", "Un seul etat d'equilibre"],
+    correctAnswer: 1,
+    explanation: "Une transformation reversible est une succession d'etats d'equilibre infiniment voisins."
+  },
+  {
+    id: 'q93',
+    session: 1,
+    question: "La condition de Schwartz verifie qu'une forme differentielle est:",
+    options: ["Une fonction d'etat", "Une differentielle totale exacte", "Une fonction de transfert", "Une grandeur extensive"],
+    correctAnswer: 1,
+    explanation: "Si d2f/dxdy = d2f/dydx, alors df est une differentielle totale exacte."
+  },
+  {
+    id: 'q94',
+    session: 1,
+    question: "Le coefficient beta est defini par:",
+    options: ["(1/V)(dV/dT)P", "(1/P)(dP/dT)V", "-(1/V)(dV/dP)T", "(dP/dT)V"],
+    correctAnswer: 1,
+    explanation: "beta = (1/P)(dP/dT)V est le coefficient d'augmentation de pression isochore."
+  },
+  {
+    id: 'q95',
+    session: 1,
+    question: "Le coefficient chi_T est le coefficient de:",
+    options: ["Dilatation isobare", "Augmentation de pression", "Compressibilite isotherme", "Dilatation isochore"],
+    correctAnswer: 2,
+    explanation: "chi_T = -(1/V)(dV/dP)T est le coefficient de compressibilite isotherme."
+  },
+  {
+    id: 'q96',
+    session: 1,
+    question: "Un STEP (systeme thermo-elastique) est:",
+    options: ["Un systeme ouvert", "Un systeme homogene inerte chimiquement", "Un systeme avec reactions chimiques", "Un systeme avec transfert de matiere"],
+    correctAnswer: 1,
+    explanation: "Un STEP est un systeme homogene, inerte chimiquement, a composition constante."
+  },
+  {
+    id: 'q97',
+    session: 1,
+    question: "Une transformation cyclique implique:",
+    options: ["Delta U > 0", "Delta U < 0", "Etat final = Etat initial", "Q = 0"],
+    correctAnswer: 2,
+    explanation: "Une transformation cyclique ramene le systeme a son etat initial."
+  },
+  {
+    id: 'q98',
+    session: 1,
+    question: "Pour un gaz parfait, l'equation d'etat PV = nRT est:",
+    options: ["Lineaire en P et V", "Lineaire en P et T", "Non lineaire", "Une identite"],
+    correctAnswer: 1,
+    explanation: "PV = nRT est lineaire en P et T (pour n et V fixes, P est proportionnel a T)."
+  },
+  {
+    id: 'q99',
+    session: 1,
+    question: "L'energie interne U est:",
+    options: ["Une fonction de transfert", "Une fonction d'etat extensive", "Une variable intensive", "Une constante universelle"],
+    correctAnswer: 1,
+    explanation: "U est une fonction d'etat extensive, energie microscopique du systeme."
+  },
+  {
+    id: 'q100',
+    session: 1,
+    question: "Une transformation spontanee est generalement:",
+    options: ["Reversible", "Irreversible", "Quasi-statique", "Isotherme"],
+    correctAnswer: 1,
+    explanation: "Une transformation spontanee est brutale et irreversible."
+  },
+  {
+    id: 'q101',
+    session: 1,
+    question: "L'equilibre thermodynamique implique:",
+    options: ["Seulement T constante", "Variables d'etat constantes et uniformes", "P constante uniquement", "V constant uniquement"],
+    correctAnswer: 1,
+    explanation: "A l'equilibre, les variables d'etat ne varient pas dans le temps ET sont uniformes."
+  },
+  {
+    id: 'q102',
+    session: 1,
+    question: "La pression est une variable:",
+    options: ["Extensive", "Intensive", "Ni l'une ni l'autre", "Depend du systeme"],
+    correctAnswer: 1,
+    explanation: "La pression est intensive: independante de la masse du systeme."
+  },
+  {
+    id: 'q103',
+    session: 1,
+    question: "Le milieu exterieur est:",
+    options: ["Le systeme etudie", "Tout ce qui n'est pas le systeme", "La frontiere du systeme", "L'Univers entier"],
+    correctAnswer: 1,
+    explanation: "Le milieu exterieur est tout ce qui n'est pas le systeme thermodynamique."
+  },
+
+  // ==================== SESSION 2 - ADDITIONAL 20 QUESTIONS ====================
+  {
+    id: 'q104',
+    session: 2,
+    question: "La temperature est liee a:",
+    options: ["La masse du systeme", "L'agitation moleculaire", "Le volume du systeme", "La pression uniquement"],
+    correctAnswer: 1,
+    explanation: "La temperature represente l'energie moyenne d'une molecule, liee a l'agitation moleculaire."
+  },
+  {
+    id: 'q105',
+    session: 2,
+    question: "Un thermometre a gaz utilise:",
+    options: ["La dilatation d'un metal", "La variation de pression d'un gaz", "La resistance electrique", "Le rayonnement"],
+    correctAnswer: 1,
+    explanation: "Un thermometre a gaz mesure la variation de pression ou de volume d'un gaz."
+  },
+  {
+    id: 'q106',
+    session: 2,
+    question: "Dans l'echelle Fahrenheit, la glace fond a:",
+    options: ["0 F", "32 F", "273 F", "-32 F"],
+    correctAnswer: 1,
+    explanation: "La glace fond a 32 F dans l'echelle Fahrenheit."
+  },
+  {
+    id: 'q107',
+    session: 2,
+    question: "Le principe zero permet de definir:",
+    options: ["L'energie", "La temperature", "Le travail", "L'entropie"],
+    correctAnswer: 1,
+    explanation: "Le principe zero permet de definir la notion de temperature et de thermometre."
+  },
+  {
+    id: 'q108',
+    session: 2,
+    question: "Une cloison diatherme permet:",
+    options: ["Les echanges de matiere", "Les echanges de chaleur", "Aucun echange", "Seulement le travail"],
+    correctAnswer: 1,
+    explanation: "Une cloison diatherme permet les echanges de chaleur entre systemes."
+  },
+  {
+    id: 'q109',
+    session: 2,
+    question: "Pour un gaz parfait, les molecules sont supposees:",
+    options: ["Tres proches les unes des autres", "Sans interaction entre elles", "Avec de fortes interactions", "Immobiles"],
+    correctAnswer: 1,
+    explanation: "Hypothese du gaz parfait: molecules sans interaction (sauf lors des chocs)."
+  },
+  {
+    id: 'q110',
+    session: 2,
+    question: "Les conditions STP correspondent a:",
+    options: ["T = 0 C, P = 1 atm", "T = 0 C, P = 1.013 x 10^5 Pa", "T = 25 C, P = 1 atm", "T = 273 K, P = 10^5 Pa"],
+    correctAnswer: 1,
+    explanation: "STP: T = 273.15 K (0 C), P = 1.013 x 10^5 Pa (1 atm)."
+  },
+  {
+    id: 'q111',
+    session: 2,
+    question: "La loi de Charles s'applique a:",
+    options: ["T constante", "V constant", "P constante", "Q = 0"],
+    correctAnswer: 1,
+    explanation: "La loi de Charles: P1/T1 = P2/T2 a volume constant."
+  },
+  {
+    id: 'q112',
+    session: 2,
+    question: "La loi de Gay-Lussac s'applique a:",
+    options: ["T constante", "V constant", "P constante", "Adiabatique"],
+    correctAnswer: 2,
+    explanation: "La loi de Gay-Lussac: V1/T1 = V2/T2 a pression constante."
+  },
+  {
+    id: 'q113',
+    session: 2,
+    question: "Pour un gaz diatomique, l'energie cinetique moyenne est:",
+    options: ["(1/2)kT", "kT", "(3/2)kT", "(5/2)kT"],
+    correctAnswer: 3,
+    explanation: "Un gaz diatomique a 5 ddl, donc Ec = (5/2)kT."
+  },
+  {
+    id: 'q114',
+    session: 2,
+    question: "Le theoreme d'equipartition dit que chaque ddl contribue:",
+    options: ["kT", "(1/2)kT", "(3/2)kT", "2kT"],
+    correctAnswer: 1,
+    explanation: "Chaque degre de liberte contribue (1/2)kT a l'energie moyenne."
+  },
+  {
+    id: 'q115',
+    session: 2,
+    question: "La dilatation lineaire s'ecrit:",
+    options: ["L = L0(1 + alpha Delta T)", "L = L0/alpha Delta T", "L = alpha L0 Delta T", "L = L0 - alpha Delta T"],
+    correctAnswer: 0,
+    explanation: "Dilatation lineaire: L = L0(1 + alpha_l x Delta T)."
+  },
+  {
+    id: 'q116',
+    session: 2,
+    question: "Le coefficient de dilatation volumique alpha_V vaut:",
+    options: ["alpha_l", "2 x alpha_l", "3 x alpha_l", "alpha_l / 3"],
+    correctAnswer: 2,
+    explanation: "Pour un corps isotrope: alpha_V = 3 x alpha_l."
+  },
+  {
+    id: 'q117',
+    session: 2,
+    question: "L'echelle Rankine a pour zero absolu:",
+    options: ["0 R", "-273 R", "-459 R", "273 R"],
+    correctAnswer: 0,
+    explanation: "L'echelle Rankine a 0 R correspond au zero absolu."
+  },
+  {
+    id: 'q118',
+    session: 2,
+    question: "Un thermocouple fonctionne par:",
+    options: ["Dilatation", "Effet Seebeck", "Resistance", "Rayonnement"],
+    correctAnswer: 1,
+    explanation: "Un thermocouple utilise l'effet Seebeck (difference de potentiel due a une difference de temperature)."
+  },
+  {
+    id: 'q119',
+    session: 2,
+    question: "Le point triple de l'eau correspond a la pression:",
+    options: ["1 atm", "611 Pa", "1013 hPa", "0 Pa"],
+    correctAnswer: 1,
+    explanation: "Le point triple de l'eau: T = 273.16 K, P = 611 Pa."
+  },
+  {
+    id: 'q120',
+    session: 2,
+    question: "A volume constant, si T augmente, la pression d'un gaz:",
+    options: ["Diminue", "Augmente", "Reste constante", "Devient nulle"],
+    correctAnswer: 1,
+    explanation: "Loi de Charles: P/T = constante, donc si T augmente, P augmente."
+  },
+  {
+    id: 'q121',
+    session: 2,
+    question: "A pression constante, si T augmente, le volume d'un gaz:",
+    options: ["Diminue", "Augmente", "Reste constant", "Devient nul"],
+    correctAnswer: 1,
+    explanation: "Loi de Gay-Lussac: V/T = constante, donc si T augmente, V augmente."
+  },
+  {
+    id: 'q122',
+    session: 2,
+    question: "A temperature constante, si P augmente, le volume d'un gaz:",
+    options: ["Augmente", "Diminue", "Reste constant", "Devient infini"],
+    correctAnswer: 1,
+    explanation: "Loi de Mariotte: PV = constante, donc si P augmente, V diminue."
+  },
+  {
+    id: 'q123',
+    session: 2,
+    question: "L'unite de temperature dans le SI est:",
+    options: ["Celsius", "Kelvin", "Fahrenheit", "Rankine"],
+    correctAnswer: 1,
+    explanation: "Le Kelvin (K) est l'unite SI de temperature."
+  },
+
+  // ==================== SESSION 3 - ADDITIONAL 20 QUESTIONS ====================
+  {
+    id: 'q124',
+    session: 3,
+    question: "La conduction thermique se fait par:",
+    options: ["Mouvement de fluide", "Contact materiel direct", "Ondes electromagnetiques", "Vide"],
+    correctAnswer: 1,
+    explanation: "La conduction est le transfert par contact materiel direct."
+  },
+  {
+    id: 'q125',
+    session: 3,
+    question: "Le rayonnement thermique peut se faire:",
+    options: ["Seulement dans les solides", "Seulement dans les gaz", "Dans le vide", "Seulement dans les liquides"],
+    correctAnswer: 2,
+    explanation: "Le rayonnement thermique peut traverser le vide (ondes EM)."
+  },
+  {
+    id: 'q126',
+    session: 3,
+    question: "La formule Q = lambda x S x (TA-TB)/e correspond a:",
+    options: ["La convection", "La conduction", "Le rayonnement", "La calorimetrie"],
+    correctAnswer: 1,
+    explanation: "Cette formule decrit la conduction thermique (loi de Fourier)."
+  },
+  {
+    id: 'q127',
+    session: 3,
+    question: "La chaleur massique c represente:",
+    options: ["La chaleur totale", "La chaleur par unite de masse", "La chaleur par unite de volume", "La temperature"],
+    correctAnswer: 1,
+    explanation: "La chaleur massique c est la quantite de chaleur par unite de masse et par degree."
+  },
+  {
+    id: 'q128',
+    session: 3,
+    question: "Pour l'eau, c vaut environ:",
+    options: ["1 J/kg.K", "4186 J/kg.K", "1000 J/kg.K", "4.186 J/kg.K"],
+    correctAnswer: 1,
+    explanation: "La chaleur massique de l'eau est environ 4186 J/kg.K."
+  },
+  {
+    id: 'q129',
+    session: 3,
+    question: "La chaleur latente de vaporisation de l'eau est:",
+    options: ["334 kJ/kg", "2260 kJ/kg", "4.186 kJ/kg", "100 kJ/kg"],
+    correctAnswer: 1,
+    explanation: "L_vaporisation = 2260 kJ/kg a 100 C."
+  },
+  {
+    id: 'q130',
+    session: 3,
+    question: "Pendant un changement d'etat, la temperature:",
+    options: ["Augmente", "Diminue", "Reste constante", "Devient nulle"],
+    correctAnswer: 2,
+    explanation: "Pendant un changement d'etat, la temperature reste constante."
+  },
+  {
+    id: 'q131',
+    session: 3,
+    question: "Le travail des forces de pression est:",
+    options: ["Toujours positif", "Toujours negatif", "De signe variable selon la transformation", "Toujours nul"],
+    correctAnswer: 2,
+    explanation: "Le signe de W depend du sens de la transformation (compression ou detente)."
+  },
+  {
+    id: 'q132',
+    session: 3,
+    question: "Dans une detente (V2 > V1), le travail est:",
+    options: ["Positif", "Negatif", "Nul", "Infini"],
+    correctAnswer: 1,
+    explanation: "Dans une detente, le systeme fournit du travail: W < 0."
+  },
+  {
+    id: 'q133',
+    session: 3,
+    question: "Dans une compression (V2 < V1), le travail est:",
+    options: ["Positif", "Negatif", "Nul", "Infini"],
+    correctAnswer: 0,
+    explanation: "Dans une compression, le systeme recoit du travail: W > 0."
+  },
+  {
+    id: 'q134',
+    session: 3,
+    question: "Le travail est une grandeur:",
+    options: ["Extensive", "Intensive", "De chemin", "D'etat"],
+    correctAnswer: 2,
+    explanation: "Le travail est une grandeur de chemin (depend du chemin suivi)."
+  },
+  {
+    id: 'q135',
+    session: 3,
+    question: "La relation CP/C_V est appelee:",
+    options: ["Coefficient de Mayer", "Coefficient gamma", "Coefficient alpha", "Coefficient beta"],
+    correctAnswer: 1,
+    explanation: "gamma = C_P/C_V est le coefficient adiabatique."
+  },
+  {
+    id: 'q136',
+    session: 3,
+    question: "Pour un gaz monoatomique, C_P = ?",
+    options: ["(3/2)R", "(5/2)R", "(7/2)R", "R"],
+    correctAnswer: 1,
+    explanation: "Pour un gaz monoatomique: C_P = (5/2)R."
+  },
+  {
+    id: 'q137',
+    session: 3,
+    question: "Pour un gaz diatomique, C_P = ?",
+    options: ["(3/2)R", "(5/2)R", "(7/2)R", "R"],
+    correctAnswer: 2,
+    explanation: "Pour un gaz diatomique: C_P = (7/2)R."
+  },
+  {
+    id: 'q138',
+    session: 3,
+    question: "La calorimetrie mesure:",
+    options: ["La temperature", "Les echanges de chaleur", "La pression", "Le volume"],
+    correctAnswer: 1,
+    explanation: "La calorimetrie est la mesure des echanges de chaleur."
+  },
+  {
+    id: 'q139',
+    session: 3,
+    question: "Un calorimetre est considere comme:",
+    options: ["Un systeme ouvert", "Un systeme isole", "Un systeme ferme non isole", "Une source de chaleur"],
+    correctAnswer: 1,
+    explanation: "Un calorimetre est approximativement un systeme isole (Q = 0)."
+  },
+  {
+    id: 'q140',
+    session: 3,
+    question: "Dans un calorimetre, la somme des chaleurs echangees est:",
+    options: ["Positive", "Negative", "Nulle", "Infinie"],
+    correctAnswer: 2,
+    explanation: "Dans un systeme isole: Somme(Qi) = 0."
+  },
+  {
+    id: 'q141',
+    session: 3,
+    question: "Le travail isotherme reversible pour un gaz parfait est:",
+    options: ["W = -P(V2-V1)", "W = nRT ln(V2/V1)", "W = 0", "W = nC_V(T2-T1)"],
+    correctAnswer: 1,
+    explanation: "Travail isotherme reversible: W = nRT ln(V2/V1)."
+  },
+  {
+    id: 'q142',
+    session: 3,
+    question: "La convection naturelle est due a:",
+    options: ["Un ventilateur", "La difference de densite", "Une pompe", "Le rayonnement"],
+    correctAnswer: 1,
+    explanation: "La convection naturelle est due aux differences de densite (fluide chaud plus leger)."
+  },
+  {
+    id: 'q143',
+    session: 3,
+    question: "Le coefficient h dans Q = hS(T-Tfluide) est:",
+    options: ["La conductivite thermique", "Le coefficient de convection", "La chaleur massique", "L'emissivite"],
+    correctAnswer: 1,
+    explanation: "h est le coefficient d'echange convectif (W/m2.K)."
+  },
+
+  // ==================== SESSION 4 - ADDITIONAL 20 QUESTIONS ====================
+  {
+    id: 'q144',
+    session: 4,
+    question: "Le principe d'equivalence affirme que pour un cycle:",
+    options: ["W = Q", "W + Q = 0", "W = 0", "Q = 0"],
+    correctAnswer: 1,
+    explanation: "Pour un cycle: W + Q = 0 (principe d'equivalence)."
+  },
+  {
+    id: 'q145',
+    session: 4,
+    question: "1 calorie equivaut a environ:",
+    options: ["1 J", "4.18 J", "1000 J", "0.001 J"],
+    correctAnswer: 1,
+    explanation: "1 cal = 4.186 J (environ 4.18 J)."
+  },
+  {
+    id: 'q146',
+    session: 4,
+    question: "L'energie interne U represente:",
+    options: ["L'energie cinetique macroscopique", "L'energie potentielle macroscopique", "L'energie microscopique totale", "L'enerlie mecanique"],
+    correctAnswer: 2,
+    explanation: "U est l'enerlie microscopique (agitation thermique, liaisons, etc.)."
+  },
+  {
+    id: 'q147',
+    session: 4,
+    question: "Pour un systeme isole, l'enerlie interne:",
+    options: ["Augmente", "Diminue", "Reste constante", "Devient nulle"],
+    correctAnswer: 2,
+    explanation: "Systeme isole: pas d'echange, donc U = constante."
+  },
+  {
+    id: 'q148',
+    session: 4,
+    question: "La detente de Joule est une transformation:",
+    options: ["Isotherme", "Isobare", "Isoenergetique", "Isochore"],
+    correctAnswer: 2,
+    explanation: "Detente de Joule: Delta U = 0, donc isoenergetique."
+  },
+  {
+    id: 'q149',
+    session: 4,
+    question: "Dans la detente de Joule, le gaz se detend:",
+    options: ["Contre une pression exterieure", "Dans le vide", "Dans un cylindre", "Dans un piston"],
+    correctAnswer: 1,
+    explanation: "Dans la detente de Joule, le gaz se detend librement dans le vide."
+  },
+  {
+    id: 'q150',
+    session: 4,
+    question: "L'enthalpie H est definie par H = U + PV, donc H est:",
+    options: ["Une fonction de chemin", "Une fonction d'etat", "Une grandeur intensive", "N'est pas une fonction"],
+    correctAnswer: 1,
+    explanation: "H = U + PV est une fonction d'etat (combinaison de fonctions d'etat)."
+  },
+  {
+    id: 'q151',
+    session: 4,
+    question: "Pour un gaz parfait, H depend de:",
+    options: ["P uniquement", "V uniquement", "T uniquement", "P et V"],
+    correctAnswer: 2,
+    explanation: "Pour un gaz parfait: H = U + nRT = H(T), donc H ne depend que de T."
+  },
+  {
+    id: 'q152',
+    session: 4,
+    question: "Dans une transformation isochore, Q = ?",
+    options: ["Delta H", "Delta U", "0", "-W"],
+    correctAnswer: 1,
+    explanation: "Isochore: W = 0, donc Q = Delta U."
+  },
+  {
+    id: 'q153',
+    session: 4,
+    question: "Dans une transformation isobare, Q = ?",
+    options: ["Delta H", "Delta U", "0", "-W"],
+    correctAnswer: 0,
+    explanation: "Isobare: Q = Delta H."
+  },
+  {
+    id: 'q154',
+    session: 4,
+    question: "Dans une transformation isotherme de gaz parfait, Delta U = ?",
+    options: ["nC_V(T2-T1)", "0", "nC_P(T2-T1)", "-W"],
+    correctAnswer: 1,
+    explanation: "Pour un GP isotherme: T = cste, U = U(T), donc Delta U = 0."
+  },
+  {
+    id: 'q155',
+    session: 4,
+    question: "La relation TV^(gamma-1) = Cste est valable pour:",
+    options: ["Une isotherme", "Une isobare", "Une adiabatique reversible", "Une isochore"],
+    correctAnswer: 2,
+    explanation: "Pour une adiabatique reversible: TV^(gamma-1) = Cste."
+  },
+  {
+    id: 'q156',
+    session: 4,
+    question: "Pour une transformation polytropique avec k = 0:",
+    options: ["Isotherme", "Isobare", "Isochore", "Adiabatique"],
+    correctAnswer: 1,
+    explanation: "Pour k = 0: PV^0 = P = Cste, donc isobare."
+  },
+  {
+    id: 'q157',
+    session: 4,
+    question: "Pour une transformation polytropique avec k = infini:",
+    options: ["Isotherme", "Isobare", "Isochore", "Adiabatique"],
+    correctAnswer: 2,
+    explanation: "Pour k = infini: V = Cste, donc isochore."
+  },
+  {
+    id: 'q158',
+    session: 4,
+    question: "Le travail d'une adiabatique reversible peut s'ecrire:",
+    options: ["nRT ln(V2/V1)", "(P2V2 - P1V1)/(gamma-1)", "-P(V2-V1)", "0"],
+    correctAnswer: 1,
+    explanation: "W_adiabatique = (P2V2 - P1V1)/(gamma-1)."
+  },
+  {
+    id: 'q159',
+    session: 4,
+    question: "Pour un gaz monoatomique, C_V/C_P = ?",
+    options: ["5/3", "3/5", "7/5", "5/7"],
+    correctAnswer: 1,
+    explanation: "Pour un gaz monoatomique: gamma = 5/3, donc C_V/C_P = 1/gamma = 3/5."
+  },
+  {
+    id: 'q160',
+    session: 4,
+    question: "Dans un cycle, la variation d'enerlie interne est:",
+    options: ["Positive", "Negative", "Nulle", "Variable"],
+    correctAnswer: 2,
+    explanation: "Cycle: etat final = etat initial, donc Delta U = 0."
+  },
+  {
+    id: 'q161',
+    session: 4,
+    question: "Pour un gaz diatomique, C_V/C_P = ?",
+    options: ["5/3", "3/5", "5/7", "7/5"],
+    correctAnswer: 2,
+    explanation: "Pour un gaz diatomique: gamma = 7/5, donc C_V/C_P = 1/gamma = 5/7."
+  },
+  {
+    id: 'q162',
+    session: 4,
+    question: "L'enerlie totale d'un systeme est:",
+    options: ["U uniquement", "Ec + Ep + U", "Ec + U", "Ep + U"],
+    correctAnswer: 1,
+    explanation: "E_totale = E_cin + E_pot + U (enerlie interne)."
+  },
+  {
+    id: 'q163',
+    session: 4,
+    question: "Si Delta U = 0, alors:",
+    options: ["W = Q", "W = -Q", "W = 0", "Q = 0"],
+    correctAnswer: 1,
+    explanation: "Delta U = W + Q = 0 implique W = -Q."
+  },
+
+  // ==================== SESSION 5 - ADDITIONAL 20 QUESTIONS ====================
+  {
+    id: 'q164',
+    session: 5,
+    question: "Le deuxieme principe explique:",
+    options: ["La conservation de l'enerlie", "Le sens des transformations", "La definition de U", "La relation W + Q"],
+    correctAnswer: 1,
+    explanation: "Le 2eme principe explique pourquoi les transformations ont un sens privilegie."
+  },
+  {
+    id: 'q165',
+    session: 5,
+    question: "Un exemple d'irreversibilite est:",
+    options: ["Un cycle de Carnot", "Le melange de deux gaz", "Une compression reversible", "Une detente isotherme quasi-statique"],
+    correctAnswer: 1,
+    explanation: "Le melange spontane de deux gaz est irreversible."
+  },
+  {
+    id: 'q166',
+    session: 5,
+    question: "Selon Clausius, la chaleur passe spontanement:",
+    options: ["Du froid au chaud", "Du chaud au froid", "Dans les deux sens", "Ne passe pas"],
+    correctAnswer: 1,
+    explanation: "Clausius: la chaleur passe spontanement du chaud vers le froid."
+  },
+  {
+    id: 'q167',
+    session: 5,
+    question: "Selon Kelvin, il est impossible de:",
+    options: ["Convertir W en Q", "Convertir Q en W integralement", "Créer de l'enerlie", "Detruire de l'enerlie"],
+    correctAnswer: 1,
+    explanation: "Kelvin: impossible de convertir integralement de la chaleur en travail."
+  },
+  {
+    id: 'q168',
+    session: 5,
+    question: "Une machine parfaite violerait:",
+    options: ["Le 1er principe", "Le 2eme principe", "Les deux", "Aucun"],
+    correctAnswer: 1,
+    explanation: "Une machine parfaite (rendement 100%) violerait le 2eme principe."
+  },
+  {
+    id: 'q169',
+    session: 5,
+    question: "Pour un cycle reversible, Somme(Q/T) = ?",
+    options: ["> 0", "= 0", "< 0", "Indefini"],
+    correctAnswer: 1,
+    explanation: "Cycle reversible: Somme(Q/T) = 0."
+  },
+  {
+    id: 'q170',
+    session: 5,
+    question: "Pour un cycle irreversible, Somme(Q/T) ?",
+    options: ["> 0", "= 0", "< 0", ">= 0"],
+    correctAnswer: 2,
+    explanation: "Cycle irreversible: Somme(Q/T) < 0."
+  },
+  {
+    id: 'q171',
+    session: 5,
+    question: "L'entropie S est une fonction:",
+    options: ["De chemin", "D'etat", "Intensive uniquement", "Non definie"],
+    correctAnswer: 1,
+    explanation: "L'entropie est une fonction d'etat."
+  },
+  {
+    id: 'q172',
+    session: 5,
+    question: "L'unite de l'entropie est:",
+    options: ["J", "J/K", "K", "J.K"],
+    correctAnswer: 1,
+    explanation: "L'entropie s'exprime en J/K."
+  },
+  {
+    id: 'q173',
+    session: 5,
+    question: "Pour une transformation reversible, dS = ?",
+    options: ["dQ", "dQ/T", "dQ x T", "T/dQ"],
+    correctAnswer: 1,
+    explanation: "Pour une transformation reversible: dS = dQ_rev/T."
+  },
+  {
+    id: 'q174',
+    session: 5,
+    question: "L'entropie echangee est:",
+    options: ["Toujours positive", "Toujours negative", "De signe quelconque", "Toujours nulle"],
+    correctAnswer: 2,
+    explanation: "L'entropie echangee peut etre positive ou negative selon le sens de l'echange."
+  },
+  {
+    id: 'q175',
+    session: 5,
+    question: "L'entropie creee est toujours:",
+    options: ["Positive", "Negative", "Nulle", "De signe variable"],
+    correctAnswer: 0,
+    explanation: "L'entropie creee est toujours positive ou nulle (Delta S_c >= 0)."
+  },
+  {
+    id: 'q176',
+    session: 5,
+    question: "Pour un systeme isole, Delta S est:",
+    options: ["< 0", "= 0", ">= 0", "<= 0"],
+    correctAnswer: 2,
+    explanation: "Pour un systeme isole: Delta S >= 0 (l'entropie augmente ou reste constante)."
+  },
+  {
+    id: 'q177',
+    session: 5,
+    question: "Le bilan entropique est:",
+    options: ["Delta S = Delta S_e - Delta S_c", "Delta S = Delta S_e + Delta S_c", "Delta S = Delta S_e x Delta S_c", "Delta S = Delta S_c"],
+    correctAnswer: 1,
+    explanation: "Bilan entropique: Delta S = Delta S_e + Delta S_c."
+  },
+  {
+    id: 'q178',
+    session: 5,
+    question: "L'entropie est une grandeur:",
+    options: ["Intensive", "Extensive", "Ni l'une ni l'autre", "Les deux"],
+    correctAnswer: 1,
+    explanation: "L'entropie est extensive (additive)."
+  },
+  {
+    id: 'q179',
+    session: 5,
+    question: "La cause principale de creation d'entropie est:",
+    options: ["La reversibilite", "L'irreversibilite thermique", "L'isolation", "La conservation"],
+    correctAnswer: 1,
+    explanation: "La mise en contact de corps a temperatures differenties cree de l'entropie."
+  },
+  {
+    id: 'q180',
+    session: 5,
+    question: "L'inegalite de Clausius s'applique a:",
+    options: ["Les systemes isoles uniquement", "Les cycles uniquement", "Toutes transformations", "Les transformations reversibles uniquement"],
+    correctAnswer: 1,
+    explanation: "L'inegalite de Clausius: Somme(Q/T) <= 0 pour un cycle."
+  },
+  {
+    id: 'q181',
+    session: 5,
+    question: "Si Delta S_c = 0, la transformation est:",
+    options: ["Irreversible", "Reversible", "Impossible", "Spontanee"],
+    correctAnswer: 1,
+    explanation: "Delta S_c = 0 caracterise une transformation reversible."
+  },
+  {
+    id: 'q182',
+    session: 5,
+    question: "Si Delta S_c > 0, la transformation est:",
+    options: ["Irreversible", "Reversible", "Impossible", "A l'equilibre"],
+    correctAnswer: 0,
+    explanation: "Delta S_c > 0 caracterise une transformation irreversible."
+  },
+  {
+    id: 'q183',
+    session: 5,
+    question: "Pour un systeme fermé, Delta S peut etre:",
+    options: ["Uniquement positive", "Uniquement negative", "Positive ou negative", "Toujours nulle"],
+    correctAnswer: 2,
+    explanation: "Pour un systeme ferme, Delta S peut etre positive ou negative selon les echanges."
+  },
+
+  // ==================== SESSION 6 - ADDITIONAL 20 QUESTIONS ====================
+  {
+    id: 'q184',
+    session: 6,
+    question: "Une machine thermique convertit:",
+    options: ["Travail en chaleur uniquement", "Chaleur en travail et inversement", "Matiere en energie", "Rien"],
+    correctAnswer: 1,
+    explanation: "Une machine thermique peut convertir chaleur en travail et inversement."
+  },
+  {
+    id: 'q185',
+    session: 6,
+    question: "Une source de chaleur a une:",
+    options: ["Faible capacite calorifique", "Forte capacite calorifique", "Temperature variable", "Pression variable"],
+    correctAnswer: 1,
+    explanation: "Une source de chaleur a une tres forte capacite calorifique (T constante)."
+  },
+  {
+    id: 'q186',
+    session: 6,
+    question: "Dans un cycle ditherme, le systeme echange avec:",
+    options: ["Une source", "Deux sources", "Trois sources", "Aucune source"],
+    correctAnswer: 1,
+    explanation: "Un cycle ditherme echange avec deux sources de temperatures differentes."
+  },
+  {
+    id: 'q187',
+    session: 6,
+    question: "Pour un cycle: W + Q1 + Q2 = ?",
+    options: ["W", "Q1", "0", "Q2"],
+    correctAnswer: 2,
+    explanation: "Pour un cycle: Delta U = 0, donc W + Q1 + Q2 = 0."
+  },
+  {
+    id: 'q188',
+    session: 6,
+    question: "Dans un moteur, W est:",
+    options: ["Positif", "Negatif", "Nul", "Infini"],
+    correctAnswer: 1,
+    explanation: "Moteur: W < 0 (le systeme fournit du travail)."
+  },
+  {
+    id: 'q189',
+    session: 6,
+    question: "Dans un moteur, Q1 est:",
+    options: ["Positif", "Negatif", "Nul", "Variable"],
+    correctAnswer: 0,
+    explanation: "Moteur: Q1 > 0 (recoit chaleur de la source chaude)."
+  },
+  {
+    id: 'q190',
+    session: 6,
+    question: "Dans un moteur, Q2 est:",
+    options: ["Positif", "Negatif", "Nul", "Variable"],
+    correctAnswer: 1,
+    explanation: "Moteur: Q2 < 0 (rejette chaleur a la source froide)."
+  },
+  {
+    id: 'q191',
+    session: 6,
+    question: "Le rendement d'un moteur est toujours:",
+    options: ["> 1", "= 1", "< 1", "= 0"],
+    correctAnswer: 2,
+    explanation: "eta = |W|/Q1 < 1 car une partie de Q1 est rejetee (Q2 < 0)."
+  },
+  {
+    id: 'q192',
+    session: 6,
+    question: "Le rendement de Carnot est le rendement:",
+    options: ["Minimum", "Maximum", "Moyen", "Nul"],
+    correctAnswer: 1,
+    explanation: "Le rendement de Carnot est le rendement maximal possible."
+  },
+  {
+    id: 'q193',
+    session: 6,
+    question: "eta_Carnot = 1 - T2/T1. Pour T1 = 400K et T2 = 300K, eta = ?",
+    options: ["0.25", "0.33", "0.75", "0.50"],
+    correctAnswer: 0,
+    explanation: "eta = 1 - 300/400 = 1 - 0.75 = 0.25 (25%)."
+  },
+  {
+    id: 'q194',
+    session: 6,
+    question: "Une machine frigorifique extrait de la chaleur:",
+    options: ["De la source chaude", "De la source froide", "Des deux sources", "D'aucune source"],
+    correctAnswer: 1,
+    explanation: "Une machine frigorifique extrait Q2 > 0 de la source froide."
+  },
+  {
+    id: 'q195',
+    session: 6,
+    question: "L'efficacite d'une machine frigorifique est:",
+    options: ["Toujours < 1", "Toujours > 1", "Peut etre > ou < 1", "= 1"],
+    correctAnswer: 2,
+    explanation: "L'efficacite frigorifique peut etre > 1 ou < 1 selon les conditions."
+  },
+  {
+    id: 'q196',
+    session: 6,
+    question: "Une pompe a chaleur chauffe:",
+    options: ["La source froide", "La source chaude", "Les deux sources", "Aucune source"],
+    correctAnswer: 1,
+    explanation: "Une PAC transfere de la chaleur vers la source chaude (interieur)."
+  },
+  {
+    id: 'q197',
+    session: 6,
+    question: "La performance d'une PAC est toujours:",
+    options: ["< 1", "= 1", "> 1", "= 0"],
+    correctAnswer: 2,
+    explanation: "La performance d'une PAC est toujours > 1 (Q1 > W)."
+  },
+  {
+    id: 'q198',
+    session: 6,
+    question: "Le cycle de Carnot est compose de:",
+    options: ["2 isothermes", "2 adiabatiques", "2 isothermes + 2 adiabatiques", "4 isothermes"],
+    correctAnswer: 2,
+    explanation: "Le cycle de Carnot: 2 isothermes + 2 adiabatiques."
+  },
+  {
+    id: 'q199',
+    session: 6,
+    question: "Pour un cycle de Carnot, Q1/T1 + Q2/T2 = ?",
+    options: ["> 0", "= 0", "< 0", "Indefini"],
+    correctAnswer: 1,
+    explanation: "Carnot est reversible, donc Q1/T1 + Q2/T2 = 0."
+  },
+  {
+    id: 'q200',
+    session: 6,
+    question: "Un cycle monotherme ne peut pas:",
+    options: ["Echanger de la chaleur", "Produire du travail", "Recevoir du travail", "Etre reversible"],
+    correctAnswer: 1,
+    explanation: "Un cycle monotherme ne peut pas produire du travail (interdit par Kelvin)."
+  },
+  {
+    id: 'q201',
+    session: 6,
+    question: "Si eta = 1, cela implique:",
+    options: ["T1 = T2", "T2 = 0 K", "Q2 = Q1", "W = 0"],
+    correctAnswer: 1,
+    explanation: "eta = 1 - T2/T1 = 1 implique T2 = 0 K (impossible)."
+  },
+  {
+    id: 'q202',
+    session: 6,
+    question: "L'efficacite d'un frigo de Carnot avec T1 = 300K et T2 = 270K est:",
+    options: ["9", "10", "0.1", "1"],
+    correctAnswer: 0,
+    explanation: "e = T2/(T1-T2) = 270/(300-270) = 270/30 = 9."
+  },
+  {
+    id: 'q203',
+    session: 6,
+    question: "La performance d'une PAC de Carnot avec T1 = 300K et T2 = 270K est:",
+    options: ["9", "10", "0.1", "1"],
+    correctAnswer: 1,
+    explanation: "p = T1/(T1-T2) = 300/(300-270) = 300/30 = 10."
   }
 ];
 
