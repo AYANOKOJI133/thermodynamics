@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script"; // 👈 ADD THIS
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -34,11 +35,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="fr" suppressHydrationWarning>
+      {/* 👇 ADD THIS BLOCK */}
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6511189100300261"
+        crossOrigin="anonymous"
+        strategy="afterInteractive"
+      />
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
