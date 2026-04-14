@@ -1038,7 +1038,7 @@ export const courseData = {
   ]
 };
 
-// COMPREHENSIVE FLASHCARDS - 200+ cards covering ALL concepts from Sessions 1-6
+// Mes Flashcards - Toutes les cartes de revision pour les 6 seances
 export const flashcardsData = [
   // ==================== SESSION 1 - 54 FLASHCARDS ====================
   // Introduction
@@ -1263,7 +1263,7 @@ export const flashcardsData = [
   { id: 'f188', session: 6, front: "Quelle est l'application du 2eme principe aux machines?", back: "Somme(Q_i/T_i) <= 0, donc Q1/T1 + Q2/T2 <= 0." },
 ];
 
-// COMPREHENSIVE QUIZ - 90+ questions covering ALL concepts from Sessions 1-6
+// Mes Quiz - Questions pour tester mes connaissances sur les 6 seances
 export const quizData = [
   // ==================== SESSION 1 - 20 QUESTIONS ====================
   {
@@ -2920,7 +2920,7 @@ export const quizData = [
   }
 ];
 
-// COMPLETE FORMULAS DATA - All formulas from all documents (Sessions 1-6)
+// Mes Formules - Toutes les formules importantes des 6 seances
 export const formulasData = {
   general: [
     { name: "Equation d'etat du gaz parfait", formula: "PV = nRT", variables: "P (Pa), V (m3), n (mol), R = 8.314 J.K-1.mol-1, T (K)", session: 1 },

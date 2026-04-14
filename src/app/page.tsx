@@ -149,7 +149,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-emerald-900 text-white py-6 mt-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-lg font-medium">Made by Adil_Err &amp; 7bibna l&apos;AI 🤖</p>
+          <p className="text-lg font-medium">Made by Adil_Err</p>
           <p className="text-sm text-emerald-300 mt-2">Thermodynamique - 6 Seances</p>
         </div>
       </footer>
