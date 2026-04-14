@@ -353,7 +353,7 @@ export default function Summary() {
         <CardContent className="pt-6 text-center">
           <p className="text-xl font-bold mb-2">Bonne chance pour l&apos;exam Adil_Err ! 🎯</p>
           <p className="text-emerald-100">
-            Tu vas assurer, continue comme ca ! 💪
+            Chi d3iwa dial lkhir nvalidi ...
           </p>
         </CardContent>
       </Card>
