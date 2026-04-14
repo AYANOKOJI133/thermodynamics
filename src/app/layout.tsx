@@ -40,13 +40,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      {/* 👇 ADD THIS BLOCK */}
-      <Script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6511189100300261"
-        crossOrigin="anonymous"
-        strategy="afterInteractive"
-      />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6511189100300261"
+     crossorigin="anonymous"></script>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
